@@ -1,0 +1,26 @@
+{
+	"name": "etc-website",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"serve": "vue-cli-service serve",
+		"build": "vue-cli-service build"
+	},
+	"dependencies": {
+		"@popperjs/core": "^2.11.6",
+		"bootstrap": "^5.2.3",
+		"markdown-it": "^13.0.1",
+		"markdown-it-attrs": "^4.1.6",
+		"postcss": "^8",
+		"raw-loader": "^4.0.2",
+		"vue": "^3.2.13",
+		"vue-router": "^4.0.3",
+		"vue-i18n": "^9.1.0"
+	},
+	"devDependencies": {
+		"@intlify/vue-i18n-loader": "^3.0.0",
+		"@vue/cli-plugin-babel": "~5.0.0",
+		"@vue/cli-plugin-router": "~5.0.0",
+		"@vue/cli-service": "~5.0.0"
+	}
+}
