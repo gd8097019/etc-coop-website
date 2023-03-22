@@ -9,7 +9,7 @@
 				}
 			],
 			"img": "/img/posts/12_gdasummit_bob.jpeg",
-			"source": "12_bob_summerwill_to_speak_at.md",
+			"source": "2019_10_19_bob_summerwill_to_speak_at.mdx",
 			"alias": "2019-10-19-bob-summerwill-to-speak-at"
 		},
 		{
@@ -21,7 +21,7 @@
 				}
 			],
 			"img": "/img/posts/11_alison.jpeg",
-			"source": "11_alison_alexis_joins_etc_coop.md",
+			"source": "2019_10_19_alison_alexis_joins_etc_coop.mdx",
 			"alias": "2019-10-19-alison-alexis-joins-etc-coop"
 		},
 		{
@@ -33,7 +33,7 @@
 				}
 			],
 			"img": "/img/posts/10_eea.jpeg",
-			"source": "10_etc_coop_joins_eea.md",
+			"source": "2019_10_18_etc_coop_joins_eea.mdx",
 			"alias": "2019-10-18-etc-coop-joins-eea"
 		},
 		{
@@ -45,7 +45,7 @@
 				}
 			],
 			"img": "/img/posts/09_bob_and_yaz.jpeg",
-			"source": "09_yaz-contract-extension.md",
+			"source": "2019_10_17_yaz-contract-extension.mdx",
 			"alias": "2019-10-17-yaz-contract-extension"
 		},
 		{
@@ -57,7 +57,7 @@
 				}
 			],
 			"img": "/img/posts/08_transparent_png.png",
-			"source": "08_pow_mining_explicit_social_contract.md",
+			"source": "2019_10_06_pow_mining_explicit_social_contract.mdx",
 			"alias": "2019-10-06-pow-mining-explicit-social-contract"
 		},
 		{
@@ -69,7 +69,7 @@
 				}
 			],
 			"img": "/img/posts/07_eea_rebel_alliance.jpeg",
-			"source": "07_etc_cooperative_applying_to_join_eea.md",
+			"source": "2019_09_12_etc_cooperative_applying_to_join_eea.mdx",
 			"alias": "2019-09-12-etc-cooperative-applying-to-join-eea"
 		},
 		{
@@ -81,7 +81,7 @@
 				}
 			],
 			"img": "/img/posts/06_hyperledger_besu.png",
-			"source": "06_etc-support-in-hyperledger-besu.md",
+			"source": "2019_09_10_etc-support-in-hyperledger-besu.mdx",
 			"alias": "2019-09-10-etc-support-in-hyperledger-besu"
 		},
 		{
@@ -93,7 +93,7 @@
 				}
 			],
 			"img": "/img/posts/05_ecc.jpeg",
-			"source": "05_end_year_review.md",
+			"source": "2019_03_28_end_year_review.mdx",
 			"alias": "2019-03-28-2018-end-of-year-review"
 		},
 		{
@@ -105,7 +105,7 @@
 				}
 			],
 			"img": "/img/posts/04_ecc.jpeg",
-			"source": "04_mid_year_review.md",
+			"source": "2018_07_09_mid_year_review.mdx",
 			"alias": "2018-07-09-2018-mid-year-review"
 		},
 		{
@@ -117,7 +117,7 @@
 				}
 			],
 			"img": "/img/posts/02_dfg.jpeg",
-			"source": "02_announcing_the_etc_cooperative_board_of_advisors.md",
+			"source": "2018_05_15_announcing_the_etc_cooperative_board_of_advisors.mdx",
 			"alias": "2018-05-15-announcing-the-etc-cooperative-board-of-advisors"
 		},
 		{
@@ -129,7 +129,7 @@
 				}
 			],
 			"img": "/img/posts/01_etcsummit2017.jpeg",
-			"source": "01_announcing_the_etc_cooperative_board_of_advisors.md",
+			"source": "2018_03_01_announcing_the_etc_cooperative_board_of_advisors.mdx",
 			"alias": "2018-03-01-announcing-the-etc-cooperative-board-of-advisors"
 		}
 	]
