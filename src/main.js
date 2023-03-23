@@ -3,6 +3,8 @@ import App from "./App.vue";
 import router from "./router";
 import markdown from "markdown-it";
 import markdownAttrs from "markdown-it-attrs";
+import metadataBlock from "markdown-it-metadata-block";
+import yaml from "yaml";
 import i18n from "./i18n";
 import "./assets/css/styles.css";
 import "./assets/css/mdfile.css";
@@ -12,7 +14,20 @@ import "bootstrap";
 const mixins = {
 	methods: {
 		md: function (input) {
-			return markdown().use(markdownAttrs).render(input);
+			const meta = {};
+			const html = markdown({
+				html: true,
+				linkify: true,
+				typographer: true,
+			})
+				.use(markdownAttrs)
+				.use(metadataBlock, {
+					parseMetadata: yaml.parse,
+					meta,
+				})
+				.render(input);
+
+			return { html, meta };
 		},
 	},
 };

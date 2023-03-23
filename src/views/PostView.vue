@@ -22,12 +22,11 @@
 		</select>
 	</div>
 	<div>
+		<pre>{{ meta }}</pre>
 		<p v-html="body"></p>
 	</div>
 </template>
 <script>
-import posts from "@/contents/posts.json";
-
 export default {
 	data() {
 		return {
@@ -35,6 +34,7 @@ export default {
 			title: null,
 			img: null,
 			body: null,
+			meta: null,
 		};
 	},
 	watch: {
@@ -45,31 +45,22 @@ export default {
 	},
 	methods: {
 		getContent(locale) {
-			const postsData = posts.list.filter(
-				(b) => b.alias === this.$route.params.alias
-			);
+			let sourceFile = `${this.$route.params.alias}/index.md`;
 
-			if (postsData.length > 0) {
-				this.id = postsData[0].id;
-				this.title = postsData[0].title;
-				this.img = postsData[0].img;
-
-				// try to load current locale folder's md files.
-				// If not exist, read default md files in 'en' folder
-				if (postsData[0].source) {
-					const sourceFile = postsData[0].source;
-					import(`@/contents/posts/${locale}/${sourceFile}`)
-						.then((module) => {
-							this.body = this.md(module.default);
-						})
-						.catch(() => {
-							// load default locale (en)
-							import(`@/contents/posts/en/${sourceFile}`).then((module) => {
-								this.body = this.md(module.default);
-							});
-						});
-				}
-			}
+			import(`@/contents/posts/${locale}/${sourceFile}`)
+				.then((module) => {
+					const { html, meta } = this.md(module.default);
+					this.body = html;
+					this.meta = meta;
+				})
+				.catch(() => {
+					// load default locale (en)
+					import(`@/contents/posts/en/${sourceFile}`).then((module) => {
+						const { html, meta } = this.md(module.default);
+						this.body = html;
+						this.meta = meta;
+					});
+				});
 		},
 	},
 	mounted() {

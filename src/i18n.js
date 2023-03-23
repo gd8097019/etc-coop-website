@@ -1,5 +1,4 @@
 import { createI18n } from "vue-i18n";
-import posts from "@/contents/posts.json";
 
 /**
  * Load locale messages
@@ -19,27 +18,8 @@ function loadLocaleMessages() {
 		if (matched && matched.length > 1) {
 			const locale = matched[1];
 			messages[locale] = locales(key);
-
-			// add posts titles to locale
-			if (posts.list && posts.list.length) {
-				posts.list.forEach((postsItem) => {
-					let titleText = "";
-					let title = postsItem.title.find((t) => t.locale === locale);
-					if (title) {
-						titleText = title.text;
-					} else {
-						title = postsItem.title.find((t) => t.locale === "en");
-						if (title) {
-							titleText = title.text;
-						}
-					}
-					messages[locale][`posts.title.content.${postsItem.id}`] = titleText;
-				});
-			}
 		}
 	});
-
-	console.log(messages);
 
 	return messages;
 }
