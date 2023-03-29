@@ -49,16 +49,6 @@ for (const lang of langs) {
 
 				const metadata = getMetaData(mdFile);
 
-				/*
-          const imgFiles = glob.globSync(`${folder}/${file}/*.{jpeg,jpg,png}`);
-
-          if (imgFiles.length > 0) {
-            let featuredImgPath = imgFiles[0];
-            const folderRelative = `${folder}/${file}/`.replace("./", "");
-            const featuredImageName = featuredImgPath.replace(folderRelative, "");
-          }
-        */
-
 				items += `<item>
                     <guid isPermaLink="false">${uuidv4()}</guid>
                     <title>${metadata.title || ""}</title>
