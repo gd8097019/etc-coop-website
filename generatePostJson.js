@@ -2,7 +2,7 @@ const fs = require("fs");
 const glob = require("glob");
 const yaml = require("yaml");
 
-const langs = ["en", "cn"];
+// helper functions
 
 const getMetaData = function (mdFile) {
 	const buffer = fs.readFileSync(mdFile);
@@ -22,6 +22,8 @@ const getMetaData = function (mdFile) {
 
 // main process
 
+const langs = ["en", "cn"];
+
 for (const lang of langs) {
 	const folder = `./src/contents/posts/${lang}`;
 
@@ -39,7 +41,7 @@ for (const lang of langs) {
 				const imgFiles = glob.globSync(`${folder}/${file}/*.{jpeg,jpg,png}`);
 
 				if (imgFiles.length > 0) {
-					featuredImgPath = imgFiles[0];
+					let featuredImgPath = imgFiles[0];
 					const folderRelative = `${folder}/${file}/`.replace("./", "");
 					const featuredImageName = featuredImgPath.replace(folderRelative, "");
 					fs.copyFile(

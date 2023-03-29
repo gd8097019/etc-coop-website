@@ -4,11 +4,13 @@
 	"private": true,
 	"scripts": {
 		"serve": "vue-cli-service serve",
-		"build": "node ./generatePostJson.js && vue-cli-service build"
+		"build": "node ./generatePostJson.js && node ./generateRssFeed.js && vue-cli-service build"
 	},
 	"dependencies": {
 		"@popperjs/core": "^2.11.6",
+		"@vueuse/head": "^1.1.23",
 		"bootstrap": "^5.2.3",
+		"glob": "^9.3.2",
 		"markdown-it": "^13.0.1",
 		"markdown-it-attrs": "^4.1.6",
 		"markdown-it-metadata-block": "^1.0.2",
@@ -17,8 +19,7 @@
 		"vue": "^3.2.13",
 		"vue-i18n": "^9.1.0",
 		"vue-router": "^4.0.3",
-		"yaml": "^2.2.1",
-		"glob": "^9.3.2"
+		"yaml": "^2.2.1"
 	},
 	"devDependencies": {
 		"@intlify/vue-i18n-loader": "^3.0.0",

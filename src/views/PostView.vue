@@ -1,4 +1,25 @@
 <template>
+	<Head>
+		<title>{{ title }}</title>
+		<meta name="description" :content="description" />
+
+		<!-- Social -->
+		<meta property="og:title" :content="title" />
+		<meta
+			property="og:description"
+			content="See latest post from ETC Cooperative"
+		/>
+		<meta property="og:image" content="https://picsum.photos/1200/675" />
+
+		<!-- Twitter -->
+		<meta name="twitter:title" :content="title" />
+		<meta
+			name="twitter:description"
+			content="See latest post from ETC Cooperative"
+		/>
+		<meta name="twitter:image" content="https://picsum.photos/1200/675" />
+		<meta name="twitter:card" content="summary_large_image" />
+	</Head>
 	<div style="float: right">
 		<select
 			id="sel"
@@ -22,19 +43,24 @@
 		</select>
 	</div>
 	<div>
-		<pre>{{ meta }}</pre>
+		<h1>{{ title }}</h1>
 		<p v-html="body"></p>
 	</div>
 </template>
 <script>
+import { Head } from "@vueuse/head";
+
 export default {
+	components: {
+		Head,
+	},
 	data() {
 		return {
-			id: null,
+			body: null,
 			title: null,
 			img: null,
-			body: null,
-			meta: null,
+			author: null,
+			tags: [],
 		};
 	},
 	watch: {
@@ -51,14 +77,20 @@ export default {
 				.then((module) => {
 					const { html, meta } = this.md(module.default);
 					this.body = html;
-					this.meta = meta;
+					this.title = meta.title || null;
+					this.img = meta.featuredImage || null;
+					this.author = meta.author || null;
+					this.tags = meta.tags || [];
 				})
 				.catch(() => {
 					// load default locale (en)
 					import(`@/contents/posts/en/${sourceFile}`).then((module) => {
 						const { html, meta } = this.md(module.default);
 						this.body = html;
-						this.meta = meta;
+						this.title = meta.title || null;
+						this.img = meta.featuredImage || null;
+						this.author = meta.author || null;
+						this.tags = meta.tags || [];
 					});
 				});
 		},

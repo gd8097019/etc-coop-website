@@ -10,6 +10,7 @@ import "./assets/css/styles.css";
 import "./assets/css/mdfile.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
+import { createHead } from "@vueuse/head";
 
 const mixins = {
 	methods: {
@@ -32,4 +33,9 @@ const mixins = {
 	},
 };
 
-createApp(App).mixin(mixins).use(i18n).use(router).mount("#app");
+createApp(App)
+	.mixin(mixins)
+	.use(i18n)
+	.use(createHead())
+	.use(router)
+	.mount("#app");
