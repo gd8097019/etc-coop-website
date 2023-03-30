@@ -21,12 +21,10 @@ const getMetaData = function (mdFile) {
 };
 
 const uuidv4 = function () {
-	return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, (c) =>
-		(
-			c ^
-			(crypto.getRandomValues(new Uint8Array(1))[0] & (15 >> (c / 4)))
-		).toString(16)
-	);
+	let part1 = Date.now().toString(36) + Math.random().toString(36).substring(2);
+	let part2 = Date.now().toString(36) + Math.random().toString(36).substring(2);
+
+	return `${part1}-${part2}`;
 };
 
 // main process
@@ -62,7 +60,6 @@ for (const lang of langs) {
                   xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
                   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
                   xmlns:media="http://search.yahoo.com/mrss/">
-                >
                 <channel>
                   <atom:link href="${website}/rss/feed.${lang}.xml" rel="self" type="application/rss+xml"/>
                   <title>ETC Cooperative</title>
