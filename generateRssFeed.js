@@ -39,6 +39,7 @@ for (const lang of langs) {
 	let items = "";
 
 	fs.readdirSync(folder)
+		.slice(0, 100)
 		.reverse()
 		.forEach((file) => {
 			const mdFiles = glob.globSync(`${folder}/${file}/*.md`);
@@ -64,7 +65,7 @@ for (const lang of langs) {
                   <atom:link href="${website}/rss/feed.${lang}.xml" rel="self" type="application/rss+xml"/>
                   <title>ETC Cooperative</title>
                   <link>${website}</link>
-                  <description>Accelerating the growth of Ethereum Classic</description>
+                  <description>See latest post from ETC Cooperative</description>
                   ${items}
                 </channel>
                 </rss>`;
