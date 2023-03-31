@@ -1,6 +1,5 @@
 src/contents/posts.cn.json
 src/contents/posts.en.json
-public/img/posts/featuredImg
 dist
 node_modules
 .DS_Store
