@@ -9,7 +9,10 @@
 			property="og:description"
 			content="See latest post from ETC Cooperative"
 		/>
-		<meta property="og:image" content="https://picsum.photos/1200/675" />
+		<meta
+			property="og:image"
+			:content="`https://etccooperative.org/img/posts/featuredImg/${img}`"
+		/>
 
 		<!-- Twitter -->
 		<meta name="twitter:title" :content="title" />
@@ -17,7 +20,10 @@
 			name="twitter:description"
 			content="See latest post from ETC Cooperative"
 		/>
-		<meta name="twitter:image" content="https://picsum.photos/1200/675" />
+		<meta
+			name="twitter:image"
+			:content="`https://etccooperative.org/img/posts/featuredImg/${img}`"
+		/>
 		<meta name="twitter:card" content="summary_large_image" />
 	</Head>
 	<div style="float: right">
