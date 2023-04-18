@@ -1,0 +1,13 @@
+.newsCardImg {
+	height: 200px;
+	object-fit: cover;
+}
+
+.newsCardHeroImg {
+	height: 575px;
+	object-fit: cover;
+}
+
+.removeUnderline {
+	text-decoration: none !important;
+}

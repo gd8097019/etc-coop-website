@@ -1,0 +1,115 @@
+<template>
+	<nav class="navbar etcNavbar navbar-expand-lg">
+		<div class="container-fluid navContainer">
+			<a class="navbar-brand order-lg-1 order-1" href="#">
+				<img src="@/assets/images/etc-logo.svg" alt="" />
+			</a>
+			<button
+				class="navbar-toggler order-lg-2 order-3"
+				type="button"
+				data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div
+				class="collapse navbar-collapse order-lg-3 order-4"
+				id="navbarSupportedContent"
+			>
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">
+							Ethereum Classic
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Mining</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Developing for ETC</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">News</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							href="#"
+							role="button"
+							data-bs-toggle="dropdown"
+							aria-expanded="false"
+						>
+							ETC Cooperative
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Action 1</a></li>
+							<li><a class="dropdown-item" href="#">Action 2</a></li>
+							<li><a class="dropdown-item" href="#">Action 3</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+			<div class="navOptions order-lg-4 order-2">
+				<div class="themeSwitchButton">
+					<input
+						type="checkbox"
+						class="checkbox"
+						id="toggleTheme"
+						@click="changeTheme"
+						:checked="theme === 'dark' ? true : false"
+					/>
+					<label for="toggleTheme" class="checkbox-label">
+						<img src="@/assets/images/sun.svg" alt="" />
+						<img src="@/assets/images/moon.svg" alt="" />
+						<span class="ball"></span>
+					</label>
+				</div>
+				<div class="selectLanguage">
+					<div class="flagImage">
+						<img src="@/assets/images/flag.svg" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+</template>
+<script>
+export default {
+	data() {
+		return {
+			theme: "light",
+		};
+	},
+	mounted() {
+		let theme = localStorage.getItem("theme");
+		if (theme) {
+			if (theme === "light") {
+				this.theme = "light";
+				document.body.classList.remove("dark-mode");
+			} else if (theme === "dark") {
+				this.theme = "dark";
+				document.body.classList.add("dark-mode");
+			}
+		}
+	},
+	methods: {
+		changeTheme() {
+			if (this.theme === "light") {
+				this.theme = "dark";
+				document.body.classList.add("dark-mode");
+				localStorage.setItem("theme", "dark");
+			} else {
+				this.theme = "light";
+				document.body.classList.remove("dark-mode");
+				localStorage.setItem("theme", "light");
+			}
+		},
+	},
+};
+</script>

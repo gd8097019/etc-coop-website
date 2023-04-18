@@ -1,8 +1,51 @@
 const fs = require("fs");
 const glob = require("glob");
 const yaml = require("yaml");
+const markdownIt = require("markdown-it");
 
 // helper functions
+
+const clearHTMLTags = function (str) {
+	return str.replace(/(<([^>]+)>)/gi, "");
+};
+
+const clearCommonMDTags = function (str) {
+	return str
+		.replaceAll("-", "")
+		.replaceAll("\n", "")
+		.replaceAll("**", "")
+		.replaceAll("##", "")
+		.replaceAll("\n", "");
+};
+
+const getDescriptionFromBody = function (mdFile) {
+	const buffer = fs.readFileSync(mdFile);
+	let fileContent = buffer.toString();
+
+	// clear meta data
+	const metas = /---(.*?)---/s.exec(fileContent);
+	if (metas.length > 0) {
+		fileContent = fileContent.replaceAll(metas[0], "");
+	}
+
+	//try to get first n character as plain text
+	let body = "";
+
+	try {
+		let md = new markdownIt({
+			html: true,
+			linkify: true,
+			typographer: true,
+		});
+
+		body = md.render(fileContent);
+		body = clearHTMLTags(body);
+		body = clearCommonMDTags(body);
+		body = body.slice(0, 160) + "...";
+	} catch (e) {}
+
+	return body;
+};
 
 const getMetaData = function (mdFile) {
 	const buffer = fs.readFileSync(mdFile);
@@ -53,6 +96,7 @@ for (const lang of langs) {
 
 				postsJson.push({
 					title: metadata.title || "",
+					description: metadata.description || getDescriptionFromBody(mdFile),
 					author: metadata.author || "",
 					tags: metadata.tags || [],
 					alias: file,
@@ -60,6 +104,11 @@ for (const lang of langs) {
 				});
 			}
 		});
+
+	fs.writeFileSync(
+		`./src/contents/posts.home.${lang}.json`,
+		JSON.stringify(postsJson.slice(0, 36), null, 2)
+	);
 
 	fs.writeFileSync(
 		`./src/contents/posts.${lang}.json`,
