@@ -132,6 +132,62 @@
 	box-shadow: unset !important;
 }
 
+.etcNavbar .selectLanguage {
+	margin-left: 16px;
+	position: relative;
+}
+
+.etcNavbar .selectLanguage .flagImage {
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.etcNavbar .selectLanguage .flagImage img {
+	width: 100%;
+	height: 100%;
+}
+
+.etcNavbar .languageDropdown {
+	display: none;
+	position: absolute;
+	top: 38px;
+	right: 0;
+	background: #0a1c3f;
+	border: 0.5px solid #ffffffa4;
+	border-radius: 5px;
+	padding: 10px 0px;
+}
+
+.etcNavbar .languageDropdown.show {
+	display: block;
+}
+
+.languageDropdown button {
+	background: transparent;
+	border: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.languageDropdown button img {
+	margin-right: 10px;
+	width: 25px;
+	height: 25px;
+}
+
+.etcNavbar .navbar-toggler {
+	background: #ffffff;
+	outline: none;
+	box-shadow: unset !important;
+}
+
 /* mainContainer class for all containers */
 
 .mainContainer {

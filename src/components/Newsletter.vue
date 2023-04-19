@@ -3,17 +3,17 @@
 		<div class="mainContainer newsletterContainer">
 			<div class="row justify-content-between">
 				<div class="col-lg-5 col-md-6 col-sm-12">
-					<h2>Sign up for our newsletter</h2>
-					<p>Stay in the loop with everything you need to know.</p>
+					<h2>{{ $t("homepage.sign_up_title") }}</h2>
+					<p>{{ $t("homepage.sign_up_description") }}</p>
 				</div>
 				<div class="col-lg-5 col-md-6 col-sm-12 ps-lg-5">
 					<div class="inputGroup">
 						<input type="text" placeholder="Enter your email" />
-						<button>Subscribe</button>
+						<button>{{ $t("homepage.sign_up_subscribe") }}</button>
 					</div>
 					<span>
-						We care about your data in our
-						<a href="">privacy policy</a>
+						{{ $t("homepage.sign_up_privacy_title") }}
+						<a href="">{{ $t("homepage.sign_up_privacy_link_title") }}</a>
 					</span>
 				</div>
 			</div>
