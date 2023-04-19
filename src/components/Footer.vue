@@ -35,7 +35,7 @@
 				<div class="col-lg-9 col-md-12">
 					<div class="row">
 						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-							<h4>Learn about ETC</h4>
+							<h4>{{ $t("footer.learn_about_etc") }}</h4>
 							<ul>
 								<li><a href="">Ethereumclassic.org</a></li>
 								<li><a href="">ETC Community</a></li>
@@ -47,7 +47,7 @@
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-							<h4>Mine ETC</h4>
+							<h4>{{ $t("footer.mine_etc") }}</h4>
 							<ul>
 								<li><a href="">Mining on ETC</a></li>
 								<li><a href="">ETC Mining Pool</a></li>
@@ -55,7 +55,7 @@
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-							<h4>Develop for ETC</h4>
+							<h4>{{ $t("footer.develop_for_etc") }}</h4>
 							<ul>
 								<li><a href="">ECIPs</a></li>
 								<li><a href="">Hyperledger Besu</a></li>
@@ -69,7 +69,7 @@
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
-							<h4>ETC Partners</h4>
+							<h4>{{ $t("footer.etc_partners") }}</h4>
 							<ul>
 								<li>
 									<a href="">
@@ -107,7 +107,7 @@
 		</div>
 		<div class="bottomFooter">
 			<div class="bottomFooterCont">
-				<p>© 2021 Etherium Classic. All rights reserved.</p>
+				<p>{{ $t("footer.reserved_text") }}</p>
 				<div class="footerBottomLinks">
 					<a href="">What is the ETC Cooperative?</a>
 					<a href="">Contact Us</a>

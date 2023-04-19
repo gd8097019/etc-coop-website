@@ -19,9 +19,11 @@
 						class="swiper-slide"
 					>
 						<div class="newsHeading">
-							<h2>Blog</h2>
+							<h2>{{ $t("homepage.blog") }}</h2>
 							<div class="newsBtns">
-								<button class="seeAllNews">See All News</button>
+								<button class="seeAllNews">
+									{{ $t("homepage.see_all_news") }}
+								</button>
 							</div>
 						</div>
 						<div class="newsContent">

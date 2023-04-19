@@ -1,3 +1,30 @@
 {
-	"hello": "你好"
+	"homepage": {
+		"title": "ETC Cooperative",
+		"description": "加速 Ethereum Classic 的发展",
+		"teaser": "我们的使命是管理以太坊经典协议的开发，并支持其成长为一个成熟的生态系统。",
+		"blog": "Blog",
+		"see_all_news": "See All News",
+		"our_history_badge": "About us",
+		"our_history_title": "Our History",
+		"our_history_description": "The Ethereum Classic Cooperative (ETC Cooperative) is a non-profit organization that was established in 2017 with the aim of supporting and promoting the development of the Ethereum Classic (ETC) blockchain platform.",
+		"our_history_body_paragraph_1": "The ETC Cooperative is funded by donations from individuals and organizations that support the ETC community, and it is governed by a board of directors who oversee the organization's activities and initiatives.",
+		"our_history_body_paragraph_2": "The main focus of the ETC Cooperative is to support the development of the ETC ecosystem by providing funding, resources, and support for developers, researchers, and other stakeholders.",
+		"our_history_body_paragraph_3": "This includes grants programs, research projects, and supporting the development of tools and infrastructure for the ETC platform.",
+		"learn_more": "Learn More",
+		"our_team": "Our team",
+		"sign_up_title": "Sign up for our newsletter",
+		"sign_up_description": "Stay in the loop with everything you need to know.",
+		"sign_up_enter_email": "Enter your email",
+		"sign_up_subscribe": "Subscribe",
+		"sign_up_privacy_title": "We care about your data in our",
+		"sign_up_privacy_link_title": "privacy policy"
+	},
+	"footer": {
+		"learn_about_etc": "Learn about ETC",
+		"mine_etc": "Mine ETC",
+		"develop_for_etc": "Develop for ETC",
+		"etc_partners": "ETC Partners",
+		"reserved_text": "© 2021 Etherium Classic. All rights reserved."
+	}
 }
