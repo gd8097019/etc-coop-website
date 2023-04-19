@@ -1,35 +1,42 @@
 <template>
-	<div style="float: right">
-		<select
-			id="sel"
-			class="uppercase rounded font-roboto bg-background font-semibold text-textColor font16 border-0 selectMenu py-2 px-1 hidden"
-			v-model="$i18n.locale"
-		>
-			<option
-				class="uppercase rounded bg-background border-0"
-				key="`locale-${0}`"
-				value="cn"
-			>
-				占位符符
-			</option>
-			<option
-				class="uppercase rounded bg-background border-0"
-				key="`locale-${1}`"
-				value="en"
-			>
-				English
-			</option>
-		</select>
-	</div>
-	<div>
-		{{ $t("hello") }}
-	</div>
-	<div v-for="(postsItem, postsKey) in posts" :key="postsKey">
-		<a :href="`/posts/${postsItem.alias}`">{{ postsItem.title }}</a>
-	</div>
+	<section class="etcCoopNavSection">
+		<Navbar />
+		<Hero />
+	</section>
+
+	<!-- news section starts here -->
+	<Blog :posts="posts" />
+	<!-- news section ends here -->
+
+	<!-- About our History section starts here -->
+	<History />
+	<!-- About our History section ends here -->
+
+	<!-- newsletter section starts here -->
+	<Newsletter />
+	<!-- newsletter section ends here -->
+
+	<!-- footer starts here -->
+	<Footer />
+	<!-- footer ends here -->
 </template>
 <script>
+import Hero from "@/components/Hero.vue";
+import Navbar from "@/components/Navbar.vue";
+import Blog from "@/components/Blog.vue";
+import History from "@/components/History.vue";
+import Newsletter from "@/components/Newsletter.vue";
+import Footer from "@/components/Footer.vue";
+
 export default {
+	components: {
+		Hero,
+		Navbar,
+		Blog,
+		History,
+		Newsletter,
+		Footer,
+	},
 	data() {
 		return {
 			posts: [],
@@ -47,7 +54,7 @@ export default {
 	mounted() {
 		const locale = this.$i18n.locale;
 
-		import(`@/contents/posts.${locale}.json`).then((module) => {
+		import(`@/contents/posts.home.${locale}.json`).then((module) => {
 			this.posts = module.default;
 		});
 	},
