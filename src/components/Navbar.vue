@@ -29,7 +29,7 @@
 						<a class="nav-link" href="#">Mining</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Developing</a>
+						<a class="nav-link" href="#">Developing for ETC</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">News</a>

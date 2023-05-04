@@ -21,7 +21,7 @@
 						<div class="newsHeading">
 							<h2>{{ $t("homepage.blog") }}</h2>
 							<div class="newsBtns">
-								<button class="seeAllNews">
+								<button class="seeAllNews seeAllNewsDesktop">
 									{{ $t("homepage.see_all_news") }}
 								</button>
 							</div>
@@ -183,6 +183,11 @@
 								</div>
 							</div>
 						</div>
+						<div class="newsBtns newsBtnsMobile">
+							<button class="seeAllNews seeAllNewsMobile">
+								{{ $t("homepage.see_all_news") }}
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -210,7 +215,12 @@ export default {
 				},
 			});
 
-			this.postPerTab = this.chunkArray(val, 6);
+			const width = window && window.innerHeight ? window.innerWidth : -1;
+			if (width > 568) {
+				this.postPerTab = this.chunkArray(val, 6);
+			} else {
+				this.postPerTab = this.chunkArray(val, 5);
+			}
 		},
 	},
 	methods: {

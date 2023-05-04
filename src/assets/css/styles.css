@@ -12,7 +12,11 @@
 	object-fit: cover;
 }
 
-@media screen and (max-width: 769px) {
+.seeAllNewsMobile {
+	display: none !important;
+}
+
+@media screen and (max-width: 595px) {
 	.newsCardHeroImg {
 		height: 200px;
 		object-fit: cover;
@@ -45,5 +49,26 @@
 
 	.newsCardLg {
 		box-shadow: none !important;
+	}
+
+	.etcNewsSection .newsBtns .seeAllNewsDesktop {
+		display: none !important;
+	}
+
+	.seeAllNewsMobile {
+		display: initial !important;
+	}
+
+	.newsSwiperBtns {
+		top: 100px !important;
+	}
+
+	.etcNewsSection .swiper-pagination-progressbar {
+		top: 154px !important;
+	}
+
+	.newsBtnsMobile {
+		justify-content: center !important;
+		margin-bottom: 15px !important;
 	}
 }

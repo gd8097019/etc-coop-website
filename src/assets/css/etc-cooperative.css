@@ -330,7 +330,7 @@
 }
 
 .etcNewsSection .swiper-pagination-progressbar {
-	top: 114px !important;
+	top: 114px;
 	background: #d6d6d6;
 }
 
@@ -1037,10 +1037,6 @@
 	.etcNewsSection .newsHeading h2 {
 		font-size: 32px;
 		margin-bottom: 20px;
-	}
-
-	.etcNewsSection .swiper-pagination-progressbar {
-		top: 205px !important;
 	}
 
 	.newsCardLg .newsImgOverContent {
