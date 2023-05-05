@@ -1,3 +1,339 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
-</rss>
+                <rss version="2.0"
+                  xml:base="https://www.trtworld.com" 
+                  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"
+                  xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
+                  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+                  xmlns:media="http://search.yahoo.com/mrss/">
+                <channel>
+                  <atom:link href="https://etccooperative.org/rss/feed.en.xml" rel="self" type="application/rss+xml"/>
+                  <title>ETC Cooperative</title>
+                  <link>https://etccooperative.org</link>
+                  <description>See latest post from ETC Cooperative</description>
+                  <item>
+                    <guid isPermaLink="false">lhalmliud34ge3w9qwe-lhalmliuyl9pz3q1gam</guid>
+                    <title>Announcing the Proof of Work Summit, Securing Blockchain's Future</title>
+                    <link>https://etccooperative.org/2023-05-01-announcing-the-proof-of-work-summit-securing-blockchains-future-en</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlivyqzm2xl4apo-lhalmlivbw0qim9nmfr</guid>
+                    <title>ETC Cooperative Adds Core Geth Support of ETC Mainnet and Testnet to DappNode</title>
+                    <link>https://etccooperative.org/2023-04-13-etc-cooperative-adds-core-geth-support-of-etc-mainnet-and-testnet-to-dappnode-en</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlix1xb7nf5ogrq-lhalmlixx23ec0sx44</guid>
+                    <title>Outline of Bob Summerwill's Speech at ETHDenver 2023</title>
+                    <link>https://etccooperative.org/2023-03-06-outline-of-bob-summerwills-speech-at-ethdenver-2023-en</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmliy6mkw3hsqqsu-lhalmliy49uf90fiyqq</guid>
+                    <title>ETC Cooperative's Bob Summerwill Will Be Speaking Today at ETHDenver</title>
+                    <link>https://etccooperative.org/2023-03-03-ETC-cooperatives-bob-summerwill-will-be-speaking-today-at-ethdenver-en</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlizgj7c2vov22j-lhalmlizyqfcwn7yktb</guid>
+                    <title>Pledge to the Ethereum Classic Community With Regard to the @eth_classic Twitter Account</title>
+                    <link>https://etccooperative.org/2023-02-01-pledge-to-the-ethereum-classic-community-with-regard-to-the-eth_classic-twitter-account-en</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlj0ad28o9q5v8j-lhalmlj0s8rbpvtjsfj</guid>
+                    <title>The ETC Grants DAO Explained With Bob Summerwill</title>
+                    <link>https://etccooperative.org/2023-01-31-the-etc-grants-dao-explained-with-bob-summerwill-en</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlj1uc77kg5j6im-lhalmlj1q2ts1g0k5up</guid>
+                    <title>Core-Geth / Docker Build Tag Formatting: Pattern Change and Deprecation Notice</title>
+                    <link>https://etccooperative.org/2023-01-31-etclabscore_core-geth-docker-tag-version-fmt-deprecation-en</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlj2plxfdmk9p0s-lhalmlj284ed9117bm</guid>
+                    <title>BITMAIN, ANTPOOL and ETC Cooperative Launch ETC Grants DAO</title>
+                    <link>https://etccooperative.org/2023-01-31-egd-etc-grants-dao-announcement-en</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlj3gcxiuqsbsh4-lhalmlj36glxvxswfrp</guid>
+                    <title>Hyperledger Besu Explained With ETC Core Developer Diego Lopez Leon</title>
+                    <link>https://etccooperative.org/2023-01-11-hyperledger-besu-explained-with-etc-core-developer-diego-lopez-leon-en</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlj4b2maw3eilgr-lhalmlj44hq3htzks6t</guid>
+                    <title>The Ethereum Classic RPC URL Is Changing From Ethercluster to Rivet</title>
+                    <link>https://etccooperative.org/2023-01-02-the-ethereum-classic-rpc-url-is-changing-from-ethercluster-to-rivet-en</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlj5ttciuhz70f-lhalmlj58vbxd7kphfq</guid>
+                    <title>Core Geth Explained With ETC Core Developer Isaac Ardis</title>
+                    <link>https://etccooperative.org/2022-12-28-core-geth-explained-with-etc-core-developer-isaac-ardis-en</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlj6grfo6hz46u9-lhalmlj64ub4obpwn9f</guid>
+                    <title>The ETC Cooperative's Communications Plan</title>
+                    <link>https://etccooperative.org/2022-11-23-the-etc-cooperatives-communications-plan-en</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlj6qnyjdqra6j-lhalmlj6zi7hgxw0jtr</guid>
+                    <title>ETC Cooperative's Mission and Projects With Bob Summerwill</title>
+                    <link>https://etccooperative.org/2022-11-22-etc-cooperatives-mission-and-projects-with-bob-summerwill-en</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlj79brczqqe4b7-lhalmlj7ol1npkh7qu</guid>
+                    <title>ETC Cooperative 2022 Q3 Report</title>
+                    <link>https://etccooperative.org/2022-11-17-q3-report-en</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlj8p2brtx1qnw-lhalmlj8m1zti6q9x3</guid>
+                    <title>Outline of Xmei Lin's and Bob Summerwill's Speeches at BITMAIN's WDMS Global 2022</title>
+                    <link>https://etccooperative.org/2022-11-16-outline-of-xmei-lins-and-bob-summerwills-speeches-at-bitmain-wdsm-global-2022-en</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlj8p296rvvze1g-lhalmlj8pnmgemlgjh8</guid>
+                    <title>Announcing the New ETC Cooperative Communications Team</title>
+                    <link>https://etccooperative.org/2022-11-15-announcing-the-new-etc-cooperative-communications-team-en</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlj9m0hbievghn-lhalmlj9swx1x4u105l</guid>
+                    <title>Ethereum Classic Safe Multisig Wallet Review</title>
+                    <link>https://etccooperative.org/2022-11-10-ethereum-classic-safe-multisig-wallet-review-en</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljawyjiqyn0nbb-lhalmljayjtui5ykly8</guid>
+                    <title>ETC Cooperative Is Attending the World Digital Mining Summit (WDMS)</title>
+                    <link>https://etccooperative.org/2022-11-08-etc-cooperative-is-attending-the-world-digital-mining-summit-wdms-en</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljbmxou2y1othm-lhalmljbkmsuxdy5l48</guid>
+                    <title>History of the Ethereum Classic Cooperative</title>
+                    <link>https://etccooperative.org/2022-09-26-history-of-the-cooperative</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljb1hlcdublz4w-lhalmljbdrt3xknz0jd</guid>
+                    <title>ETC Cooperative 2022 Q2 Report</title>
+                    <link>https://etccooperative.org/2022-08-24-q2-report</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljcm8cc2pm7lqj-lhalmljcxv9nnfjqmrn</guid>
+                    <title>ETC Cooperative Discord server</title>
+                    <link>https://etccooperative.org/2022-08-15-etc-cooperative-discord-server</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljd9c1t8yyp19v-lhalmljdz7xu8o0epw</guid>
+                    <title>An Open Letter to Chandler Guo</title>
+                    <link>https://etccooperative.org/2022-08-08-open-letter-to-chandler-guo</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljdy8azjymsjrq-lhalmljdc0uxlf5gbz</guid>
+                    <title>ETC Cooperative Q1 Package</title>
+                    <link>https://etccooperative.org/2022-05-26-q1-board-package</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljec34t8jcxibq-lhalmlje64d5jr3qfp3</guid>
+                    <title>2021 Retrospective, 2022 Budget and Roadmap</title>
+                    <link>https://etccooperative.org/2022-04-12-2021-retrospective-2022-budget-roadmap</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljfgaaglwekhp8-lhalmljfy5yxeyvgeim</guid>
+                    <title>Mystique hard fork ~ February 13th</title>
+                    <link>https://etccooperative.org/2022-01-27-mystique-hard-fork</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljff63v1l2qx46-lhalmljf0s2hjv36mdif</guid>
+                    <title>ETC Cooperative now funding Core-Geth</title>
+                    <link>https://etccooperative.org/2021-12-22-coop-now-funding-core-geth</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljgnjyz9fg77rh-lhalmljgcj31yjqk5n</guid>
+                    <title>ETC Cooperative Q3 and October Board Package</title>
+                    <link>https://etccooperative.org/2021-11-26-q3-october-board-package</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljh7n1azgsmgax-lhalmljhdgemb3lzdl</guid>
+                    <title>Switch to Rivet</title>
+                    <link>https://etccooperative.org/2021-11-02-switch-to-rivet</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljh93aunox2v2-lhalmljheoveczo1vou</guid>
+                    <title>ETC Cooperative July/August Board Package</title>
+                    <link>https://etccooperative.org/2021-09-23-july-august-board-package</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljiuww9catr10p-lhalmlji8l2u0hjz9</guid>
+                    <title>ETC Cooperative withdraws support for ECIP-1098</title>
+                    <link>https://etccooperative.org/2021-09-20-withdraws-support-for-ecip-1098</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljicvnq3pyl8yu-lhalmlji67kk9badgkl</guid>
+                    <title>Welcome, Diego López León!</title>
+                    <link>https://etccooperative.org/2021-09-08-welcome-diego</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljjc0zpqrnmkyq-lhalmljje0ow54d46xj</guid>
+                    <title>Charles Hoskinson joins ETC Coop board</title>
+                    <link>https://etccooperative.org/2021-07-08-charles-hoskinson-joins-etc-coop-board</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljkopqd2eqes2m-lhalmljkagz7y0qwu1b</guid>
+                    <title>ETC Cooperative Q1 2021 Transparency Report</title>
+                    <link>https://etccooperative.org/2021-05-11-q1-2021</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljkinrita6wolm-lhalmljklrzjfwy87o</guid>
+                    <title>Polls in favor of an Ethereum Classic Treasury</title>
+                    <link>https://etccooperative.org/2021-04-23-treasury-polls</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljlicahhkxrsj-lhalmljlepq77ekyr8j</guid>
+                    <title>ETC Cooperative January, February Board Package</title>
+                    <link>https://etccooperative.org/2021-04-06-january-february-board-package</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljl8u6dgcji4g-lhalmljljuu59p72qa</guid>
+                    <title>ETC Cooperative 2020 Retrospective</title>
+                    <link>https://etccooperative.org/2021-01-19-2020-retrospective</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljm2l7ndl9cw9o-lhalmljmweht6ycutxo</guid>
+                    <title>Why Ethereum Classic should adopt a treasury</title>
+                    <link>https://etccooperative.org/2021-01-13-why-treasury</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljmmalignxibu-lhalmljmroo4eornw18</guid>
+                    <title>Why change the Ethereum Classic Proof of Work algorithm to Keccak-256 (Sha-3)</title>
+                    <link>https://etccooperative.org/2020-12-02-why-keccak</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljnyt0w48juz7g-lhalmljnvbkb6f9he4c</guid>
+                    <title>Thanos hard-fork this week</title>
+                    <link>https://etccooperative.org/2020-11-23-thanos-hard-fork-this-week</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljndf8c8unkitk-lhalmljnwj6pu4kk00a</guid>
+                    <title>ETC Cooperative Q3 2020 Transparency Report</title>
+                    <link>https://etccooperative.org/2020-11-16-etc-cooperative-q3-2020-transparency-report</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljoqdv8ngbvvkm-lhalmljomuaeyngmaz</guid>
+                    <title>ETC Weekly #1 | Network security, Thanos hard-fork, ECIP comparison</title>
+                    <link>https://etccooperative.org/2020-10-30-ETC-Weekly-0</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljonaalwmjyw6e-lhalmljos87fs2v5n2s</guid>
+                    <title>Get ETC Weekly updates! - Announcing ETC Weekly Newsletter</title>
+                    <link>https://etccooperative.org/2020-10-27-subscribe-to-etc-weekly-newsletter</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljpoiy5dt4wycs-lhalmljpqgvn0re4ex</guid>
+                    <title>Ensuring ETC Network Security</title>
+                    <link>https://etccooperative.org/2020-10-20-ensuring-etc-network-security</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljptdvgh59e91q-lhalmljpanfe3ioi2sd</guid>
+                    <title>Migrate to Hyperledger Besu: Make the switch from OpenEthereum or Multi-Geth</title>
+                    <link>https://etccooperative.org/2020-09-29-Migrate-To-Hyperledger-Besu</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljqgpkpq48oxk7-lhalmljqij4ap2e5mt8</guid>
+                    <title>Staffing Changes</title>
+                    <link>https://etccooperative.org/2020-09-16-staffing-changes</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljrs8zit1kwfk-lhalmljryeoprtqlqs</guid>
+                    <title>ETC Network Security Plan</title>
+                    <link>https://etccooperative.org/2020-08-19-etc-network-security-plan</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljrusj7yenelr-lhalmljr0umzm7eh0rc8</guid>
+                    <title>51% attack on ETC</title>
+                    <link>https://etccooperative.org/2020-08-02-51-percent-attack</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljs5ltdzw01y7i-lhalmljsah1jth04bcm</guid>
+                    <title>Connext State Channels on ETC</title>
+                    <link>https://etccooperative.org/2020-07-17-etc-connext-state-channels</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljs729qqz46ur3-lhalmljsg78rcokf8bj</guid>
+                    <title>Kevin Lord joins ETC Cooperative</title>
+                    <link>https://etccooperative.org/2020-07-02-kevin-lord-joins-etc-coop</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljtyp1xx5tczvp-lhalmljt4u8xmuj7hw4</guid>
+                    <title>ETC Cooperative April 2020 report</title>
+                    <link>https://etccooperative.org/2020-05-22-etc-cooperative-april-2020-report</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljtzhl9isu8lvi-lhalmljtp25qzvxl1ok</guid>
+                    <title>ETC Phoenix client upgrade instructions</title>
+                    <link>https://etccooperative.org/2020-05-20-phoenix-hardfork</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljtypu32bl5pn-lhalmljted636rtlnw</guid>
+                    <title>Consensus: Distributed - Bob and Yaz speaking</title>
+                    <link>https://etccooperative.org/2020-05-06-consensus-bob-and-yaz-speaking</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlju6jmd5v64miv-lhalmljuqvza481rc1</guid>
+                    <title>ETC Cooperative Q1 2020 Transparency Report</title>
+                    <link>https://etccooperative.org/2020-04-30-etc-cooperative-q1-2020-transparency-report</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljuxamtdi2n0xb-lhalmljuomk3i6gr6g</guid>
+                    <title>ETC - Foundations at Consensus: Distributed</title>
+                    <link>https://etccooperative.org/2020-04-23-etc-foundations-consensus-distributed</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljvez3ruv5mzc5-lhalmljvuvp0f4c29g</guid>
+                    <title>ETC Cooperative 2019 Retrospective released</title>
+                    <link>https://etccooperative.org/2020-04-13-etc-cooperative-2019-retrospective-released</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljvakf89rb3gdg-lhalmljvzlo1xpiq92i</guid>
+                    <title>ETC Cooperative Website Relaunched</title>
+                    <link>https://etccooperative.org/2020-03-27-etc-cooperative-website-relaunched</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljw6ksf1hbbqdh-lhalmljw8d0tlfkbte</guid>
+                    <title>Yaz Khoury joins EEA Testnet WG as Vice-Chair</title>
+                    <link>https://etccooperative.org/2020-03-24-yaz-khoury-joins-eea-testnet-wg-as-vice-chair</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljxy53xek9mls-lhalmljxai1bhm4px3w</guid>
+                    <title>ETC Cooperative AGM 2020 - new governance in place</title>
+                    <link>https://etccooperative.org/2020-03-17-etc-cooperative-agm-2020-new-governance</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljxj5y8cwju74g-lhalmljxbc5bik94rwv</guid>
+                    <title>Bob Summerwill joins EEA Technical Spec WG as a Vice-Chair</title>
+                    <link>https://etccooperative.org/2020-03-09-bob-summerwill-joins-eea-technical-spec-wg-as-a-vice-chair</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljy5zi4zwm276e-lhalmljyyupy66pqehm</guid>
+                    <title>Update on ETC Phoenix Hardfork</title>
+                    <link>https://etccooperative.org/2020-02-28-update-on-etc-phoenix-hardfork</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljypu51amvz69-lhalmljycnp84q5awj</guid>
+                    <title>ETC Cooperative support for switch of mining POW to Keccak256 proposal</title>
+                    <link>https://etccooperative.org/2020-02-10-etc-coop-support-switch-to-keccak256</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljzfa62wc9hdma-lhalmljzfz93qjdlkl</guid>
+                    <title>Core Devs Call: ECIP-1078 Phoenix Upgrade</title>
+                    <link>https://etccooperative.org/2020-01-31-core-devs-call-ecip-1078-phoenix-upgrade</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmljz3bcod4ywjyu-lhalmljztg51kvv9ibf</guid>
+                    <title>ETC Phoenix Hardfork</title>
+                    <link>https://etccooperative.org/2020-01-26-etc-phoenix-hardfork</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlk067lv8ivnkam-lhalmlk0ytrs2yi28eh</guid>
+                    <title>Donations</title>
+                    <link>https://etccooperative.org/2020-01-24-donations</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlk0kos5xcepil-lhalmlk0exnwbvgi8l4</guid>
+                    <title>Grayscale Extends Support of ETC Cooperative</title>
+                    <link>https://etccooperative.org/2020-01-19-grayscale-extends-support-of-etc-cooperative</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlk156mokqcqsjf-lhalmlk16xmes2xww3p</guid>
+                    <title>ETC Successfully hardforks to Agharta</title>
+                    <link>https://etccooperative.org/2020-01-12-etc-successfully-hardforks-to-agharta</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlk12sdoqelmd43-lhalmlk14u0zzcsd9w4</guid>
+                    <title>Vyper Support Comes To ETC</title>
+                    <link>https://etccooperative.org/2020-01-07-vyper-support-comes-to-etc</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlk18c8b2bgr6oo-lhalmlk1zzj9i0yvo1</guid>
+                    <title>URGENT - ETC Agharta Update</title>
+                    <link>https://etccooperative.org/2020-01-05-etc-agharta-update</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlk2l3x5gnhqqdm-lhalmlk2msvdnf85nc9</guid>
+                    <title>ETC Cooperative contributes Ethercluster to Hyperledger Labs</title>
+                    <link>https://etccooperative.org/2019-12-23-coop-contributes-ethercluster-to-hyperledger-labs</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlk2ljumm9smsgh-lhalmlk2tsx8wk78krf</guid>
+                    <title>Bob Summerwill to speak at Global Digital Assets (Vancouver) Summit 2019</title>
+                    <link>https://etccooperative.org/2019-10-19-bob-summerwill-to-speak-at</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlk41xmbf5wrbk4-lhalmlk4x0lpgf1efn</guid>
+                    <title>Alison Alexis CPA joins ETC Cooperative as Financial Controller</title>
+                    <link>https://etccooperative.org/2019-10-19-alison-alexis-joins-etc-coop</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlk49wr7t19u4hu-lhalmlk4747y1r2wli</guid>
+                    <title>ETC Cooperative joins Enterprise Ethereum Alliance</title>
+                    <link>https://etccooperative.org/2019-10-18-etc-coop-joins-eea</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlk4x3xgsvh11c9-lhalmlk4xvbjjpy9ox</guid>
+                    <title>ETC Cooperative extends Yaz Khoury's contract</title>
+                    <link>https://etccooperative.org/2019-10-17-yaz-contract-extension</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlk5tm4ocl18wn-lhalmlk5yvir01anls</guid>
+                    <title>Proposing an explicit social contract in support of POW mining</title>
+                    <link>https://etccooperative.org/2019-10-06-pow-mining-explicit-social-contract</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlk52lt3d64rz4c-lhalmlk503l9ty5z5cfp</guid>
+                    <title>ETC Cooperative applying to join EEA</title>
+                    <link>https://etccooperative.org/2019-09-12-etc-cooperative-applying-to-join-eea</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlk6isdcseqjt6-lhalmlk6xj4e62b8e5d</guid>
+                    <title>ETC Support in Hyperledger Besu</title>
+                    <link>https://etccooperative.org/2019-09-10-etc-support-in-hyperledger-besu</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlk60kln00v8dkzp-lhalmlk6aiomgig3rsm</guid>
+                    <title>2018 End Of Year Review</title>
+                    <link>https://etccooperative.org/2019-03-28-2018-end-of-year-review</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlk75z7ugvbjz3c-lhalmlk7z27jiz4k5y8</guid>
+                    <title>2018 Mid Year Review</title>
+                    <link>https://etccooperative.org/2018-07-09-2018-mid-year-review</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlk7keizj55hymo-lhalmlk7pp5a357ycg</guid>
+                    <title>Announcing New Members of the ETC Cooperative</title>
+                    <link>https://etccooperative.org/2018-05-15-announcing-new-members-of-the-etc-cooperative</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlk7ndvr3r85v47-lhalmlk71uxkgklp982</guid>
+                    <title>Announcing $250,000 in Funding from Digital Finance Group</title>
+                    <link>https://etccooperative.org/2018-05-15-250k-funding-digital-finance-group</link>
+                  </item><item>
+                    <guid isPermaLink="false">lhalmlk8ff95sbecul9-lhalmlk8ei5y9psp4y4</guid>
+                    <title>Announcing the ETC Cooperative Board of Advisors</title>
+                    <link>https://etccooperative.org/2018-03-01-announcing-the-etc-cooperative-board-of-advisors</link>
+                  </item>
+                </channel>
+                </rss>

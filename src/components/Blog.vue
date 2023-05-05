@@ -126,7 +126,7 @@
 													</div>
 													<div class="newsCardContent">
 														<h4>
-															{{ post[3].title }}
+															{{ truncate(post[3].title, 65) }}
 														</h4>
 													</div>
 												</div>
@@ -146,7 +146,7 @@
 													</div>
 													<div class="newsCardContent">
 														<h4>
-															{{ post[4].title }}
+															{{ truncate(post[4].title, 65) }}
 														</h4>
 													</div>
 												</div>
@@ -170,7 +170,7 @@
 															<span>April 4, 2023</span>
 														</h5>
 														<h4>
-															{{ post[5].title }}
+															{{ truncate(post[5].title, 65) }}
 														</h4>
 														<p>
 															{{ post[5].description }}
@@ -221,6 +221,9 @@ export default {
 				chunked.push(chunk);
 			}
 			return chunked;
+		},
+		truncate(source, size) {
+			return source.length > size ? source.slice(0, size - 1) + "…" : source;
 		},
 	},
 };
