@@ -3,15 +3,6 @@
 		<div class="mainContainer">
 			<!-- Swiper -->
 			<div class="swiper mySwiper">
-				<div class="newsSwiperBtns">
-					<div class="swiperSlideBtn swiper-button-prev">
-						<img src="@/assets/images/arrow-left.svg" alt="" />
-					</div>
-					<div class="swiperSlideBtn swiper-button-next">
-						<img src="@/assets/images/arrow-right.svg" alt="" />
-					</div>
-				</div>
-				<div class="swiper-pagination"></div>
 				<div class="swiper-wrapper">
 					<div
 						v-for="(post, pkey) in postPerTab"
@@ -20,11 +11,6 @@
 					>
 						<div class="newsHeading">
 							<h2>{{ $t("homepage.blog") }}</h2>
-							<div class="newsBtns">
-								<button class="seeAllNews">
-									{{ $t("homepage.see_all_news") }}
-								</button>
-							</div>
 						</div>
 						<div class="newsContent">
 							<div class="row">
@@ -183,6 +169,11 @@
 								</div>
 							</div>
 						</div>
+						<div class="newsBtns newsBtnsMobile">
+							<button class="seeAllNews seeAllNewsMobile">
+								{{ $t("homepage.see_all_news") }}
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -199,18 +190,12 @@ export default {
 	},
 	watch: {
 		posts(val, oldval) {
-			var swiper = new window.Swiper(".mySwiper", {
-				pagination: {
-					el: ".swiper-pagination",
-					type: "progressbar",
-				},
-				navigation: {
-					nextEl: ".swiper-button-next",
-					prevEl: ".swiper-button-prev",
-				},
-			});
-
-			this.postPerTab = this.chunkArray(val, 6);
+			const width = window && window.innerHeight ? window.innerWidth : -1;
+			if (width > 568) {
+				this.postPerTab = this.chunkArray(val, 6);
+			} else {
+				this.postPerTab = this.chunkArray(val, 5);
+			}
 		},
 	},
 	methods: {

@@ -107,7 +107,7 @@ for (const lang of langs) {
 
 	fs.writeFileSync(
 		`./src/contents/posts.home.${lang}.json`,
-		JSON.stringify(postsJson.slice(0, 36), null, 2)
+		JSON.stringify(postsJson.slice(0, 6), null, 2)
 	);
 
 	fs.writeFileSync(
