@@ -12,8 +12,13 @@
 	object-fit: cover;
 }
 
-.seeAllNewsMobile {
-	display: none !important;
+.etcNewsSection .newsBtns {
+	display: flex !important;
+	justify-content: flex-end;
+}
+
+.etcNewsSection .newsBtns .seeAllNews {
+	margin-right: 0px !important;
 }
 
 @media screen and (max-width: 595px) {
@@ -63,12 +68,12 @@
 		top: 100px !important;
 	}
 
-	.etcNewsSection .swiper-pagination-progressbar {
-		top: 154px !important;
-	}
-
 	.newsBtnsMobile {
 		justify-content: center !important;
 		margin-bottom: 15px !important;
+	}
+
+	.newsSwiperBtns {
+		display: none !important;
 	}
 }
