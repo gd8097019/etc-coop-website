@@ -8,7 +8,8 @@
 }
 
 .newsCardHeroImg {
-	height: 575px;
+	height: 675px;
+	width: 100%;
 	object-fit: cover;
 }
 
@@ -19,6 +20,18 @@
 
 .etcNewsSection .newsBtns .seeAllNews {
 	margin-right: 0px !important;
+}
+
+@media (min-width: 595px) and (max-width: 767px) {
+	.newsCardHeroImg {
+		height: 432px;
+		object-fit: cover;
+	}
+
+	.newsCardImg {
+		height: 432px;
+		object-fit: cover;
+	}
 }
 
 @media screen and (max-width: 595px) {
