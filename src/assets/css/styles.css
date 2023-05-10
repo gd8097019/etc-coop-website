@@ -46,6 +46,10 @@
 		background-color: white !important;
 	}
 
+	.dark-mode .newsImgOverContent {
+		padding: 20px 15px 15px 15px !important;
+	}
+
 	.newsCardLg h4 {
 		font-family: var(--Noto_sans) !important;
 		font-style: normal !important;
