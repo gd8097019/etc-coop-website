@@ -41,9 +41,13 @@
 	}
 
 	.newsImgOverContent {
-		padding: 20px 15px 15px 15px !important;
+		padding: 20px 0px 15px 0px !important;
 		position: relative !important;
 		background-color: white !important;
+	}
+
+	.dark-mode .newsImgOverContent {
+		padding: 20px 15px 15px 15px !important;
 	}
 
 	.newsCardLg h4 {
