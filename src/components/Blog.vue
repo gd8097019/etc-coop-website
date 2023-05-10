@@ -2,38 +2,35 @@
 	<section class="etcNewsSection">
 		<div class="mainContainer">
 			<!-- Swiper -->
+
 			<div class="swiper mySwiper">
 				<div class="swiper-wrapper">
-					<div
-						v-for="(post, pkey) in postPerTab"
-						:key="pkey"
-						class="swiper-slide"
-					>
+					<div class="swiper-slide">
 						<div class="newsHeading">
 							<h2>{{ $t("homepage.blog") }}</h2>
 						</div>
-						<div class="newsContent">
+						<div class="newsContent" v-if="posts.length > 0">
 							<div class="row">
 								<div class="col-12">
 									<div class="row">
-										<div class="col-12" v-if="post[0]">
+										<div class="col-12" v-if="posts[0]">
 											<router-link
-												:to="`/posts/${post[0].alias}`"
+												:to="`/posts/${posts[0].alias}`"
 												class="removeUnderline"
 											>
 												<div class="newsCard newsCardLg">
 													<div class="newsCardHeroImg">
 														<img
-															:src="`/img/posts/featuredImg/${post[0].image}`"
+															:src="`/img/posts/featuredImg/${posts[0].image}`"
 															alt=""
 														/>
 													</div>
 													<div class="newsImgOverContent">
 														<h4>
-															{{ post[0].title }}
+															{{ posts[0].title }}
 														</h4>
 														<p>
-															{{ post[0].description }}
+															{{ posts[0].description }}
 														</p>
 													</div>
 												</div>
@@ -45,13 +42,13 @@
 									<div class="row">
 										<div class="col-lg-4 col-md-4 col-sm-12">
 											<router-link
-												:to="`/posts/${post[1].alias}`"
+												:to="`/posts/${posts[1].alias}`"
 												class="removeUnderline"
 											>
 												<div class="newsCard">
 													<div class="newsCardImg">
 														<img
-															:src="`/img/posts/featuredImg/${post[1].image}`"
+															:src="`/img/posts/featuredImg/${posts[1].image}`"
 															alt=""
 														/>
 													</div>
@@ -61,10 +58,10 @@
 															<span>April 4, 2023</span>
 														</h5>
 														<h4>
-															{{ post[1].title }}
+															{{ posts[1].title }}
 														</h4>
 														<p>
-															{{ post[1].description }}
+															{{ posts[1].description }}
 														</p>
 													</div>
 												</div>
@@ -72,13 +69,13 @@
 										</div>
 										<div class="col-lg-4 col-md-4 col-sm-12">
 											<router-link
-												:to="`/posts/${post[2].alias}`"
+												:to="`/posts/${posts[2].alias}`"
 												class="removeUnderline"
 											>
 												<div class="newsCard">
 													<div class="newsCardImg">
 														<img
-															:src="`/img/posts/featuredImg/${post[2].image}`"
+															:src="`/img/posts/featuredImg/${posts[2].image}`"
 															alt=""
 														/>
 													</div>
@@ -88,10 +85,10 @@
 															<span>April 4, 2023</span>
 														</h5>
 														<h4>
-															{{ post[2].title }}
+															{{ posts[2].title }}
 														</h4>
 														<p>
-															{{ post[2].description }}
+															{{ posts[2].description }}
 														</p>
 													</div>
 												</div>
@@ -99,13 +96,13 @@
 										</div>
 										<div class="col-lg-4 col-md-4 col-sm-12">
 											<router-link
-												:to="`/posts/${post[3].alias}`"
+												:to="`/posts/${posts[3].alias}`"
 												class="removeUnderline"
 											>
 												<div class="newsCard">
 													<div class="newsCardImg">
 														<img
-															:src="`/img/posts/featuredImg/${post[3].image}`"
+															:src="`/img/posts/featuredImg/${posts[3].image}`"
 															alt=""
 														/>
 													</div>
@@ -115,10 +112,10 @@
 															<span>April 4, 2023</span>
 														</h5>
 														<h4>
-															{{ post[3].title }}
+															{{ posts[3].title }}
 														</h4>
 														<p>
-															{{ post[3].description }}
+															{{ posts[3].description }}
 														</p>
 													</div>
 												</div>
@@ -142,30 +139,8 @@
 <script>
 export default {
 	props: ["posts"],
-	data() {
-		return {
-			postPerTab: [],
-		};
-	},
-	watch: {
-		posts(val, oldval) {
-			const width = window && window.innerHeight ? window.innerWidth : -1;
-			if (width > 568) {
-				this.postPerTab = this.chunkArray(val, 6);
-			} else {
-				this.postPerTab = this.chunkArray(val, 5);
-			}
-		},
-	},
+
 	methods: {
-		chunkArray(array, chunkSize = 6) {
-			let chunked = [];
-			for (let i = 0; i < array.length; i += chunkSize) {
-				const chunk = array.slice(i, i + chunkSize);
-				chunked.push(chunk);
-			}
-			return chunked;
-		},
 		truncate(source, size) {
 			return source.length > size ? source.slice(0, size - 1) + "…" : source;
 		},
