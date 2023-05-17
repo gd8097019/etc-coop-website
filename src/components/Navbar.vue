@@ -1,9 +1,9 @@
 <template>
 	<nav class="navbar etcNavbar navbar-expand-lg">
 		<div class="container-fluid navContainer">
-			<a class="navbar-brand order-lg-1 order-1" href="#">
+			<router-link class="navbar-brand order-lg-1 order-1" to="/">
 				<img src="@/assets/images/etc-logo.svg" alt="" />
-			</a>
+			</router-link>
 			<button
 				class="navbar-toggler order-lg-2 order-3"
 				type="button"
@@ -21,9 +21,13 @@
 			>
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">
+						<router-link
+							class="nav-link active"
+							aria-current="page"
+							to="/what-is-etc"
+						>
 							Ethereum Classic
-						</a>
+						</router-link>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Mining</a>
