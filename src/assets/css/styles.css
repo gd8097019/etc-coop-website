@@ -3,14 +3,47 @@
 	object-fit: cover;
 }
 
+:root {
+	--Dm_sans: "DM Sans", sans-serif;
+	--Noto_sans: "Noto Sans", sans-serif;
+	--Noto_sans_jp: "Noto Sans JP", sans-serif;
+	--Roboto: "Roboto", sans-serif;
+}
+
 .removeUnderline {
 	text-decoration: none !important;
 }
 
 .newsCardHeroImg {
 	height: 675px;
+}
+
+.etcNavbar {
+	padding: 28px 32px !important;
+}
+
+.etcNavbar .navContainer {
+	max-width: 1198px !important;
+	padding: 0 !important;
+}
+
+.etcNavbar .navbar-brand {
+	width: 170px;
+}
+
+.etcNavbar .navbar-brand img {
 	width: 100%;
 	object-fit: cover;
+}
+
+.etcNavbar .navbar-nav .nav-link {
+	font-family: var(--Dm_sans);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	color: #ffffff;
+	padding: 10px;
+	margin: 0px 6px;
 }
 
 .etcNewsSection .newsBtns {
@@ -22,17 +55,430 @@
 	margin-right: 0px !important;
 }
 
-@media (min-width: 595px) and (max-width: 767px) {
-	.newsCardHeroImg {
-		height: 432px;
-		object-fit: cover;
-	}
-
-	.newsCardImg {
-		height: 432px;
-		object-fit: cover;
-	}
+.etcNavbar .navbar-nav .nav-link.active {
+	color: #22c55e;
+	font-weight: 700;
+	border-bottom: 2px solid #22c55e;
 }
+
+.etcNavbar .navbar-nav .nav-item:last-child .nav-link {
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.etcNavbar .dropdown-toggle {
+	display: flex;
+	align-items: center;
+}
+
+.etcNavbar .dropdown-toggle::after {
+	width: 15px;
+	height: 15px;
+	border: none !important;
+	background: url(@/assets/images/arrow-down.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	margin-left: 13px;
+}
+
+.etcNavbar .navOptions {
+	display: flex;
+	align-items: center;
+	margin-left: 70px;
+}
+
+.etcNavbar .checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.etcNavbar .checkbox-label {
+	background: transparent;
+	border: 1px solid #ffffff;
+	width: 44px;
+	height: 24px;
+	border-radius: 50px;
+	position: relative;
+	padding: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.etcNavbar .checkbox-label img {
+	width: 14px;
+	height: 14px;
+}
+
+.etcNavbar .checkbox-label .ball {
+	background-color: #fff;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 3px;
+	left: 4px;
+	border-radius: 50%;
+	transition: transform 0.2s linear;
+}
+
+.etcNavbar .checkbox:checked + .checkbox-label .ball {
+	transform: translateX(18px);
+}
+
+.etcNavbar .selectLanguage {
+	margin-left: 16px;
+	position: relative;
+}
+
+.etcNavbar .selectLanguage .flagImage {
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.etcNavbar .selectLanguage .flagImage img {
+	width: 100%;
+	height: 100%;
+}
+
+.etcNavbar .languageDropdown {
+	display: none;
+	position: absolute;
+	top: 38px;
+	right: 0;
+	background: #0a1c3f;
+	border: 0.5px solid #ffffffa4;
+	border-radius: 5px;
+	padding: 10px 0px;
+}
+
+.etcNavbar .languageDropdown.show {
+	display: block;
+}
+
+.languageDropdown button {
+	background: transparent;
+	border: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.languageDropdown button img {
+	margin-right: 10px;
+	width: 25px;
+	height: 25px;
+}
+
+.etcNavbar .navbar-toggler {
+	background: #ffffff;
+	outline: none;
+	box-shadow: unset !important;
+}
+
+/* mainContainer class for all containers */
+
+.mainContainer {
+	max-width: 1266px !important;
+	width: 100%;
+	margin: 0 auto !important;
+	padding-right: 32px !important;
+	padding-left: 32px !important;
+}
+
+/* newsletter section starts here */
+
+.newsletterSection {
+	background: url(@/assets/images/newsletter_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 88px 0px;
+}
+
+.newsletterContainer h2 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	letter-spacing: -0.02em;
+	color: #ffffff;
+	margin-bottom: 16px;
+}
+
+.newsletterContainer p {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	color: #8896ab;
+	margin: 0;
+}
+
+.newsletterContainer .inputGroup {
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.newsletterContainer .inputGroup input {
+	max-width: 320px;
+	height: 46px;
+	background: #ffffff;
+	border: 1px solid #d5dae1;
+	border: none;
+	outline: none;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+	border-radius: 8px;
+	padding: 10px 14px;
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #667085;
+}
+
+.inputGroup input::placeholder {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #667085;
+}
+
+.newsletterContainer .inputGroup button {
+	width: 114px;
+	height: 46px;
+	background: #22c55e;
+	box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+	border-radius: 6px;
+	border: none;
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	color: #f0fdf4;
+	margin-left: 24px;
+}
+
+.newsletterContainer span {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	color: #8896ab;
+}
+
+.newsletterContainer span a {
+	color: #22c55e;
+}
+
+/* newsletter section ends here */
+
+/* footer starts here */
+.etcCoopFooter {
+	background: radial-gradient(
+			50% 50% at 50% 50%,
+			rgba(247, 248, 249, 0) 0%,
+			#f7f8f9 100%
+		),
+		url(@/assets/images/about_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.etcFooterContainer {
+	max-width: 1242.68px;
+	width: 100%;
+	margin: 0 auto !important;
+	padding: 84px 32px 50px !important;
+}
+
+.etcFooterContainer .footerLogoCont img {
+	width: 170px;
+	height: 34px;
+}
+
+.footerLogoDark {
+	display: none;
+}
+
+.etcFooterContainer .socialMediaIcons {
+	margin: 27px 0px 30px;
+}
+
+.socialMediaIcons img {
+	width: 30px;
+	height: 30px;
+	margin-right: 12px;
+}
+
+.etcFooterContainer .socialMediaIcons a {
+	display: inline-block;
+	width: fit-content;
+	text-decoration: none;
+}
+
+.etcFooterContainer h4 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	color: #1b1b1b;
+	margin-bottom: 20px;
+}
+
+.etcFooterContainer ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.etcFooterContainer ul li a {
+	display: inline-block;
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	color: #556987;
+	text-decoration: none;
+	margin-bottom: 8px;
+}
+
+.etcFooterContainer ul li a:hover {
+	color: #748eb6;
+}
+
+.etcFooterContainer ul li img {
+	width: 169.18px;
+	height: 50px;
+	margin-bottom: 8px;
+}
+
+.etcFooterContainer .darkImg {
+	display: none;
+}
+
+.etcCoopFooter .bottomFooter {
+	background: #293342;
+}
+
+.etcCoopFooter .bottomFooter .bottomFooterCont {
+	max-width: 1264px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 35px 32px;
+}
+
+.etcCoopFooter .bottomFooter p {
+	margin: 0px;
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	color: #8896ab;
+}
+
+.etcCoopFooter .footerBottomLinks a {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	color: #8896ab;
+	text-decoration: none;
+}
+
+.etcCoopFooter .footerBottomLinks a:nth-child(2) {
+	margin-left: 30px;
+}
+
+/* footer ends here*/
+
+/* dark mode css starts here */
+
+.dark-mode {
+	background: #070f1f;
+}
+
+.dark-mode .newsletterSection {
+	background: #111825;
+}
+
+.dark-mode .newsletterContainer p {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.dark-mode .newsletterContainer .inputGroup input {
+	background: #1f2734;
+	color: #ffffff !important;
+}
+
+.dark-mode .newsletterContainer .inputGroup input::placeholder {
+	color: #ffffff !important;
+}
+
+.dark-mode .newsletterContainer .inputGroup button {
+	color: #111825;
+}
+
+.dark-mode .newsletterContainer span {
+	color: #ffffff;
+}
+
+.dark-mode .etcCoopFooter {
+	background: #070f1f;
+}
+
+.dark-mode .footerLogoCont .footerLogo {
+	display: none;
+}
+
+.dark-mode .footerLogoDark {
+	display: block;
+}
+
+.dark-mode .etcFooterContainer h4 {
+	color: #ffffff;
+}
+
+.dark-mode .etcFooterContainer ul li a {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.dark-mode .lightImg {
+	display: none;
+}
+
+.dark-mode .darkImg {
+	display: block;
+}
+
+.dark-mode .etcCoopFooter .bottomFooter {
+	background: #111825;
+}
+
+.dark-mode .etcCoopFooter .bottomFooter p {
+	color: #ffffff;
+}
+
+.dark-mode .etcCoopFooter .footerBottomLinks a {
+	color: #ffffff;
+}
+
+/* dark mode css ends here */
+
+/* media queries */
 
 @media screen and (max-width: 595px) {
 	.newsCardHeroImg {
@@ -92,5 +538,2165 @@
 
 	.newsSwiperBtns {
 		display: none !important;
+	}
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+	.newsCardImg {
+		height: 432px;
+		object-fit: cover;
+	}
+
+	.etcNavbar .navbar-nav .nav-link {
+		margin: 0px 2px !important;
+		font-size: 15px;
+	}
+
+	.etcNavbar .navOptions {
+		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.etcNavbar .navbar-nav {
+		padding-top: 20px;
+	}
+
+	.etcNavbar .navbar-nav .nav-link {
+		margin: 6px 0px !important;
+		padding: 4px 0px !important;
+	}
+
+	.etcNavbar .navOptions {
+		margin-left: auto;
+		margin-right: 20px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.dark-mode .newsImgOverContent {
+		padding: 20px 15px 15px 15px !important;
+	}
+
+	.newsCardLg {
+		box-shadow: none !important;
+	}
+
+	.etcNewsSection .newsBtns .seeAllNewsDesktop {
+		display: none !important;
+	}
+
+	.seeAllNewsMobile {
+		display: initial !important;
+	}
+
+	.newsSwiperBtns {
+		top: 100px !important;
+	}
+
+	.newsBtnsMobile {
+		justify-content: center !important;
+		margin-bottom: 15px !important;
+	}
+
+	.newsSwiperBtns {
+		display: none !important;
+	}
+
+	.newsletterContainer h2 {
+		font-size: 36px;
+	}
+
+	.newsletterContainer .inputGroup {
+		margin-top: 30px;
+	}
+
+	.bottomFooterCont {
+		flex-direction: column;
+	}
+
+	. .etcCoopFooter .bottomFooter p {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.etcNavbar {
+		padding: 15px !important;
+	}
+
+	.etcCoopHeroContainer {
+		padding: 15px !important;
+	}
+
+	.etcNavbar .navbar-brand {
+		width: 150px;
+	}
+
+	.newsletterContainer .inputGroup {
+		flex-direction: column;
+	}
+
+	.newsletterContainer .inputGroup button {
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+
+	.newsletterContainer h2 {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.newsletterContainer p {
+		text-align: center;
+		font-size: 14px;
+	}
+
+	.newsletterContainer span {
+		display: block;
+		text-align: center;
+		margin-top: 15px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.bottomFooterCont .footerBottomLinks {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 355px) {
+	.etcNavbar .navbar-toggler {
+		margin-top: 20px;
+	}
+
+	.moreDetailsBtns {
+		flex-direction: column;
+	}
+
+	.moreDetailsBtns button:nth-child(2) {
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+}
+
+/* 
+.
+.
+.
+.
+.
+.
+ */
+
+/* new changes in navbar starts here */
+.etcNavbar .navbar-nav .nav-link {
+	width: fit-content;
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	color: #ffffff;
+	padding: 10px 0px !important;
+	margin: 0px 16px;
+}
+
+.etcNavbar .navbar-nav .nav-link.active {
+	width: fit-content;
+	color: #22c55e;
+	font-weight: 700;
+	border-bottom: 2px solid #22c55e;
+}
+
+.etcNavbar .nav-link.active.dropdown-toggle::after {
+	background: url(@/assets/images/arrow-down-green.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+	.etcNavbar .navbar-nav .nav-link {
+		margin: 0px 10px !important;
+		font-size: 15px;
+	}
+}
+/* new changes in navbar ends here */
+
+/* mining on etc page starts here */
+
+/* mining section starts here */
+.miningNavSection {
+	background: url(@/assets/images/mining-bg.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	height: 467px;
+}
+
+.miningContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.miningContainer .miningHeroContent {
+	width: 100%;
+	margin-top: 137px;
+}
+
+.miningHeroContent h1 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 70px;
+	line-height: 56px;
+	color: #ffffff;
+	text-align: center;
+}
+
+/* mining in etc paragraphs section starts here */
+.miningParaSection {
+	background: #ffffff;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 72px 0px;
+}
+
+.miningParaSection .miningParaContainer {
+	max-width: 1074px;
+	width: 100%;
+	padding: 0px 32px;
+	margin: 0 auto;
+}
+
+.miningParaContainer p {
+	max-width: 816px;
+	width: 100%;
+	margin: 0 auto;
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: #556987;
+}
+
+/* mining in etc paragraphs section ends here */
+
+/* what you need section starts here */
+.whatYouNeedSection {
+	background: #f7f8f9;
+	padding: 80px 0px 72px;
+}
+
+.whatYouNeedContainer {
+	max-width: 1132px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 32px;
+}
+
+.whatYouNeedContainer .secBadge {
+	display: block;
+	width: fit-content;
+	margin: 0 auto;
+	background: #dcfce7;
+	box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+	border-radius: 36px;
+	font-family: var(--Roboto);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	padding: 2px 8px;
+	color: #22c55e;
+	margin-bottom: 16px;
+}
+
+.whatYouNeedContainer .heading {
+	max-width: 816px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.whatYouNeedContainer .heading h1 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 44px;
+	text-align: center;
+	letter-spacing: -0.02em;
+	color: #2a3342;
+	margin-bottom: 16px;
+}
+.whatYouNeedContainer .heading p {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: center;
+	color: #556987;
+	margin-bottom: 0px;
+}
+
+.whatYouNeedContainer .whatYouNeedContent {
+	padding: 70px 0px 0px;
+}
+
+.whatYouNeedContent .whatYouNeedInnerContent {
+	display: flex;
+}
+
+.whatYouNeedContent .whatYouNeedText {
+	flex: 1;
+	margin-top: 70px;
+}
+
+.whatYouNeedContent .whatYouNeedText.text-center {
+	max-width: 608px;
+	flex: unset;
+	margin: 0 auto !important;
+}
+
+.whatYouNeedText h4 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	color: #2a3342;
+	margin-bottom: 15px;
+}
+.whatYouNeedText p {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #556987;
+	margin-bottom: 0px;
+}
+
+.whatYouNeedContent .whatYouNeedImg {
+	display: block;
+	max-width: 430px;
+	width: 100%;
+	margin: 0 20px 34px;
+}
+
+.whatYouNeedContent .whatYouNeedImg img {
+	width: 100%;
+	margin: 0 auto;
+}
+/* what you need section ends here */
+
+/* popular mining starts here */
+.popularMining {
+	background: #ffffff;
+	padding: 80px 32px;
+}
+
+.popularMining p {
+	max-width: 816px;
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: #22c55e;
+	margin: 0 auto;
+}
+/* popular mining ends here */
+/* mining on etc page starts here */
+
+/* developing for etc page starts here */
+/* developing section starts here */
+
+.developingNavSection {
+	background: url(@/assets/images/developing-bg.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	height: 467px;
+}
+
+.developingContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.developingContainer .developingHeroContent {
+	width: 100%;
+	margin-top: 137px;
+}
+
+.developingHeroContent h1 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 70px;
+	line-height: 56px;
+	color: #ffffff;
+	text-align: center;
+}
+
+/* developing paragraphs section starts here */
+.developingParaSection {
+	background: #ffffff;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 72px 0px;
+}
+
+.developingParaSection .developingParaContainer {
+	max-width: 1074px;
+	width: 100%;
+	padding: 0px 32px;
+	margin: 0 auto;
+}
+
+.developingParaContainer p {
+	max-width: 816px;
+	width: 100%;
+	margin: 0 auto;
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: #556987;
+}
+
+/* developing paragraphs section ends here */
+
+/* developing for etc section starts here */
+.developingForEtcSection {
+	background: #f7f8f9;
+	padding: 50px 0px 80px;
+}
+
+.developingForEtcSection.blockchainSection {
+	background: #ffffff;
+	padding: 90px 0px 110px;
+}
+
+.developingForEtcSection.communitySection {
+	background: #f7f8f9;
+	padding: 70px 0px 110px;
+}
+
+.developingForEtcContainer {
+	max-width: 1296px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 32px;
+}
+
+.developingForEtcContainer .secBadge {
+	display: block;
+	width: fit-content;
+	background: #dcfce7;
+	box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+	border-radius: 36px;
+	font-family: var(--Roboto);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	padding: 2px 8px;
+	color: #22c55e;
+	margin-bottom: 16px;
+}
+
+.developingForEtcContainer h2 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 44px;
+	letter-spacing: -0.02em;
+	color: #2a3342;
+	margin-bottom: 16px;
+}
+
+.developingForEtcContainer p {
+	max-width: 554px;
+	width: 100%;
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	color: #556987;
+	margin-bottom: 0px;
+}
+
+.developingForEtcContainer .solidityImg {
+	display: block;
+	max-width: 442px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.developingForEtcContainer .solidityImg.dark {
+	display: none;
+}
+
+.developingForEtcContainer .communityImg {
+	display: block;
+	max-width: 619px;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 24px;
+}
+/* developing for etc section ends here */
+
+/* developing requirement section starts here */
+.developingRequirement {
+	padding: 80px 32px;
+}
+
+.developingRequirement p {
+	max-width: 816px;
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: #22c55e;
+	margin: 0 auto;
+}
+/* developing requirement section ends here */
+/* developing for etc page ends here */
+
+/* what is etc cooperative page starts here */
+.whatIsEtcCoopNavSection {
+	background: url(@/assets/images/what-is-etc-coop-bg.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	height: 467px;
+}
+
+.whatIsEtcCoopContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.whatIsEtcCoopContainer .whatIsEtcCoopHeroContent {
+	width: 100%;
+	margin-top: 137px;
+}
+
+.whatIsEtcCoopHeroContent h1 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 70px;
+	line-height: 56px;
+	color: #ffffff;
+	text-align: center;
+}
+
+/* what is etc coop paragraphs section starts here */
+.whatIsEtcCoopParaSection {
+	background: #ffffff;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 72px 0px;
+}
+
+.whatIsEtcCoopParaSection .whatIsEtcCoopParaContainer {
+	max-width: 1074px;
+	width: 100%;
+	padding: 0px 32px;
+	margin: 0 auto;
+}
+
+.whatIsEtcCoopParaContainer p {
+	max-width: 816px;
+	width: 100%;
+	margin: 0 auto;
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: #556987;
+}
+
+/* what is etc coop paragraphs section ends here */
+
+/* mission of etc section starts here */
+.missionOfEtcSection {
+	background: #f7f8f9;
+	padding: 80px 0px 50px;
+}
+
+.missionOfEtcContainer {
+	max-width: 1210px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 32px;
+}
+
+.missionOfEtcContainer .secBadge {
+	display: block;
+	width: fit-content;
+	margin: 0 auto;
+	background: #dcfce7;
+	box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+	border-radius: 36px;
+	font-family: var(--Roboto);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	padding: 2px 8px;
+	color: #22c55e;
+	margin-bottom: 16px;
+}
+
+.missionOfEtcContainer .heading {
+	max-width: 815px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.missionOfEtcContainer .heading h1 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 44px;
+	text-align: center;
+	letter-spacing: -0.02em;
+	color: #2a3342;
+	margin-bottom: 16px;
+}
+
+.missionOfEtcContainer .heading p {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: center;
+	color: #556987;
+	margin-bottom: 0px;
+}
+
+.missionOfEtcCards {
+	margin-top: 56px !important;
+}
+
+.missionOfEtcCard {
+	max-width: 332px;
+	margin: 0 auto 55px;
+}
+
+.missionOfEtcCard img {
+	display: flex;
+	width: 50px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+.missionOfEtcCard h4 {
+	text-align: center;
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+	color: #2a3342;
+	margin: 32px 0px 15px;
+}
+
+.missionOfEtcCard p {
+	text-align: center;
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #556987;
+	margin: 0px;
+}
+
+/* mission of etc section ends here */
+
+/* history of etc cooperative starts here */
+.historyOfEtcSection {
+	background: #ffffff;
+	padding: 80px 0px 100px;
+}
+
+.historyOfEtcContainer {
+	max-width: 1296px;
+	margin: 0 auto;
+	padding: 0px 32px;
+}
+
+.historyOfEtcContainer .secBadge {
+	display: block;
+	width: fit-content;
+	margin: 0 auto;
+	background: #dcfce7;
+	box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+	border-radius: 36px;
+	font-family: var(--Roboto);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	padding: 2px 8px;
+	color: #22c55e;
+	margin-bottom: 16px;
+}
+
+.historyOfEtcContainer .heading h1 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 44px;
+	text-align: center;
+	letter-spacing: -0.02em;
+	color: #2a3342;
+}
+
+.historyOfEtcMainContent {
+	margin-top: 110px;
+	position: relative;
+	height: 470px;
+}
+
+.historyOfEtcMainContent .historyOfEtcCurvedLines {
+	width: 100%;
+	height: 370px;
+	position: absolute;
+}
+
+.historyOfEtcContent {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.historyOfEtcContent .historyText {
+	margin: 0 auto;
+	position: relative;
+	top: -11px;
+}
+
+.historyOfEtcContent .historyText:nth-child(1) {
+	max-width: 175px;
+}
+
+.historyOfEtcContent .historyText:nth-child(2) {
+	top: -5px;
+	max-width: 200px;
+}
+
+.historyOfEtcContent .historyText:nth-child(3) {
+	max-width: 226px;
+}
+
+.historyOfEtcContent .historyText .circle {
+	display: block;
+	width: 24px;
+	height: 24px;
+	background: #ffffff;
+	border: 4px solid #22c55e;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+.historyOfEtcContent .historyText p {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+	letter-spacing: 0.005em;
+	color: #2a3342;
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+
+.historyOfEtcContent .historyText p span {
+	display: block;
+	color: #556987;
+}
+/* history of etc cooperative ends here */
+
+/* donations to etc section starts here */
+.donationsToEtcSection {
+	padding: 0px 32px;
+}
+
+.donationsToEtcContainer {
+	max-width: 1232px;
+	margin: 0px auto;
+	background: #f7f8f9;
+	border-radius: 24px;
+	padding: 80px 40px;
+}
+
+.donationsToEtcContainer p {
+	max-width: 1024px;
+	margin: 0 auto;
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: #556987;
+}
+/* donations to etc section ends here */
+
+/* etc learn more section starts here */
+.learnMoreEtcSection {
+	background: #ffffff;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 80px 0px;
+}
+
+.learnMoreEtcSection .learnMoreEtcContainer {
+	padding: 0px 32px;
+}
+
+.learnMoreEtcContainer h2 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 44px;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 44px;
+}
+
+.learnMoreEtcContainer p {
+	font-family: var(--Roboto);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: #000000;
+}
+
+.learnMoreEtcContainer p a {
+	color: #22c55e;
+	font-weight: 500;
+	text-decoration: none;
+}
+/* etc learn more section ends here */
+
+/* what is etc cooperative page ends here */
+
+/* 
+.
+.
+.
+.
+. */
+
+/* dark mode css starts here */
+
+.dark-mode .etcCoopFooter .bottomFooter {
+	background: #111825;
+}
+
+.dark-mode .miningParaSection {
+	background: #070f1f;
+}
+
+.dark-mode .miningParaContainer p {
+	color: #cccccc;
+}
+
+.dark-mode .whatYouNeedSection {
+	background: #111825;
+}
+.dark-mode .whatYouNeedContainer .secBadge {
+	background: #22c55e;
+	color: #111825;
+}
+
+.dark-mode .whatYouNeedContainer .heading h1 {
+	color: #ffffff;
+}
+
+.dark-mode .whatYouNeedContainer .heading p {
+	color: #cccccc;
+}
+
+.dark-mode .whatYouNeedText h4 {
+	color: #ffffff;
+}
+
+.dark-mode .whatYouNeedText p {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.dark-mode .popularMining {
+	background: #070f1f;
+}
+
+/* ..... */
+
+.dark-mode .developingParaSection {
+	background: #070f1f;
+}
+
+.dark-mode .developingParaContainer p {
+	color: #cccccc;
+}
+
+.dark-mode .developingForEtcSection {
+	background: #111825;
+}
+
+.dark-mode .developingForEtcSection.blockchainSection {
+	background: #070f1f;
+}
+
+.dark-mode .developingForEtcSection.communitySection {
+	background: #111825;
+}
+
+.dark-mode .developingForEtcContainer .secBadge {
+	background: #22c55e;
+	color: #111825;
+}
+
+.dark-mode .developingForEtcSection h2 {
+	color: #ffffff;
+}
+
+.dark-mode .developingForEtcSection p {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.dark-mode .developingForEtcSection p b {
+	color: #ffffff;
+}
+
+.dark-mode .developingForEtcContainer .solidityImg.light {
+	display: none;
+}
+
+.dark-mode .developingForEtcContainer .solidityImg.dark {
+	display: block;
+}
+
+.dark-mode .developingRequirement {
+	background: #070f1f;
+}
+
+/* ... */
+
+.dark-mode .whatIsEtcCoopParaSection {
+	background: #070f1f;
+}
+
+.dark-mode .whatIsEtcCoopParaContainer p {
+	color: #cccccc;
+}
+
+.dark-mode .missionOfEtcSection {
+	background: #111825;
+}
+
+.dark-mode .missionOfEtcContainer .secBadge {
+	background: #22c55e;
+	color: #111825;
+}
+
+.dark-mode .missionOfEtcContainer .heading h1 {
+	color: #ffffff;
+}
+
+.dark-mode .missionOfEtcContainer .heading p {
+	color: #cccccc;
+}
+
+.dark-mode .missionOfEtcCard h4 {
+	color: #ffffff;
+}
+
+.dark-mode .missionOfEtcCard p {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.dark-mode .historyOfEtcSection {
+	background: #070f1f;
+}
+
+.dark-mode .historyOfEtcContainer .secBadge {
+	background: #22c55e;
+	color: #111825;
+}
+
+.dark-mode .historyOfEtcContainer .heading h1 {
+	color: #ffffff;
+}
+
+.dark-mode .historyOfEtcContent .historyText p {
+	color: #ffffff;
+}
+
+.dark-mode .historyOfEtcContent .historyText p span {
+	color: #8899a6;
+}
+
+.dark-mode .historyOfEtcContent .historyText .circle {
+	border: 4px solid #131313;
+}
+
+.dark-mode .donationsToEtcSection {
+	background: #070f1f;
+}
+
+.dark-mode .donationsToEtcContainer {
+	background: #111825;
+}
+
+.dark-mode .donationsToEtcContainer p {
+	color: #cccccc;
+}
+
+.dark-mode .learnMoreEtcSection {
+	background: #070f1f;
+}
+
+.dark-mode .learnMoreEtcContainer h2 {
+	color: #ffffff;
+}
+
+.dark-mode .learnMoreEtcContainer p {
+	color: #ffffff;
+}
+
+.dark-mode .learnMoreEtcContainer p a {
+	color: #22c55e;
+}
+
+/* .......... */
+
+/* media queries */
+
+@media screen and (max-width: 991px) {
+	.miningNavSection {
+		min-height: 300px;
+		height: auto;
+		padding-bottom: 60px;
+	}
+
+	.miningContainer .miningHeroContent {
+		margin-top: 40px;
+	}
+
+	.miningParaContainer p {
+		max-width: 100%;
+	}
+
+	.whatYouNeedContent .whatYouNeedInnerContent {
+		flex-direction: column;
+	}
+
+	.whatYouNeedInnerContent .whatYouNeedText {
+		text-align: center !important;
+		max-width: 608px;
+		margin: 0 auto;
+	}
+
+	.whatYouNeedContent .whatYouNeedImg {
+		margin: 30px auto;
+		max-width: 380px;
+	}
+
+	.whatYouNeedContent .whatYouNeedText.text-center {
+		margin-top: 30px !important;
+	}
+
+	.developingNavSection {
+		min-height: 300px;
+		height: auto;
+		padding-bottom: 60px;
+	}
+
+	.developingContainer .developingHeroContent {
+		margin-top: 40px;
+	}
+
+	.developingParaContainer p {
+		max-width: 100%;
+	}
+
+	.developingForEtcContainer p {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.developingForEtcContainer img {
+		margin-top: 40px !important;
+	}
+
+	.whatIsEtcCoopNavSection {
+		min-height: 300px;
+		height: auto;
+		padding-bottom: 60px;
+	}
+
+	.whatIsEtcCoopContainer .whatIsEtcCoopHeroContent {
+		margin-top: 40px;
+	}
+
+	.historyOfEtcMainContent {
+		height: 370px;
+	}
+
+	.historyOfEtcMainContent .historyOfEtcCurvedLines {
+		height: 270px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.miningNavSection {
+		min-height: auto;
+		height: auto;
+		padding-bottom: 60px;
+	}
+
+	.miningHeroContent h1 {
+		font-size: 50px;
+	}
+
+	.whatYouNeedContent .whatYouNeedImg {
+		margin: 30px auto;
+		max-width: 330px;
+	}
+
+	.developingNavSection {
+		min-height: auto;
+		height: auto;
+		padding-bottom: 60px;
+	}
+
+	.developingHeroContent h1 {
+		font-size: 50px;
+	}
+
+	.whatIsEtcCoopNavSection {
+		min-height: auto;
+		height: auto;
+		padding-bottom: 60px;
+	}
+
+	.whatIsEtcCoopHeroContent h1 {
+		font-size: 50px;
+	}
+
+	.donationsToEtcContainer {
+		padding: 60px 30px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.miningHeroContent h1 {
+		font-size: 40px;
+	}
+
+	.miningParaContainer p {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.whatYouNeedContainer .heading h1 {
+		font-size: 30px;
+	}
+
+	.whatYouNeedContainer .heading p {
+		font-size: 16px;
+	}
+
+	.popularMining p {
+		font-size: 18px;
+	}
+
+	.developingHeroContent h1 {
+		font-size: 40px;
+	}
+
+	.developingParaContainer p {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.developingRequirement p {
+		font-size: 18px;
+	}
+
+	.whatIsEtcCoopHeroContent h1 {
+		font-size: 40px;
+	}
+
+	.missionOfEtcContainer .heading h1 {
+		font-size: 30px;
+	}
+
+	.historyOfEtcContainer .heading h1 {
+		font-size: 30px;
+	}
+
+	.historyOfEtcMainContent .historyOfEtcCurvedLines {
+		object-fit: cover;
+	}
+
+	.donationsToEtcContainer {
+		padding: 40px 20px;
+	}
+
+	.donationsToEtcContainer p {
+		font-size: 18px;
+	}
+
+	.learnMoreEtcContainer h2 {
+		text-align: center;
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 411px) {
+	.whatIsEtcCoopHeroContent h1 {
+		font-size: 36px;
+	}
+}
+
+/*======= OLD ============*/
+
+.etcCoopNavSection {
+	background: url(@/assets/images/ethereum_cooperative_bg.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	height: 779px;
+}
+
+/* mainContainer class for all containers */
+
+.etcCoopHeroContainer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.etcCoopHeroContainer .etcCoopHeroContent {
+	max-width: 595px;
+	width: 100%;
+	margin-top: 135px;
+}
+
+.etcCoopHeroContent h1 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 70px;
+	display: flex;
+	align-items: center;
+	color: #22c55e;
+}
+
+.etcCoopHeroContent h3 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 44px;
+	color: #ffffff;
+}
+
+.etcCoopHeroContent p {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 32px;
+	color: #ffffff;
+}
+
+/* news section starts here */
+
+.etcNewsSection .swiper {
+	padding: 40px 0px;
+}
+
+.etcNewsSection .newsHeading {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.etcNewsSection .newsHeading h2 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 42px;
+	letter-spacing: 0.5px;
+	color: #1b1b1b;
+}
+
+.etcNewsSection .swiper {
+	width: 100%;
+	height: 100%;
+	padding: 40px 0px;
+}
+
+.etcNewsSection .swiper-slide .newsContent {
+	padding: 30px 0px 0px;
+}
+
+.etcNewsSection .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.etcNewsSection .newsBtns {
+	display: flex;
+}
+
+.etcNewsSection .newsBtns .seeAllNews {
+	background: #22c55e;
+	box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+	border-radius: 6px;
+	border: none;
+	width: 170px;
+	height: 56px;
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	color: #f0fdf4;
+	margin-right: 130px;
+}
+
+.etcNewsSection .newsSwiperBtns {
+	width: 80px;
+	background: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 52px;
+	right: 0;
+	z-index: 1111;
+}
+
+.etcNewsSection .swiperSlideBtn {
+	width: 30px;
+	height: 30px;
+	padding: 0 !important;
+	position: static !important;
+	margin: 0 !important;
+	z-index: unset !important;
+	border: 3px solid #1b1b1b;
+	border-radius: 50%;
+}
+
+.etcNewsSection .swiperSlideBtn::after {
+	content: unset !important;
+	display: none !important;
+}
+
+.etcNewsSection .swiperSlideBtn img {
+	width: 10px;
+	height: auto;
+}
+
+.etcNewsSection .swiper-pagination-progressbar {
+	top: 114px;
+	background: #d6d6d6;
+}
+
+.etcNewsSection
+	.swiper-pagination-progressbar
+	.swiper-pagination-progressbar-fill {
+	background: #313131 !important;
+}
+
+.newsCard {
+	margin: 0px 0px 32px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.newsCardLg {
+	position: relative;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.newsCardLg::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		180deg,
+		rgba(217, 217, 217, 0) 0%,
+		#000000 94.23%
+	);
+	border-radius: 5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.newsCardLg .newsImgOverContent {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 24px;
+}
+
+.newsCardLg h4 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	color: #ffffff;
+	margin-bottom: 18px;
+}
+
+.newsCardLg p {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #ffffff;
+	margin-bottom: 0px;
+}
+
+.newsCard .newsCardContent {
+	padding: 22px 0px 0px;
+}
+
+.newsCard .newsCardContent2 {
+	max-width: 330px;
+	width: 100%;
+}
+
+.newsCard .newsCardContent h4 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+	color: #1b1b1b;
+	margin: 0;
+}
+
+.newsCard .newsCardContent h5 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	color: #22c55e;
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.newsCard .newsCardContent h5 span.dot {
+	color: #556987;
+	margin: -10px 10px 0px;
+}
+
+.newsCard .newsCardContent h5 span {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	color: #556987;
+}
+
+.newsCard .newsCardContent p {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	color: #556987;
+	margin-top: 18px;
+}
+
+/* news section ends here */
+
+/* About our History section starts here */
+
+.aboutOurHistorySection {
+	background: radial-gradient(
+			50% 50% at 50% 50%,
+			rgba(247, 248, 249, 0) 0%,
+			#f7f8f9 100%
+		),
+		url(@/assets/images/about_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 88px 0px 72px;
+}
+
+.aboutOurHistoryContainer .smallHeading {
+	width: 71px;
+	height: 22px;
+	background: #dcfce7;
+	box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+	border-radius: 36px;
+	font-family: var(--Roboto);
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	color: #22c55e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 16px;
+}
+
+.aboutHistoryContent h2 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	letter-spacing: -0.02em;
+	color: #2a3342;
+	margin-bottom: 16px;
+}
+
+.aboutHistoryContent h6 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 28px;
+	color: #556987;
+	margin-bottom: 36px;
+}
+
+.aboutHistoryContent p {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 28px;
+	color: #556987;
+	margin-bottom: 24px;
+}
+
+.aboutOurHistoryContainer .moreDetailsBtns {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 10px 0px 60px;
+}
+
+.moreDetailsBtns button:nth-child(1) {
+	width: 159px;
+	height: 56px;
+	background: #22c55e;
+	border: none;
+	box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+	border-radius: 6px;
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	color: #f0fdf4;
+}
+
+.moreDetailsBtns button:nth-child(2) {
+	width: 142px;
+	height: 56px;
+	background: transparent;
+	border: 1px solid #22c55e;
+	filter: drop-shadow(0px 1px 2px rgba(105, 81, 255, 0.05));
+	border-radius: 6px;
+	font-family: "Noto Sans";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	color: #22c55e;
+	margin-left: 20px;
+}
+
+.aboutOurHistoryContainer .aboutHistoryImg {
+	background: #556987;
+	border-radius: 24px;
+	overflow: hidden;
+}
+
+.aboutOurHistoryContainer .aboutHistoryImg img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* About our History section ends here */
+
+/* dark mode css starts here */
+
+.dark-mode .etcNewsSection {
+	background: #111825;
+}
+
+.dark-mode .etcNewsSection .newsHeading h2 {
+	color: #ffffff;
+}
+
+.dark-mode .etcNewsSection .newsBtns .seeAllNews {
+	color: #111825;
+}
+
+.dark-mode .etcNewsSection .newsSwiperBtns {
+	background: #111825;
+}
+
+.dark-mode .etcNewsSection .swiperSlideBtn {
+	border-color: #ffffff;
+}
+
+.dark-mode .etcNewsSection .swiperSlideBtn img {
+	filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
+		hue-rotate(0deg);
+}
+
+.dark-mode
+	.etcNewsSection
+	.swiper-pagination-progressbar
+	.swiper-pagination-progressbar-fill {
+	background: #ffffff !important;
+}
+
+.dark-mode .etcNewsSection .swiper-pagination-progressbar {
+	background: #585d66;
+}
+
+.dark-mode .newsCard .newsCardContent h4 {
+	color: #ffffff;
+}
+
+.dark-mode .newsCard .newsCardContent h5 span {
+	color: #ffffff;
+}
+
+.dark-mode .newsCard .newsCardContent p {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.dark-mode .aboutOurHistorySection {
+	background: #070f1f;
+}
+
+.dark-mode .aboutOurHistoryContainer .smallHeading {
+	background: #22c55e;
+	color: #070f1f;
+}
+
+.dark-mode .aboutHistoryContent h2 {
+	color: #ffffff;
+}
+
+.dark-mode .aboutHistoryContent h6 {
+	color: #ffffff;
+}
+
+.dark-mode .aboutHistoryContent p {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+/* media queries */
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+	.etcNavbar .navbar-nav .nav-link {
+		margin: 0px 2px !important;
+		font-size: 15px;
+	}
+
+	.etcNavbar .navOptions {
+		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.etcCoopNavSection {
+		height: 600px;
+	}
+
+	.etcCoopHeroContainer .etcCoopHeroContent {
+		margin-top: 40px;
+	}
+
+	.etcNavbar .navbar-nav {
+		padding-top: 20px;
+	}
+
+	.etcNavbar .navbar-nav .nav-link {
+		margin: 6px 0px !important;
+		padding: 4px 0px !important;
+	}
+
+	.etcNavbar .navOptions {
+		margin-left: auto;
+		margin-right: 20px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.etcCoopNavSection {
+		background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+			url(@/assets/images/ethereum_cooperative_bg.png);
+		background-repeat: no-repeat;
+		background-position: top;
+		background-size: cover;
+		height: auto;
+		padding-bottom: 60px;
+	}
+
+	.etcCoopHeroContainer .etcCoopHeroContent {
+		margin-top: 40px;
+	}
+
+	.etcCoopHeroContent h1 {
+		font-size: 50px;
+	}
+
+	.etcCoopHeroContent h3 {
+		font-size: 30px;
+	}
+
+	.etcCoopHeroContent p {
+		font-size: 18px;
+	}
+
+	.newsletterContainer h2 {
+		font-size: 36px;
+	}
+
+	.newsletterContainer .inputGroup {
+		margin-top: 30px;
+	}
+
+	.bottomFooterCont {
+		flex-direction: column;
+	}
+
+	.etcCoopFooter .bottomFooter p {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.etcNavbar {
+		padding: 15px !important;
+	}
+
+	.etcCoopHeroContainer {
+		padding: 15px !important;
+	}
+
+	.etcNavbar .navbar-brand {
+		width: 150px;
+	}
+
+	.etcCoopHeroContent h1 {
+		font-size: 40px;
+	}
+
+	.etcCoopHeroContent h3 {
+		font-size: 26px;
+	}
+
+	.etcCoopHeroContent p {
+		font-size: 16px;
+	}
+
+	.newsHeading {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.etcNewsSection .newsBtns .seeAllNews {
+		margin-right: 0px;
+		height: 50px;
+		font-size: 16px;
+	}
+
+	.etcNewsSection .swiper {
+		padding: 30px 0px;
+	}
+
+	.etcNewsSection .newsSwiperBtns {
+		top: 155px;
+		left: 0px;
+		margin: 0 auto;
+		right: 0px;
+	}
+
+	.etcNewsSection .swiper-slide .newsContent {
+		padding: 10px 0px 0px;
+	}
+
+	.etcNewsSection .newsHeading h2 {
+		font-size: 32px;
+		margin-bottom: 20px;
+	}
+
+	.newsCardLg .newsImgOverContent {
+		padding: 16px;
+	}
+
+	.newsCardLg h4 {
+		margin-bottom: 12px;
+	}
+
+	.aboutOurHistorySection {
+		padding: 60px 0px;
+	}
+
+	.aboutOurHistoryContainer .smallHeading {
+		margin: 0 auto 16px;
+	}
+
+	.aboutHistoryContent h2 {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.aboutHistoryContent h6 {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.aboutHistoryContent p {
+		text-align: center;
+		font-size: 14px;
+	}
+
+	.moreDetailsBtns button {
+		height: 50px !important;
+		font-size: 14px !important;
+	}
+
+	.newsletterContainer .inputGroup {
+		flex-direction: column;
+	}
+
+	.newsletterContainer .inputGroup button {
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+
+	.newsletterContainer h2 {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.newsletterContainer p {
+		text-align: center;
+		font-size: 14px;
+	}
+
+	.newsletterContainer span {
+		display: block;
+		text-align: center;
+		margin-top: 15px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.bottomFooterCont .footerBottomLinks {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 355px) {
+	.etcNavbar .navbar-toggler {
+		margin-top: 20px;
+	}
+
+	.moreDetailsBtns {
+		flex-direction: column;
+	}
+
+	.moreDetailsBtns button:nth-child(2) {
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+}
+
+.whatIsEtcNavSection {
+	background: url(@/assets/images/what-is-etc-bg.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	height: 467px;
+}
+
+.whatIsEtcContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.whatIsEtcContainer .whatIsEtcHeroContent {
+	width: 100%;
+	margin-top: 137px;
+}
+
+.whatIsEtcHeroContent h1 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 70px;
+	line-height: 56px;
+	color: #ffffff;
+	text-align: center;
+}
+
+/* what is etc paragraphs section starts here */
+.whatIsEtcParaSection {
+	background: radial-gradient(
+			50% 50% at 50% 50%,
+			rgba(247, 248, 249, 0) 0%,
+			#f7f8f9 100%
+		),
+		url(@/assets/images/para-bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 72px 0px;
+}
+
+.whatIsEtcParaSection .whatIsEtcParaContainer {
+	max-width: 1074px;
+	width: 100%;
+	padding: 0px 32px;
+	margin: 0 auto;
+}
+
+.whatIsEtcParaContainer p {
+	max-width: 470px;
+	width: 100%;
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 0px;
+	color: #000000;
+}
+
+/* what is etc paragraphs section ends here */
+
+/* etc learn more section starts here */
+.etcLearnMoreSection {
+	background: radial-gradient(
+			50% 50% at 50% 50%,
+			rgba(247, 248, 249, 0) 0%,
+			#f7f8f9 100%
+		),
+		url(@/assets/images/para-bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 80px 0px;
+}
+
+.etcLearnMoreSection .etcLearnMoreContainer {
+	padding: 0px 32px;
+}
+
+.etcLearnMoreContainer h2 {
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 44px;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 44px;
+}
+
+.etcLearnMoreContainer p {
+	font-family: var(--Roboto);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: #000000;
+}
+
+.etcLearnMoreContainer p a {
+	color: #22c55e;
+	font-weight: 500;
+	text-decoration: none;
+}
+/* etc learn more section ends here */
+
+/* etc classic section starts here */
+
+.etcClassicSection {
+	background: #ffffff;
+	padding: 88px 0px 80px;
+}
+
+.etcClassicSection .etcClassicContainer {
+	max-width: 1074px;
+	width: 100%;
+	padding: 0px 32px;
+	margin: 0 auto;
+}
+
+.etcClassicContainer img {
+	max-width: 460px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 24px;
+}
+
+.etcClassicContainer p {
+	max-width: 470px;
+	width: 100%;
+	font-family: var(--Noto_sans);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 0px;
+	color: #000000;
+}
+
+/* etc classic section ends here */
+
+.dark-mode .whatIsEtcParaSection {
+	background: #070f1f;
+}
+
+.dark-mode .whatIsEtcParaContainer p {
+	color: #cccccc;
+}
+
+.dark-mode .etcClassicSection {
+	background: #111825;
+}
+
+.dark-mode .etcClassicContainer p {
+	color: #ffffff;
+}
+
+.dark-mode .etcLearnMoreSection {
+	background: #070f1f;
+}
+
+.dark-mode .etcLearnMoreContainer h2 {
+	color: #ffffff;
+}
+
+.dark-mode .etcLearnMoreContainer p {
+	color: #ffffff;
+}
+
+.dark-mode .etcLearnMoreContainer p a {
+	color: #22c55e;
+}
+
+@media screen and (max-width: 991px) {
+	.whatIsEtcNavSection {
+		height: 300px;
+	}
+
+	.whatIsEtcContainer .whatIsEtcHeroContent {
+		margin-top: 40px;
+	}
+
+	.whatIsEtcParaContainer p {
+		max-width: 100%;
+	}
+
+	.etcClassicContainer img {
+		display: block;
+		height: auto;
+		margin: 0 auto 40px;
+	}
+
+	.etcClassicContainer p {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.whatIsEtcNavSection {
+		height: auto;
+		padding-bottom: 60px;
+	}
+
+	.whatIsEtcHeroContent h1 {
+		font-size: 50px;
+	}
+
+	.seeAllNewsMobile {
+		display: initial !important;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.whatIsEtcHeroContent h1 {
+		font-size: 40px;
+	}
+
+	.newsSwiperBtns {
+		top: 100px !important;
+	}
+
+	.whatIsEtcParaContainer p {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.etcClassicContainer p {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.etcLearnMoreContainer h2 {
+		text-align: center;
+		font-size: 30px;
+		margin-bottom: 20px;
 	}
 }
