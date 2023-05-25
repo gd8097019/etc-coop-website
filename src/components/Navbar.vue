@@ -22,18 +22,32 @@
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					<li class="nav-item">
 						<router-link
-							class="nav-link active"
+							class="nav-link"
+							active-class="active"
 							aria-current="page"
-							to="/what-is-etc"
+							to="/ethereum-classic"
 						>
 							Ethereum Classic
 						</router-link>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Mining</a>
+						<router-link
+							class="nav-link"
+							active-class="active"
+							aria-current="page"
+							to="/mining"
+						>
+							Mining
+						</router-link>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Developing for ETC</a>
+						<router-link
+							active-class="active"
+							class="nav-link"
+							aria-current="page"
+							to="/developing-for-etc"
+							>Developing</router-link
+						>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">News</a>
@@ -49,7 +63,15 @@
 							ETC Cooperative
 						</a>
 						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#">Action 1</a></li>
+							<li>
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/what-is-etc-cooperative"
+								>
+									What is ETC Cooperative
+								</router-link>
+							</li>
 							<li><a class="dropdown-item" href="#">Action 2</a></li>
 							<li><a class="dropdown-item" href="#">Action 3</a></li>
 						</ul>

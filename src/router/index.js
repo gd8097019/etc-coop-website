@@ -1,7 +1,10 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
 import PostView from "@/views/PostView.vue";
-import WhatIsEtc from "@/views/WhatIsEtc.vue";
+import EthereumClassic from "@/views/EthereumClassic.vue";
+import Mining from "@/views/Mining.vue";
+import DevelopingForEtc from "@/views/DevelopingForEtc.vue";
+import WhatIsEtcCoop from "@/views/WhatIsEtcCoop.vue";
 
 const routes = [
 	{
@@ -15,9 +18,24 @@ const routes = [
 		component: PostView,
 	},
 	{
-		path: "/what-is-etc",
-		name: "what-is-etc",
-		component: WhatIsEtc,
+		path: "/ethereum-classic",
+		name: "ethereum-classic",
+		component: EthereumClassic,
+	},
+	{
+		path: "/mining",
+		name: "mining",
+		component: Mining,
+	},
+	{
+		path: "/developing-for-etc",
+		name: "developing-for-etc",
+		component: DevelopingForEtc,
+	},
+	{
+		path: "/what-is-etc-cooperative",
+		name: "what-is-etc-cooperative",
+		component: WhatIsEtcCoop,
 	},
 ];
 
