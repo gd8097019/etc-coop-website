@@ -9,6 +9,7 @@ import i18n from "./i18n";
 import "./assets/css/styles.css";
 import "./assets/css/mdfile.css";
 import "./assets/css/etc-cooperative.css";
+import "./assets/css/what-is-etc.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 
