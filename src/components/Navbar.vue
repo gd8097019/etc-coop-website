@@ -46,7 +46,7 @@
 							class="nav-link"
 							aria-current="page"
 							to="/developing-for-etc"
-							>Developing for ETC</router-link
+							>Developing</router-link
 						>
 					</li>
 					<li class="nav-item">
