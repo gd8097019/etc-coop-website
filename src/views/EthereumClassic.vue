@@ -5,7 +5,7 @@
 				<Navbar></Navbar>
 				<div class="mainContainer whatIsEtcContainer">
 					<div class="whatIsEtcHeroContent">
-						<h1>What is ETC?</h1>
+						<h1>{{ $t("ethereum-classic.header") }}</h1>
 					</div>
 				</div>
 			</section>

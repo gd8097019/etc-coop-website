@@ -5,7 +5,7 @@
 				<Navbar></Navbar>
 				<div class="mainContainer miningContainer">
 					<div class="miningHeroContent">
-						<h1>Mining on ETC</h1>
+						<h1>{{ $t("mining.header") }}</h1>
 					</div>
 				</div>
 			</section>
@@ -16,10 +16,7 @@
 			<section class="miningParaSection">
 				<div class="miningParaContainer">
 					<p>
-						Mining on Ethereum Classic (ETC) is similar to mining on other
-						blockchain platforms. It involves the use of computers to solve
-						computationally intensive puzzles, which are required to validate
-						transactions and stamp new blocks on the blockchain.
+						{{ $t("mining.p1") }}
 					</p>
 				</div>
 			</section>
@@ -28,48 +25,35 @@
 			<!-- what you need section starts here -->
 			<section class="whatYouNeedSection">
 				<div class="whatYouNeedContainer">
-					<span class="secBadge">Mining</span>
+					<span class="secBadge">{{ $t("mining.mining_badge") }}</span>
 					<div class="heading">
-						<h1>What you need to mine ETC</h1>
+						<h1>{{ $t("mining.mining_title") }}</h1>
 						<p>
-							The mining process in ETC is based on a proof-of-work (PoW)
-							consensus algorithm, called Nakamoto Consensus, which means that
-							miners must compete to solve the computational puzzles to add new
-							blocks to the blockchain. The first miner to solve the problem and
-							stamp the new block is rewarded with newly minted ETC coins as
-							well as transaction fees
+							{{ $t("mining.mining_body") }}
 						</p>
 					</div>
 					<div class="whatYouNeedContent">
 						<div class="whatYouNeedInnerContent">
 							<div class="whatYouNeedText text-end">
-								<h4>Specialized Hardware</h4>
+								<h4>{{ $t("mining.what_you_need_1_title") }}</h4>
 								<p>
-									To mine ETC, miners need to have specialized hardware such as
-									ASICs (Application-Specific Integrated Circuits) or GPUs
-									(Graphics Processing Units)
+									{{ $t("mining.what_you_need_1_body") }}
 								</p>
 							</div>
 							<div class="whatYouNeedImg">
 								<img src="@/assets/images/etc-start.png" alt="" />
 							</div>
 							<div class="whatYouNeedText text-start">
-								<h4>Specialized Software</h4>
+								<h4>{{ $t("mining.what_you_need_2_title") }}</h4>
 								<p>
-									Miners need to have software that allows them to connect to
-									the blockchain network
+									{{ $t("mining.what_you_need_2_body") }}
 								</p>
 							</div>
 						</div>
 						<div class="whatYouNeedText text-center">
-							<h4>Computational power and electricity</h4>
+							<h4>{{ $t("mining.what_you_need_3_title") }}</h4>
 							<p>
-								Mining on ETC requires significant aggregate capital investment
-								in computational power and electricity by the mining segment.
-								This is the basis of the security model of the network and is
-								the key component that guarantees the benefits of
-								decentralization, permissionlessness, censorship resistance, and
-								immutability.
+								{{ $t("mining.what_you_need_3_body") }}
 							</p>
 						</div>
 					</div>
@@ -80,9 +64,7 @@
 			<!-- popular mining starts here -->
 			<div class="popularMining">
 				<p>
-					Mining ETC is a popular and lucrative activity among miners who
-					believe in the long-term potential of the platform and its
-					cryptocurrency, and who are aligned with its decentralist principles.
+					{{ $t("mining.p2") }}
 				</p>
 			</div>
 			<!-- popular mining ends here -->
