@@ -5,6 +5,10 @@ import EthereumClassic from "@/views/EthereumClassic.vue";
 import Mining from "@/views/Mining.vue";
 import DevelopingForEtc from "@/views/DevelopingForEtc.vue";
 import WhatIsEtcCoop from "@/views/WhatIsEtcCoop.vue";
+import Governance from "@/views/Governance.vue";
+import Fillings from "@/views/Fillings.vue";
+import People from "@/views/People.vue";
+import Contact from "@/views/Contact.vue";
 
 const routes = [
 	{
@@ -36,6 +40,26 @@ const routes = [
 		path: "/what-is-etc-cooperative",
 		name: "what-is-etc-cooperative",
 		component: WhatIsEtcCoop,
+	},
+	{
+		path: "/governance",
+		name: "governance",
+		component: Governance,
+	},
+	{
+		path: "/fillings",
+		name: "fillings",
+		component: Fillings,
+	},
+	{
+		path: "/people",
+		name: "people",
+		component: People,
+	},
+	{
+		path: "/contact",
+		name: "contact",
+		component: Contact,
 	},
 ];
 
