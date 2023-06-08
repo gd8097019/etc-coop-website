@@ -1796,7 +1796,7 @@
 /*======= OLD ============*/
 
 .etcCoopNavSection {
-	background: url(@/assets/images/ethereum_cooperative_bg.png);
+	background: url(@/assets/images/ethereum_cooperative_bg.jpg);
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
@@ -2276,7 +2276,7 @@
 @media screen and (max-width: 767px) {
 	.etcCoopNavSection {
 		background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
-			url(@/assets/images/ethereum_cooperative_bg.png);
+			url(@/assets/images/ethereum_cooperative_bg.jpg);
 		background-repeat: no-repeat;
 		background-position: top;
 		background-size: cover;
