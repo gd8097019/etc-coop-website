@@ -85,19 +85,40 @@
 												</div>
 											</div>
 											<div class="memberSocialMedia">
-												<a href="">
+												<a
+													v-if="
+														activePeople &&
+														activePeople.social &&
+														activePeople.social.twitter
+													"
+													:href="activePeople.social.twitter"
+												>
 													<img
 														src="@/assets/images/member-twitter.svg"
 														alt=""
 													/>
 												</a>
-												<a href="">
+												<a
+													v-if="
+														activePeople &&
+														activePeople.social &&
+														activePeople.social.discord
+													"
+													:href="activePeople.social.discord"
+												>
 													<img
 														src="@/assets/images/member-discord.svg"
 														alt=""
 													/>
 												</a>
-												<a href="">
+												<a
+													v-if="
+														activePeople &&
+														activePeople.social &&
+														activePeople.social.linkedin
+													"
+													:href="activePeople.social.linkedin"
+												>
 													<img
 														src="@/assets/images/member-linkedin.svg"
 														alt=""
@@ -121,29 +142,12 @@
 						<h1>Board of Directors:</h1>
 					</div>
 					<div class="row">
-						<div class="col-md-6">
+						<div v-for="(board, bKey) in boards" :key="bKey" class="col-md-6">
 							<div class="bodCard">
-								<img src="@/assets/images/bod-1.png" alt="" />
-								<h5>Craig Salm</h5>
-								<p>Chair</p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="bodCard">
-								<img src="@/assets/images/bod-2.png" alt="" />
-								<h5>Cody Burns</h5>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="bodCard">
-								<img src="@/assets/images/bod-3.png" alt="" />
-								<h5>Elaine Ou</h5>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="bodCard">
-								<img src="@/assets/images/bod-4.png" alt="" />
-								<h5>Roy Zou</h5>
+								<img :src="require(`@/assets/images/${board.img}`)" alt="" />
+
+								<h5>{{ board.name }}</h5>
+								<p>{{ board.title }}</p>
 							</div>
 						</div>
 					</div>
@@ -174,11 +178,11 @@ export default {
 					description:
 						"Bob Summerwill is Executive Director for the ETC Cooperative. He has been a community member of the Ethereum project since 2015 and of the Hyperledger project since 2016.",
 					mail: "bob@etccooperative.org",
-					social: [
-						{ platform: "twitter", link: "" },
-						{ platform: "discord", link: "" },
-						{ platform: "linkedin", link: "" },
-					],
+					social: {
+						twitter: "https://www.twitter.com",
+						discord: "https://www.discord.com",
+						linkedin: "https://www.linkedin.com",
+					},
 				},
 				{
 					img: "member-2.png",
@@ -186,11 +190,11 @@ export default {
 					title: "Financial Controller and Business Services",
 					description: "",
 					mail: "",
-					social: [
-						{ platform: "twitter", link: "" },
-						{ platform: "discord", link: "" },
-						{ platform: "linkedin", link: "" },
-					],
+					social: {
+						twitter: "https://www.twitter.com",
+						discord: "https://www.discord.com",
+						linkedin: "https://www.linkedin.com",
+					},
 				},
 				{
 					img: "member-3.png",
@@ -198,11 +202,11 @@ export default {
 					title: "Core Developer, Ethereum Classic",
 					description: "",
 					mail: "",
-					social: [
-						{ platform: "twitter", link: "" },
-						{ platform: "discord", link: "" },
-						{ platform: "linkedin", link: "" },
-					],
+					social: {
+						twitter: "https://www.twitter.com",
+						discord: "https://www.discord.com",
+						linkedin: "https://www.linkedin.com",
+					},
 				},
 				{
 					img: "member-4.png",
@@ -210,11 +214,11 @@ export default {
 					title: "Core Developer, Ethereum Classic",
 					description: "",
 					mail: "",
-					social: [
-						{ platform: "twitter", link: "" },
-						{ platform: "discord", link: "" },
-						{ platform: "linkedin", link: "" },
-					],
+					social: {
+						twitter: "https://www.twitter.com",
+						discord: "https://www.discord.com",
+						linkedin: "https://www.linkedin.com",
+					},
 				},
 				{
 					img: "member-5.png",
@@ -222,11 +226,11 @@ export default {
 					title: "Core Developer, Ethereum Classic",
 					description: "",
 					mail: "",
-					social: [
-						{ platform: "twitter", link: "" },
-						{ platform: "discord", link: "" },
-						{ platform: "linkedin", link: "" },
-					],
+					social: {
+						twitter: "https://www.twitter.com",
+						discord: "https://www.discord.com",
+						linkedin: "https://www.linkedin.com",
+					},
 				},
 				{
 					img: "member-6.png",
@@ -234,11 +238,11 @@ export default {
 					title: "Senior Editor",
 					description: "",
 					mail: "",
-					social: [
-						{ platform: "twitter", link: "" },
-						{ platform: "discord", link: "" },
-						{ platform: "linkedin", link: "" },
-					],
+					social: {
+						twitter: "https://www.twitter.com",
+						discord: "https://www.discord.com",
+						linkedin: "https://www.linkedin.com",
+					},
 				},
 				{
 					img: "member-7.png",
@@ -246,11 +250,11 @@ export default {
 					title: "Marketing Manager",
 					description: "",
 					mail: "",
-					social: [
-						{ platform: "twitter", link: "" },
-						{ platform: "discord", link: "" },
-						{ platform: "linkedin", link: "" },
-					],
+					social: {
+						twitter: "https://www.twitter.com",
+						discord: "https://www.discord.com",
+						linkedin: "https://www.linkedin.com",
+					},
 				},
 				{
 					img: "member-8.png",
@@ -258,11 +262,11 @@ export default {
 					title: "Communications Manager",
 					description: "",
 					mail: "",
-					social: [
-						{ platform: "twitter", link: "" },
-						{ platform: "discord", link: "" },
-						{ platform: "linkedin", link: "" },
-					],
+					social: {
+						twitter: "https://www.twitter.com",
+						discord: "https://www.discord.com",
+						linkedin: "https://www.linkedin.com",
+					},
 				},
 				{
 					img: "member-9.png",
@@ -270,12 +274,18 @@ export default {
 					title: "Events Manager",
 					description: "",
 					mail: "",
-					social: [
-						{ platform: "twitter", link: "" },
-						{ platform: "discord", link: "" },
-						{ platform: "linkedin", link: "" },
-					],
+					social: {
+						twitter: "https://www.twitter.com",
+						discord: "https://www.discord.com",
+						linkedin: "https://www.linkedin.com",
+					},
 				},
+			],
+			boards: [
+				{ img: "bod-1.png", name: "Craig Salm", title: "Chair" },
+				{ img: "bod-2.png", name: "Cody Burns", title: "" },
+				{ img: "bod-3.png", name: "Elaine Ou", title: "" },
+				{ img: "bod-4.png", name: "Roy Zou", title: "" },
 			],
 		};
 	},

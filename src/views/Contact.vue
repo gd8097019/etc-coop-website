@@ -19,155 +19,23 @@
 						<h1>How to stay in contact with the ETC Cooperative:</h1>
 					</div>
 					<div class="row">
-						<div class="col-xl-4 col-md-6 px-2">
+						<div
+							v-for="(contact, cKey) in contacts"
+							:key="cKey"
+							class="col-xl-4 col-md-6 px-2"
+						>
 							<div class="contactCard">
-								<img src="@/assets/images/member-1.png" alt="" />
+								<img :src="require(`@/assets/images/${contact.img}`)" alt="" />
 								<div class="contactCardDetails">
-									<h6>Bob Summerwill</h6>
-									<span>Executive Director</span>
-									<a href="">
+									<h6>{{ contact.name }}</h6>
+									<span>{{ contact.title }}</span>
+									<a :href="`mailto:${contact.mail}`">
 										<img src="@/assets/images/mail-icon-green.svg" alt="" />
-										bob@etccooperative.org
+										{{ contact.mail }}
 									</a>
-									<a href="">
+									<a :href="`https://www.twitter.com/${contact.twitter}`">
 										<img src="@/assets/images/member-twitter.svg" alt="" />
-										@bobsummerwill
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-md-6 px-2">
-							<div class="contactCard">
-								<img src="@/assets/images/member-2.png" alt="" />
-								<div class="contactCardDetails">
-									<h6>Alison Alexis</h6>
-									<span>Financial Controller and Business Services</span>
-									<a href="">
-										<img src="@/assets/images/mail-icon-green.svg" alt="" />
-										alison@etccooperative.org
-									</a>
-									<a href="">
-										<img src="@/assets/images/member-twitter.svg" alt="" />
-										@AlisonBobEth
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-md-6 px-2">
-							<div class="contactCard">
-								<img src="@/assets/images/member-3.png" alt="" />
-								<div class="contactCardDetails">
-									<h6>Isaac Ardis</h6>
-									<span>Core Developer</span>
-									<a href="">
-										<img src="@/assets/images/mail-icon-green.svg" alt="" />
-										isaac@etccooperative.org
-									</a>
-									<a href="">
-										<img src="@/assets/images/member-twitter.svg" alt="" />
-										@isaacardis
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-md-6 px-2">
-							<div class="contactCard">
-								<img src="@/assets/images/member-4.png" alt="" />
-								<div class="contactCardDetails">
-									<h6>Chris Ziogas</h6>
-									<span>Core Developer</span>
-									<a href="">
-										<img src="@/assets/images/mail-icon-green.svg" alt="" />
-										chris@etccooperative.org
-									</a>
-									<a href="">
-										<img src="@/assets/images/member-twitter.svg" alt="" />
-										@ziogaschr
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-md-6 px-2">
-							<div class="contactCard">
-								<img src="@/assets/images/member-5.png" alt="" />
-								<div class="contactCardDetails">
-									<h6>Diego López León</h6>
-									<span>Core Developer</span>
-									<a href="">
-										<img src="@/assets/images/mail-icon-green.svg" alt="" />
-										diego@etccooperative.org
-									</a>
-									<a href="">
-										<img src="@/assets/images/member-twitter.svg" alt="" />
-										@diega
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-md-6 px-2">
-							<div class="contactCard">
-								<img src="@/assets/images/member-6.png" alt="" />
-								<div class="contactCardDetails">
-									<h6>Donald McIntyre</h6>
-									<span>Senior Editor</span>
-									<a href="">
-										<img src="@/assets/images/mail-icon-green.svg" alt="" />
-										donald@etccooperative.org
-									</a>
-									<a href="">
-										<img src="@/assets/images/member-twitter.svg" alt="" />
-										@ETCPOW
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-md-6 px-2">
-							<div class="contactCard">
-								<img src="@/assets/images/member-7.png" alt="" />
-								<div class="contactCardDetails">
-									<h6>Andrew Dick</h6>
-									<span>Marketing Manager</span>
-									<a href="">
-										<img src="@/assets/images/mail-icon-green.svg" alt="" />
-										andrew@etccooperative.org
-									</a>
-									<a href="">
-										<img src="@/assets/images/member-twitter.svg" alt="" />
-										@Bubble_Gum_Tate
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-md-6 px-2">
-							<div class="contactCard">
-								<img src="@/assets/images/member-8.png" alt="" />
-								<div class="contactCardDetails">
-									<h6>Angelah Liu</h6>
-									<span>Communications Manager</span>
-									<a href="">
-										<img src="@/assets/images/mail-icon-green.svg" alt="" />
-										angelah@etccooperative.org
-									</a>
-									<a href="">
-										<img src="@/assets/images/member-twitter.svg" alt="" />
-										@angelahliu_
-									</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-md-6 px-2">
-							<div class="contactCard">
-								<img src="@/assets/images/member-9.png" alt="" />
-								<div class="contactCardDetails">
-									<h6>Emma Todd</h6>
-									<span>Events Manager</span>
-									<a href="">
-										<img src="@/assets/images/mail-icon-green.svg" alt="" />
-										emma@etccooperative.org
-									</a>
-									<a href="">
-										<img src="@/assets/images/member-twitter.svg" alt="" />
-										@CryptoEmmaT
+										@{{ contact.twitter }}
 									</a>
 								</div>
 							</div>
@@ -214,6 +82,75 @@ export default {
 	components: {
 		Layout,
 		Navbar,
+	},
+	data() {
+		return {
+			contacts: [
+				{
+					img: "member-1.png",
+					name: "Bob Summerwill",
+					title: "Executive Director",
+					mail: "bob@etccooperative.org",
+					twitter: "bobsummerwill",
+				},
+				{
+					img: "member-2.png",
+					name: "Alison Alexis",
+					title: "Financial Controller and Business Services",
+					mail: "alison@etccooperative.org",
+					twitter: "AlisonBobEth",
+				},
+				{
+					img: "member-3.png",
+					name: "Isaac Ardis",
+					title: "Core Developer",
+					mail: "isaac@etccooperative.org",
+					twitter: "isaacardis",
+				},
+				{
+					img: "member-4.png",
+					name: "Chris Ziogas",
+					title: "Core Developer",
+					mail: "chris@etccooperative.org",
+					twitter: "ziogaschr",
+				},
+				{
+					img: "member-5.png",
+					name: "Diego López León",
+					title: "Core Developer",
+					mail: "diego@etccooperative.org",
+					twitter: "diega",
+				},
+				{
+					img: "member-6.png",
+					name: "Donald McIntyre",
+					title: "Senior Editor",
+					mail: "donald@etccooperative.org",
+					twitter: "ETCPOW",
+				},
+				{
+					img: "member-7.png",
+					name: "Andrew Dick",
+					title: "Marketing Manager",
+					mail: "andrew@etccooperative.org",
+					twitter: "Bubble_Gum_Tate",
+				},
+				{
+					img: "member-8.png",
+					name: "Angelah Liu",
+					title: "Communications Manager",
+					mail: "angelah@etccooperative.org",
+					twitter: "angelahliu_",
+				},
+				{
+					img: "member-9.png",
+					name: "Emma Todd",
+					title: "Events Manager",
+					mail: "emma@etccooperative.org",
+					twitter: "CryptoEmmaT",
+				},
+			],
+		};
 	},
 };
 </script>
