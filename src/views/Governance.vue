@@ -283,6 +283,7 @@
 							<h2 class="accordion-header">
 								<button
 									class="accordion-button"
+									:class="{ collapsed: rkey !== 0 ? true : false }"
 									type="button"
 									data-bs-toggle="collapse"
 									:data-bs-target="`#collapse-${rkey}`"

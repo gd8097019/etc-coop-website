@@ -19,74 +19,42 @@
 						<h1>Incorporation Documents</h1>
 					</div>
 					<div class="accordion" id="accordionPanelsStayOpenExample">
-						<div class="accordion-item">
+						<div
+							class="accordion-item"
+							v-for="(incorpation, ikey) in incorpations"
+							:key="ikey"
+						>
 							<h2 class="accordion-header">
 								<button
 									class="accordion-button"
+									:class="{ collapsed: ikey !== 0 ? true : false }"
 									type="button"
 									data-bs-toggle="collapse"
-									data-bs-target="#collapseOne"
-									aria-expanded="true"
-									aria-controls="collapseOne"
-								>
-									<span class="accBtnContent">
-										Reports 2017
-										<span class="showAndHide"></span>
-									</span>
-								</button>
-							</h2>
-							<div
-								id="collapseOne"
-								class="accordion-collapse collapse accordion-collapse collapse show"
-							>
-								<div class="documentCard">
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
-									<div class="documentCardContent">
-										<div class="documentSubj">
-											<h3>7th September</h3>
-											<p>ETCC LLC – LLC Agreement (EXECUTED)</p>
-										</div>
-										<a href="">
-											<img
-												class="lightIcon"
-												src="@/assets/images/arrow-right-dark.svg"
-												alt=""
-											/>
-											<img
-												class="darkIcon"
-												src="@/assets/images/arrow-right-gray.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button
-									class="accordion-button collapsed"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#collapseTwo"
+									:data-bs-target="`#collapse-i-${ikey}`"
 									aria-expanded="false"
-									aria-controls="collapseTwo"
+									:aria-controls="`collapse-i-${ikey}`"
+									@click="updateAccordionText('i', ikey)"
 								>
 									<span class="accBtnContent">
-										Reports 2018
-										<span class="showAndHide"></span>
+										<div style="color: black">{{ incorpation.title }}</div>
+
+										<span v-if="ikey === 0" class="showAndHide">hide</span>
+										<span v-else class="showAndHide">show</span>
 									</span>
 								</button>
 							</h2>
 							<div
-								id="collapseTwo"
+								:id="`collapse-i-${ikey}`"
 								class="accordion-collapse collapse accordion-collapse collapse"
+								:class="{
+									show: activeIncorporationTab === ikey ? true : false,
+								}"
 							>
-								<div class="documentCard">
+								<div
+									v-for="(file, fkey) in incorpation.files"
+									:key="fkey"
+									class="documentCard"
+								>
 									<img
 										class="pdfIcon"
 										src="@/assets/images/pdf-icon.svg"
@@ -94,114 +62,8 @@
 									/>
 									<div class="documentCardContent">
 										<div class="documentSubj">
-											<h3>29th April</h3>
-											<p>ETCC Inc. Form 1023</p>
-										</div>
-										<a href="">
-											<img
-												class="lightIcon"
-												src="@/assets/images/arrow-right-dark.svg"
-												alt=""
-											/>
-											<img
-												class="darkIcon"
-												src="@/assets/images/arrow-right-gray.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-								</div>
-								<div class="documentCard">
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
-									<div class="documentCardContent">
-										<div class="documentSubj">
-											<h3>9th March</h3>
-											<p>
-												ETCC LLC – Member Action To Convert to Not-For-Profit
-												and Appoint Board (EXECUTED)
-											</p>
-										</div>
-										<a href="">
-											<img
-												class="lightIcon"
-												src="@/assets/images/arrow-right-dark.svg"
-												alt=""
-											/>
-											<img
-												class="darkIcon"
-												src="@/assets/images/arrow-right-gray.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-								</div>
-								<div class="documentCard">
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
-									<div class="documentCardContent">
-										<div class="documentSubj">
-											<h3>10th March</h3>
-											<p>ETCC LLC – Conversion Certificate (FILED)</p>
-										</div>
-										<a href="">
-											<img
-												class="lightIcon"
-												src="@/assets/images/arrow-right-dark.svg"
-												alt=""
-											/>
-											<img
-												class="darkIcon"
-												src="@/assets/images/arrow-right-gray.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-								</div>
-								<div class="documentCard">
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
-									<div class="documentCardContent">
-										<div class="documentSubj">
-											<h3>10th March</h3>
-											<p>
-												ETCC Inc. – Minutes re Certificate, Bylaws, and
-												Directors
-											</p>
-										</div>
-										<a href="">
-											<img
-												class="lightIcon"
-												src="@/assets/images/arrow-right-dark.svg"
-												alt=""
-											/>
-											<img
-												class="darkIcon"
-												src="@/assets/images/arrow-right-gray.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-								</div>
-								<div class="documentCard">
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
-									<div class="documentCardContent">
-										<div class="documentSubj">
-											<h3>10th April</h3>
-											<p>ETCC Inc. – By-Laws (EXECUTED)</p>
+											<h3 v-if="file.date !== ''">{{ file.date }}</h3>
+											<p>{{ file.description }}</p>
 										</div>
 										<a href="">
 											<img
@@ -231,77 +93,42 @@
 						<h1>Resolutions</h1>
 					</div>
 					<div class="accordion" id="accordionPanelsStayOpenExample">
-						<div class="accordion-item">
+						<div
+							class="accordion-item"
+							v-for="(resolution, rkey) in resolutions"
+							:key="rkey"
+						>
 							<h2 class="accordion-header">
 								<button
 									class="accordion-button"
+									:class="{ collapsed: rkey !== 0 ? true : false }"
 									type="button"
 									data-bs-toggle="collapse"
-									data-bs-target="#collapseThree"
-									aria-expanded="true"
-									aria-controls="collapseThree"
-								>
-									<span class="accBtnContent">
-										Resolutions 2019
-										<span class="showAndHide"></span>
-									</span>
-								</button>
-							</h2>
-							<div
-								id="collapseThree"
-								class="accordion-collapse collapse accordion-collapse collapse show"
-							>
-								<div class="documentCard">
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
-									<div class="documentCardContent">
-										<div class="documentSubj">
-											<h3>29th March</h3>
-											<p>
-												ETC Coop - Resolutions (Appointing and Removing
-												Officers)
-											</p>
-										</div>
-										<a href="">
-											<img
-												class="lightIcon"
-												src="@/assets/images/arrow-right-dark.svg"
-												alt=""
-											/>
-											<img
-												class="darkIcon"
-												src="@/assets/images/arrow-right-gray.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button
-									class="accordion-button collapsed"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#collapseFour"
+									:data-bs-target="`#collapse-r-${rkey}`"
 									aria-expanded="false"
-									aria-controls="collapseFour"
+									:aria-controls="`collapse-r-${rkey}`"
+									@click="updateAccordionText('r', rkey)"
 								>
 									<span class="accBtnContent">
-										Resolutions 2020
-										<span class="showAndHide"></span>
+										<div style="color: black">{{ resolution.title }}</div>
+
+										<span v-if="rkey === 0" class="showAndHide">hide</span>
+										<span v-else class="showAndHide">show</span>
 									</span>
 								</button>
 							</h2>
 							<div
-								id="collapseFour"
+								:id="`collapse-r-${rkey}`"
 								class="accordion-collapse collapse accordion-collapse collapse"
+								:class="{
+									show: activeResolutionsTab === rkey ? true : false,
+								}"
 							>
-								<div class="documentCard">
+								<div
+									v-for="(file, fkey) in resolution.files"
+									:key="fkey"
+									class="documentCard"
+								>
 									<img
 										class="pdfIcon"
 										src="@/assets/images/pdf-icon.svg"
@@ -309,61 +136,8 @@
 									/>
 									<div class="documentCardContent">
 										<div class="documentSubj">
-											<h3>20th March</h3>
-											<p>
-												ETC Coop - Resolutions (Appointing and Removing
-												Officers)
-											</p>
-										</div>
-										<a href="">
-											<img
-												class="lightIcon"
-												src="@/assets/images/arrow-right-dark.svg"
-												alt=""
-											/>
-											<img
-												class="darkIcon"
-												src="@/assets/images/arrow-right-gray.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button
-									class="accordion-button collapsed"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#collapseFive"
-									aria-expanded="false"
-									aria-controls="collapseFive"
-								>
-									<span class="accBtnContent">
-										Resolutions 2022
-										<span class="showAndHide"></span>
-									</span>
-								</button>
-							</h2>
-							<div
-								id="collapseFive"
-								class="accordion-collapse collapse accordion-collapse collapse"
-							>
-								<div class="documentCard">
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
-									<div class="documentCardContent">
-										<div class="documentSubj">
-											<h3>12th April</h3>
-											<p>
-												ETC Coop 2022 AGM Resolutions (Resignation of Directors,
-												Approval of Corporation Governance Documentation)
-											</p>
+											<h3 v-if="file.date !== ''">{{ file.date }}</h3>
+											<p>{{ file.description }}</p>
 										</div>
 										<a href="">
 											<img
@@ -393,74 +167,42 @@
 						<h1>Fillings</h1>
 					</div>
 					<div class="accordion" id="accordionPanelsStayOpenExample">
-						<div class="accordion-item">
+						<div
+							class="accordion-item"
+							v-for="(filling, fkey) in fillings"
+							:key="fkey"
+						>
 							<h2 class="accordion-header">
 								<button
 									class="accordion-button"
+									:class="{ collapsed: fkey !== 0 ? true : false }"
 									type="button"
 									data-bs-toggle="collapse"
-									data-bs-target="#collapseSix"
-									aria-expanded="true"
-									aria-controls="collapseSix"
-								>
-									<span class="accBtnContent">
-										Fillings 2018
-										<span class="showAndHide"></span>
-									</span>
-								</button>
-							</h2>
-							<div
-								id="collapseSix"
-								class="accordion-collapse collapse accordion-collapse collapse show"
-							>
-								<div class="documentCard">
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
-									<div class="documentCardContent">
-										<div class="documentSubj">
-											<h3>25th November</h3>
-											<p>ETC Coop – Form 990 (2018 tax year)</p>
-										</div>
-										<a href="">
-											<img
-												class="lightIcon"
-												src="@/assets/images/arrow-right-dark.svg"
-												alt=""
-											/>
-											<img
-												class="darkIcon"
-												src="@/assets/images/arrow-right-gray.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button
-									class="accordion-button collapsed"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#collapseSeven"
+									:data-bs-target="`#collapse-f-${fkey}`"
 									aria-expanded="false"
-									aria-controls="collapseSeven"
+									:aria-controls="`collapse-f-${fkey}`"
+									@click="updateAccordionText('f', fkey)"
 								>
 									<span class="accBtnContent">
-										Fillings 2019
-										<span class="showAndHide"></span>
+										<div style="color: black">{{ filling.title }}</div>
+
+										<span v-if="fkey === 0" class="showAndHide">hide</span>
+										<span v-else class="showAndHide">show</span>
 									</span>
 								</button>
 							</h2>
 							<div
-								id="collapseSeven"
+								:id="`collapse-f-${fkey}`"
 								class="accordion-collapse collapse accordion-collapse collapse"
+								:class="{
+									show: activeFillingsTab === fkey ? true : false,
+								}"
 							>
-								<div class="documentCard">
+								<div
+									v-for="(file, fkey) in filling.files"
+									:key="fkey"
+									class="documentCard"
+								>
 									<img
 										class="pdfIcon"
 										src="@/assets/images/pdf-icon.svg"
@@ -468,55 +210,8 @@
 									/>
 									<div class="documentCardContent">
 										<div class="documentSubj">
-											<h3>20th November</h3>
-											<p>ETC Coop – Form 990 (2019 tax year)</p>
-										</div>
-										<a href="">
-											<img
-												class="lightIcon"
-												src="@/assets/images/arrow-right-dark.svg"
-												alt=""
-											/>
-											<img
-												class="darkIcon"
-												src="@/assets/images/arrow-right-gray.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button
-									class="accordion-button collapsed"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#collapseEight"
-									aria-expanded="false"
-									aria-controls="collapseEight"
-								>
-									<span class="accBtnContent">
-										Fillings 2020
-										<span class="showAndHide"></span>
-									</span>
-								</button>
-							</h2>
-							<div
-								id="collapseEight"
-								class="accordion-collapse collapse accordion-collapse collapse"
-							>
-								<div class="documentCard">
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
-									<div class="documentCardContent">
-										<div class="documentSubj">
-											<h3>21st November</h3>
-											<p>ETC Coop – Form 990 (2020 tax year)</p>
+											<h3 v-if="file.date !== ''">{{ file.date }}</h3>
+											<p>{{ file.description }}</p>
 										</div>
 										<a href="">
 											<img
@@ -546,75 +241,20 @@
 						<h1>Other documents</h1>
 					</div>
 					<div class="row">
-						<div class="col-md-6">
+						<div
+							v-for="(otherDocument, oKey) in otherDocuments"
+							:key="oKey"
+							class="col-md-6"
+						>
 							<div class="otherDocCard">
 								<img src="@/assets/images/excel-icon.svg" alt="" />
-								<p>ETC Coop 2020 Goals & Objectives</p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="otherDocCard">
-								<img src="@/assets/images/excel-icon.svg" alt="" />
-								<p>ETC Coop 2020 Goals & Objectives</p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="otherDocCard">
-								<img src="@/assets/images/excel-icon.svg" alt="" />
-								<p>ETC Coop 2020 Goals & Objectives</p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="otherDocCard">
-								<img src="@/assets/images/excel-icon.svg" alt="" />
-								<p>ETC Coop 2020 Goals & Objectives</p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="otherDocCard">
-								<img src="@/assets/images/excel-icon.svg" alt="" />
-								<p>ETC Coop 2020 Goals & Objectives</p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="otherDocCard">
-								<img src="@/assets/images/excel-icon.svg" alt="" />
-								<p>ETC Coop 2020 Goals & Objectives</p>
-							</div>
-						</div>
-						<div class="col-md-6">
-							<div class="otherDocCard">
-								<img src="@/assets/images/excel-icon.svg" alt="" />
-								<p>ETC Coop 2020 Goals & Objectives</p>
+								<p>{{ otherDocument.title }}</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 			<!-- other documents section ends here -->
-
-			<!-- newsletter section starts here -->
-			<section class="newsletterSection">
-				<div class="mainContainer newsletterContainer">
-					<div class="row justify-content-between">
-						<div class="col-lg-5 col-md-6 col-sm-12">
-							<h2>Sign up for our newsletter</h2>
-							<p>Stay in the loop with everything you need to know.</p>
-						</div>
-						<div class="col-lg-5 col-md-6 col-sm-12 ps-lg-5">
-							<div class="inputGroup">
-								<input type="text" placeholder="Enter your email" />
-								<button>Subscribe</button>
-							</div>
-							<span>
-								We care about your data in our
-								<a href="">privacy policy</a>
-							</span>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- newsletter section ends here -->
 		</template>
 	</Layout>
 </template>
@@ -626,6 +266,145 @@ export default {
 	components: {
 		Layout,
 		Navbar,
+	},
+	data() {
+		return {
+			activeIncorporationTab: 0,
+			activeResolutionsTab: 0,
+			activeFillingsTab: 0,
+			incorpations: [
+				{
+					title: "Reports 2017",
+					files: [
+						{
+							date: "7th September",
+							description: "ETCC LLC – LLC Agreement (EXECUTED)",
+							fileLink: "",
+						},
+					],
+				},
+				{
+					title: "Reports 2018",
+					files: [
+						{
+							date: "29th April",
+							description: "ETCC Inc. Form 1023",
+							fileLink: "",
+						},
+						{
+							date: "9th March",
+							description:
+								"ETCC LLC – Member Action To Convert to Not-For-Profit and Appoint Board (EXECUTED)",
+							fileLink: "",
+						},
+						{
+							date: "10th March",
+							description: "ETCC LLC – Conversion Certificate (FILED)",
+							fileLink: "",
+						},
+						{
+							date: "10th March",
+							description:
+								"ETCC Inc. – Minutes re Certificate, Bylaws, and Directors",
+							fileLink: "",
+						},
+						{
+							date: "10th April",
+							description: "ETCC Inc. – By-Laws (EXECUTED)",
+							fileLink: "",
+						},
+					],
+				},
+			],
+			resolutions: [
+				{
+					title: "Resolutions 2019",
+					files: [
+						{
+							date: "29th March",
+							description:
+								"ETC Coop - Resolutions (Appointing and Removing Officers)",
+							fileLink: "",
+						},
+					],
+				},
+				{
+					title: "Resolutions 2020",
+					files: [
+						{
+							date: "20th March",
+							description:
+								"ETC Coop - Resolutions (Appointing and Removing Officers)",
+							fileLink: "",
+						},
+					],
+				},
+				{
+					title: "Resolutions 2022",
+					files: [
+						{
+							date: "12th April",
+							description:
+								"ETC Coop 2022 AGM Resolutions (Resignation of Directors, Approval of Corporation Governance Documentation)",
+							fileLink: "",
+						},
+					],
+				},
+			],
+			fillings: [
+				{
+					title: "Fillings 2018",
+					files: [
+						{
+							date: "25th November",
+							description: "ETC Coop – Form 990 (2018 tax year)",
+							fileLink: "",
+						},
+					],
+				},
+				{
+					title: "Fillings 2019",
+					files: [
+						{
+							date: "20th November",
+							description: "ETC Coop – Form 990 (2019 tax year)",
+							fileLink: "",
+						},
+					],
+				},
+				{
+					title: "Fillings 2020",
+					files: [
+						{
+							date: "21st November",
+							description: "ETC Coop – Form 990 (2020 tax year)",
+							fileLink: "",
+						},
+					],
+				},
+			],
+			otherDocuments: [
+				{ title: "ETC Coop 2020 Goals & Objectives", fileLink: "" },
+				{ title: "ETC Coop 2020 Goals & Objectives", fileLink: "" },
+				{ title: "ETC Coop 2020 Goals & Objectives", fileLink: "" },
+				{ title: "ETC Coop 2020 Goals & Objectives", fileLink: "" },
+				{ title: "ETC Coop 2020 Goals & Objectives", fileLink: "" },
+				{ title: "ETC Coop 2020 Goals & Objectives", fileLink: "" },
+				{ title: "ETC Coop 2020 Goals & Objectives", fileLink: "" },
+			],
+		};
+	},
+	methods: {
+		updateAccordionText(typeKey, key) {
+			const element = document.querySelector(
+				`[data-bs-target="#collapse-${typeKey}-${key}"] .showAndHide`
+			);
+			if (element.textContent === "hide") {
+				element.textContent = "show";
+			} else if (element.textContent === "show") {
+				element.textContent = "hide";
+			}
+		},
 	},
 };
 </script>
