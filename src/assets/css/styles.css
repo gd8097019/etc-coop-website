@@ -2547,6 +2547,7 @@ body.removeScroll::-webkit-scrollbar {
 	object-fit: cover;
 }
 
+.sliderContainer .swiper.mySwiper,
 .sliderContainer .swiper.mySwiper2 {
 	position: relative;
 	width: calc(100% + 1094px);
@@ -2599,6 +2600,7 @@ body.removeScroll::-webkit-scrollbar {
 	padding: 80px 0px;
 }
 
+.swiper .swiper-button-next,
 .swiper .swiper-button-prev {
 	width: 30px;
 	height: 30px;
@@ -2611,6 +2613,7 @@ body.removeScroll::-webkit-scrollbar {
 	user-select: none;
 }
 
+.swiper .swiper-button-next::after,
 .swiper .swiper-button-prev::after {
 	display: none;
 }

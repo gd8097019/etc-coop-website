@@ -275,224 +275,39 @@
 						<h1>Reports</h1>
 					</div>
 					<div class="accordion" id="accordionPanelsStayOpenExample">
-						<div class="accordion-item">
+						<div
+							class="accordion-item"
+							v-for="(report, rkey) in reports"
+							:key="rkey"
+						>
 							<h2 class="accordion-header">
 								<button
 									class="accordion-button"
 									type="button"
 									data-bs-toggle="collapse"
-									data-bs-target="#collapseOne"
-									aria-expanded="true"
-									aria-controls="collapseOne"
-								>
-									<span class="accBtnContent">
-										Reports 2019
-										<span class="showAndHide"></span>
-									</span>
-								</button>
-							</h2>
-							<div
-								id="collapseOne"
-								class="accordion-collapse collapse accordion-collapse collapse show"
-							>
-								<div class="documentCard">
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
-									<div class="documentCardContent">
-										<div class="documentSubj">
-											<h3>1st November</h3>
-											<p>History of the Ethereum Classic Cooperative</p>
-										</div>
-										<a href="">
-											<img
-												class="lightIcon"
-												src="@/assets/images/arrow-right-dark.svg"
-												alt=""
-											/>
-											<img
-												class="darkIcon"
-												src="@/assets/images/arrow-right-gray.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button
-									class="accordion-button collapsed"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#collapseTwo"
+									:data-bs-target="`#collapse-${rkey}`"
 									aria-expanded="false"
-									aria-controls="collapseTwo"
+									:aria-controls="`collapse-${rkey}`"
+									@click="updateAccordionText(rkey)"
 								>
 									<span class="accBtnContent">
-										Reports 2020
-										<span class="showAndHide"></span>
+										<div style="color: black">{{ report.title }}</div>
+
+										<span v-if="rkey === 0" class="showAndHide">hide</span>
+										<span v-else class="showAndHide">show</span>
 									</span>
 								</button>
 							</h2>
 							<div
-								id="collapseTwo"
+								:id="`collapse-${rkey}`"
 								class="accordion-collapse collapse accordion-collapse collapse"
+								:class="{ show: activeReportTab === rkey ? true : false }"
 							>
-								<div class="documentCard">
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
-									<div class="documentCardContent">
-										<div class="documentSubj">
-											<h3>17th March</h3>
-											<p>
-												ETC Coop 2020 AGM Meeting Minutes Organizational Meeting
-												Mar 17
-											</p>
-										</div>
-										<a href="">
-											<img
-												class="lightIcon"
-												src="@/assets/images/arrow-right-dark.svg"
-												alt=""
-											/>
-											<img
-												class="darkIcon"
-												src="@/assets/images/arrow-right-gray.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-								</div>
-								<div class="documentCard">
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
-									<div class="documentCardContent">
-										<div class="documentSubj">
-											<h3>17th March</h3>
-											<p>ETC Coop Document Retention Policy</p>
-										</div>
-										<a href="">
-											<img
-												class="lightIcon"
-												src="@/assets/images/arrow-right-dark.svg"
-												alt=""
-											/>
-											<img
-												class="darkIcon"
-												src="@/assets/images/arrow-right-gray.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-								</div>
-								<div class="documentCard">
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
-									<div class="documentCardContent">
-										<div class="documentSubj">
-											<h3>17th March</h3>
-											<p>ETC Coop Gift and Donation Policy</p>
-										</div>
-										<a href="">
-											<img
-												class="lightIcon"
-												src="@/assets/images/arrow-right-dark.svg"
-												alt=""
-											/>
-											<img
-												class="darkIcon"
-												src="@/assets/images/arrow-right-gray.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-								</div>
-								<div class="documentCard">
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
-									<div class="documentCardContent">
-										<div class="documentSubj">
-											<h3>17th March</h3>
-											<p>ETC Coop Whistleblower Policy</p>
-										</div>
-										<a href="">
-											<img
-												class="lightIcon"
-												src="@/assets/images/arrow-right-dark.svg"
-												alt=""
-											/>
-											<img
-												class="darkIcon"
-												src="@/assets/images/arrow-right-gray.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-								</div>
-								<div class="documentCard">
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
-									<div class="documentCardContent">
-										<div class="documentSubj">
-											<h3>30th April</h3>
-											<p>ETC Coop 2020 Q1 Report</p>
-										</div>
-										<a href="">
-											<img
-												class="lightIcon"
-												src="@/assets/images/arrow-right-dark.svg"
-												alt=""
-											/>
-											<img
-												class="darkIcon"
-												src="@/assets/images/arrow-right-gray.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button
-									class="accordion-button collapsed"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#collapseThree"
-									aria-expanded="false"
-									aria-controls="collapseThree"
+								<div
+									v-for="(file, fkey) in report.files"
+									:key="fkey"
+									class="documentCard"
 								>
-									<span class="accBtnContent">
-										Reports 2021
-										<span class="showAndHide"></span>
-									</span>
-								</button>
-							</h2>
-							<div
-								id="collapseThree"
-								class="accordion-collapse collapse accordion-collapse collapse"
-							>
-								<div class="documentCard">
 									<img
 										class="pdfIcon"
 										src="@/assets/images/pdf-icon.svg"
@@ -500,101 +315,8 @@
 									/>
 									<div class="documentCardContent">
 										<div class="documentSubj">
-											<h3>1st November</h3>
-											<p>History of the Ethereum Classic Cooperative</p>
-										</div>
-										<a href="">
-											<img
-												class="lightIcon"
-												src="@/assets/images/arrow-right-dark.svg"
-												alt=""
-											/>
-											<img
-												class="darkIcon"
-												src="@/assets/images/arrow-right-gray.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button
-									class="accordion-button collapsed"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#collapseFour"
-									aria-expanded="false"
-									aria-controls="collapseFour"
-								>
-									<span class="accBtnContent">
-										Reports 2022
-										<span class="showAndHide"></span>
-									</span>
-								</button>
-							</h2>
-							<div
-								id="collapseFour"
-								class="accordion-collapse collapse accordion-collapse collapse"
-							>
-								<div class="documentCard">
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
-									<div class="documentCardContent">
-										<div class="documentSubj">
-											<h3>1st November</h3>
-											<p>History of the Ethereum Classic Cooperative</p>
-										</div>
-										<a href="">
-											<img
-												class="lightIcon"
-												src="@/assets/images/arrow-right-dark.svg"
-												alt=""
-											/>
-											<img
-												class="darkIcon"
-												src="@/assets/images/arrow-right-gray.svg"
-												alt=""
-											/>
-										</a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="accordion-item">
-							<h2 class="accordion-header">
-								<button
-									class="accordion-button collapsed"
-									type="button"
-									data-bs-toggle="collapse"
-									data-bs-target="#collapseFive"
-									aria-expanded="false"
-									aria-controls="collapseFive"
-								>
-									<span class="accBtnContent">
-										Agendas
-										<span class="showAndHide"></span>
-									</span>
-								</button>
-							</h2>
-							<div
-								id="collapseFive"
-								class="accordion-collapse collapse accordion-collapse collapse"
-							>
-								<div class="documentCard">
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
-									<div class="documentCardContent">
-										<div class="documentSubj">
-											<p>ETC Coop 2020 Agenda</p>
+											<h3 v-if="file.date !== ''">{{ file.date }}</h3>
+											<p>{{ file.description }}</p>
 										</div>
 										<a href="">
 											<img
@@ -628,6 +350,115 @@ export default {
 	components: {
 		Layout,
 		Navbar,
+	},
+	data() {
+		return {
+			activeReportTab: 0,
+			reports: [
+				{
+					title: "Reports 2019",
+					files: [
+						{
+							date: "1st November",
+							description: "History of the Ethereum Classic Cooperative",
+							fileLink: "",
+						},
+					],
+				},
+				{
+					title: "Reports 2020",
+					files: [
+						{
+							date: "17th March",
+							description:
+								"ETC Coop 2020 AGM Meeting Minutes Organizational Meeting Mar 17",
+							fileLink: "",
+						},
+						{
+							date: "17th March",
+							description: "ETC Coop Document Retention Policy",
+							fileLink: "",
+						},
+						{
+							date: "17th March",
+							description: "ETC Coop Gift and Donation Policy",
+							fileLink: "",
+						},
+						{
+							date: "17th March",
+							description: "ETC Coop Whistleblower Policy",
+							fileLink: "",
+						},
+						{
+							date: "30th April",
+							description: "ETC Coop 2020 Q1 Report",
+							fileLink: "",
+						},
+					],
+				},
+				{
+					title: "Reports 2021",
+					files: [
+						{
+							date: "1st November",
+							description: "History of the Ethereum Classic Cooperative",
+							fileLink: "",
+						},
+					],
+				},
+				{
+					title: "Reports 2022",
+					files: [
+						{
+							date: "1st November",
+							description: "History of the Ethereum Classic Cooperative",
+							fileLink: "",
+						},
+					],
+				},
+				{
+					title: "Agendas",
+					files: [
+						{
+							date: "",
+							description: "ETC Coop 2020 Agenda",
+							fileLink: "",
+						},
+					],
+				},
+			],
+		};
+	},
+	methods: {
+		updateAccordionText(key) {
+			const element = document.querySelector(
+				`[data-bs-target="#collapse-${key}"] .showAndHide`
+			);
+			if (element.textContent === "hide") {
+				element.textContent = "show";
+			} else if (element.textContent === "show") {
+				element.textContent = "hide";
+			}
+		},
+	},
+	mounted() {
+		var swiper = new window.Swiper(".mySwiper", {
+			slidesPerView: 4,
+			spaceBetween: 15,
+			navigation: {
+				nextEl: ".swiper-button-next1",
+				prevEl: ".swiper-button-prev1",
+			},
+		});
+
+		var swiper = new window.Swiper(".mySwiper2", {
+			slidesPerView: 4,
+			spaceBetween: 15,
+			navigation: {
+				nextEl: ".swiper-button-next2",
+				prevEl: ".swiper-button-prev2",
+			},
+		});
 	},
 };
 </script>
