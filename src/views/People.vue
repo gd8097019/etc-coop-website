@@ -19,138 +19,63 @@
 						<h1>Team:</h1>
 					</div>
 					<div class="row">
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="teamMemberCard">
+						<div
+							v-for="(people, pKey) in peoples"
+							:key="pKey"
+							class="col-lg-4 col-md-6 col-sm-6"
+						>
+							<div @click="selectPeople(people)" class="teamMemberCard">
 								<img
-									src="@/assets/images/member-1.png"
+									:src="require(`@/assets/images/${people.img}`)"
 									alt="team member"
 									id="teamMemberImg"
 								/>
-								<h5 id="teamMember">Bob Summerwill</h5>
-								<p id="teamMemberDesig">Executive Director</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="teamMemberCard">
-								<img
-									src="@/assets/images/member-2.png"
-									alt="team member"
-									id="teamMemberImg"
-								/>
-								<h5 id="teamMember">Alison Alexis</h5>
-								<p id="teamMemberDesig">
-									Financial Controller and Business Services
-								</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="teamMemberCard">
-								<img
-									src="@/assets/images/member-3.png"
-									alt="team member"
-									id="teamMemberImg"
-								/>
-								<h5 id="teamMember">Isaac Ardis</h5>
-								<p id="teamMemberDesig">Core Developer, Ethereum Classic</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="teamMemberCard">
-								<img
-									src="@/assets/images/member-4.png"
-									alt="team member"
-									id="teamMemberImg"
-								/>
-								<h5 id="teamMember">Chris Ziogas</h5>
-								<p id="teamMemberDesig">Core Developer, Ethereum Classic</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="teamMemberCard">
-								<img
-									src="@/assets/images/member-5.png"
-									alt="team member"
-									id="teamMemberImg"
-								/>
-								<h5 id="teamMember">Diego López León</h5>
-								<p id="teamMemberDesig">Core Developer, Ethereum Classic</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="teamMemberCard">
-								<img
-									src="@/assets/images/member-6.png"
-									alt="team member"
-									id="teamMemberImg"
-								/>
-								<h5 id="teamMember">Donald McIntyre</h5>
-								<p id="teamMemberDesig">Senior Editor</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="teamMemberCard">
-								<img
-									src="@/assets/images/member-7.png"
-									alt="team member"
-									id="teamMemberImg"
-								/>
-								<h5 id="teamMember">Andrew Dick</h5>
-								<p id="teamMemberDesig">Marketing Manager</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="teamMemberCard">
-								<img
-									src="@/assets/images/member-8.png"
-									alt="team member"
-									id="teamMemberImg"
-								/>
-								<h5 id="teamMember">Angelah Liu</h5>
-								<p id="teamMemberDesig">Communications Manager</p>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-sm-6">
-							<div class="teamMemberCard">
-								<img
-									src="@/assets/images/member-9.png"
-									alt="team member"
-									id="teamMemberImg"
-								/>
-								<h5 id="teamMember">Emma Todd</h5>
-								<p id="teamMemberDesig">Events Manager</p>
+								<h5 id="teamMember">{{ people.name }}</h5>
+								<p id="teamMemberDesig">{{ people.title }}</p>
 							</div>
 						</div>
 					</div>
 
 					<!-- member modal -->
-					<div class="teamMemberModal" id="teamMemberModal">
+					<div
+						v-show="activePeople"
+						class="teamMemberModal"
+						id="teamMemberModal"
+					>
 						<img
 							class="closeModal"
 							id="closeModal"
 							src="@/assets/images/close-modal.svg"
 							alt="X"
+							@click="closeModal"
 						/>
 						<div class="teamMemberModalContainer">
 							<div class="row justify-content-center">
 								<div class="col-lg-6 col-md-8 col-sm-10 col-12">
 									<div class="memberImg">
-										<img src="" alt="" id="memberImg" />
+										<img
+											v-if="activePeople"
+											:src="require(`@/assets/images/${activePeople.img}`)"
+											alt=""
+											id="memberImg"
+										/>
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-8 col-sm-10 col-12">
 									<div class="memberInfo">
 										<div class="memberIntro">
-											<h4 id="memberName"></h4>
-											<p id="memberDesig">Executive Director</p>
+											<h4 v-if="activePeople" id="memberName">
+												{{ activePeople.name }}
+											</h4>
+											<p v-if="activePeople" id="memberDesig">
+												{{ activePeople.title }}
+											</p>
 										</div>
 										<div class="memberDetails">
 											<div>
 												<span class="dash"></span>
-												<p>
-													Bob Summerwill is Executive Director for the ETC
-													Cooperative. He has been a community member of the
-													Ethereum project since 2015 and of the Hyperledger
-													project since 2016.
+												<p v-if="activePeople">
+													{{ activePeople.description }}
 												</p>
 												<div class="memberEmail">
 													<a href="">
@@ -237,6 +162,142 @@ export default {
 	components: {
 		Layout,
 		Navbar,
+	},
+	data() {
+		return {
+			activePeople: null,
+			peoples: [
+				{
+					img: "member-1.png",
+					name: "Bob Summerwill",
+					title: "Executive Director",
+					description:
+						"Bob Summerwill is Executive Director for the ETC Cooperative. He has been a community member of the Ethereum project since 2015 and of the Hyperledger project since 2016.",
+					mail: "bob@etccooperative.org",
+					social: [
+						{ platform: "twitter", link: "" },
+						{ platform: "discord", link: "" },
+						{ platform: "linkedin", link: "" },
+					],
+				},
+				{
+					img: "member-2.png",
+					name: "Alison Alexis",
+					title: "Financial Controller and Business Services",
+					description: "",
+					mail: "",
+					social: [
+						{ platform: "twitter", link: "" },
+						{ platform: "discord", link: "" },
+						{ platform: "linkedin", link: "" },
+					],
+				},
+				{
+					img: "member-3.png",
+					name: "Isaac Ardis",
+					title: "Core Developer, Ethereum Classic",
+					description: "",
+					mail: "",
+					social: [
+						{ platform: "twitter", link: "" },
+						{ platform: "discord", link: "" },
+						{ platform: "linkedin", link: "" },
+					],
+				},
+				{
+					img: "member-4.png",
+					name: "Chris Ziogas",
+					title: "Core Developer, Ethereum Classic",
+					description: "",
+					mail: "",
+					social: [
+						{ platform: "twitter", link: "" },
+						{ platform: "discord", link: "" },
+						{ platform: "linkedin", link: "" },
+					],
+				},
+				{
+					img: "member-5.png",
+					name: "Diego López León",
+					title: "Core Developer, Ethereum Classic",
+					description: "",
+					mail: "",
+					social: [
+						{ platform: "twitter", link: "" },
+						{ platform: "discord", link: "" },
+						{ platform: "linkedin", link: "" },
+					],
+				},
+				{
+					img: "member-6.png",
+					name: "Donald McIntyre",
+					title: "Senior Editor",
+					description: "",
+					mail: "",
+					social: [
+						{ platform: "twitter", link: "" },
+						{ platform: "discord", link: "" },
+						{ platform: "linkedin", link: "" },
+					],
+				},
+				{
+					img: "member-7.png",
+					name: "Andrew Dick",
+					title: "Marketing Manager",
+					description: "",
+					mail: "",
+					social: [
+						{ platform: "twitter", link: "" },
+						{ platform: "discord", link: "" },
+						{ platform: "linkedin", link: "" },
+					],
+				},
+				{
+					img: "member-8.png",
+					name: "Angelah Liu",
+					title: "Communications Manager",
+					description: "",
+					mail: "",
+					social: [
+						{ platform: "twitter", link: "" },
+						{ platform: "discord", link: "" },
+						{ platform: "linkedin", link: "" },
+					],
+				},
+				{
+					img: "member-9.png",
+					name: "Emma Todd",
+					title: "Events Manager",
+					description: "",
+					mail: "",
+					social: [
+						{ platform: "twitter", link: "" },
+						{ platform: "discord", link: "" },
+						{ platform: "linkedin", link: "" },
+					],
+				},
+			],
+		};
+	},
+	methods: {
+		selectPeople(people) {
+			let bodyScroll = document.querySelector("body");
+			let teamMemberModal = document.querySelector("#teamMemberModal");
+
+			teamMemberModal.classList.add("show");
+			bodyScroll.classList.add("removeScroll");
+
+			this.activePeople = people;
+		},
+		closeModal() {
+			let bodyScroll = document.querySelector("body");
+			let teamMemberModal = document.querySelector("#teamMemberModal");
+
+			teamMemberModal.classList.remove("show");
+			bodyScroll.classList.remove("removeScroll");
+
+			this.activePeople = null;
+		},
 	},
 };
 </script>
