@@ -172,7 +172,7 @@ export default {
 			activePeople: null,
 			peoples: [
 				{
-					img: "member-1.png",
+					img: "bob-summerwill.png",
 					name: "Bob Summerwill",
 					title: "Executive Director",
 					description:
@@ -185,7 +185,7 @@ export default {
 					},
 				},
 				{
-					img: "member-2.png",
+					img: "alison-alexis.png",
 					name: "Alison Alexis",
 					title: "Financial Controller and Business Services",
 					description: "",
@@ -197,7 +197,7 @@ export default {
 					},
 				},
 				{
-					img: "member-3.png",
+					img: "isaac-ardis.png",
 					name: "Isaac Ardis",
 					title: "Core Developer, Ethereum Classic",
 					description: "",
@@ -209,7 +209,7 @@ export default {
 					},
 				},
 				{
-					img: "member-4.png",
+					img: "chris-ziogas.png",
 					name: "Chris Ziogas",
 					title: "Core Developer, Ethereum Classic",
 					description: "",
@@ -221,7 +221,7 @@ export default {
 					},
 				},
 				{
-					img: "member-5.png",
+					img: "diego-leon.png",
 					name: "Diego López León",
 					title: "Core Developer, Ethereum Classic",
 					description: "",
@@ -233,7 +233,7 @@ export default {
 					},
 				},
 				{
-					img: "member-6.png",
+					img: "donald-mcintyre.png",
 					name: "Donald McIntyre",
 					title: "Senior Editor",
 					description: "",
@@ -245,7 +245,7 @@ export default {
 					},
 				},
 				{
-					img: "member-7.png",
+					img: "andrew-dick.png",
 					name: "Andrew Dick",
 					title: "Marketing Manager",
 					description: "",
@@ -257,7 +257,7 @@ export default {
 					},
 				},
 				{
-					img: "member-8.png",
+					img: "angelah-liu.png",
 					name: "Angelah Liu",
 					title: "Communications Manager",
 					description: "",
@@ -269,7 +269,7 @@ export default {
 					},
 				},
 				{
-					img: "member-9.png",
+					img: "emma-todd.png",
 					name: "Emma Todd",
 					title: "Events Manager",
 					description: "",
