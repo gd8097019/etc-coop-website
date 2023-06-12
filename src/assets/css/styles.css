@@ -3,6 +3,10 @@
 	--Noto_sans: "Noto Sans", sans-serif;
 	--Noto_sans_jp: "Noto Sans JP", sans-serif;
 	--Roboto: "Roboto", sans-serif;
+	--primaryDark: #151814;
+	--secondaryDark: #0e0f0e;
+	--greenishDark: #111c11;
+	--darkFooter: #091506;
 }
 
 .aboutHistoryContent h2 {
@@ -250,7 +254,7 @@
 
 /* dark mode css starts here */
 .dark-mode {
-	background: #070f1f;
+	background: var(--secondaryDark);
 }
 
 .dark-mode .aboutHistoryContent h2 {
@@ -267,11 +271,11 @@
 
 .dark-mode .aboutOurHistoryContainer .smallHeading {
 	background: #22c55e;
-	color: #070f1f;
+	color: var(--secondaryDark);
 }
 
 .dark-mode .aboutOurHistorySection {
-	background: #070f1f;
+	background: var(--primaryDark);
 }
 
 .dark-mode .bodCard h5 {
@@ -287,7 +291,7 @@
 }
 
 .dark-mode .bodSection {
-	background: #070f1f;
+	background: var(--secondaryDark);
 }
 
 .dark-mode .contactCard {
@@ -313,7 +317,7 @@
 
 .dark-mode .developingForEtcContainer .secBadge {
 	background: #22c55e;
-	color: #111825;
+	color: var(--primaryDark);
 }
 
 .dark-mode .developingForEtcContainer .solidityImg.dark {
@@ -325,7 +329,7 @@
 }
 
 .dark-mode .developingForEtcSection {
-	background: #111825;
+	background: var(--primaryDark);
 }
 
 .dark-mode .developingForEtcSection h2 {
@@ -341,11 +345,11 @@
 }
 
 .dark-mode .developingForEtcSection.blockchainSection {
-	background: #070f1f;
+	background: var(--secondaryDark);
 }
 
 .dark-mode .developingForEtcSection.communitySection {
-	background: #111825;
+	background: var(--primaryDark);
 }
 
 .dark-mode .developingParaContainer p {
@@ -354,11 +358,11 @@
 
 /* ..... */
 .dark-mode .developingParaSection {
-	background: #070f1f;
+	background: var(--secondaryDark);
 }
 
 .dark-mode .developingRequirement {
-	background: #070f1f;
+	background: var(--secondaryDark);
 }
 
 .dark-mode .documentCardContent .darkIcon {
@@ -386,7 +390,7 @@
 }
 
 .dark-mode .donationsToEtcContainer {
-	background: #111825;
+	background: var(--primaryDark);
 }
 
 .dark-mode .donationsToEtcContainer p {
@@ -394,7 +398,7 @@
 }
 
 .dark-mode .donationsToEtcSection {
-	background: #070f1f;
+	background: var(--secondaryDark);
 }
 
 .dark-mode .etcClassicContainer p {
@@ -402,20 +406,20 @@
 }
 
 .dark-mode .etcClassicSection {
-	background: #111825;
+	background: var(--primaryDark);
 }
 
 .dark-mode .etcContactLinksContainer {
-	background: #111825;
+	background: var(--primaryDark);
 	border: 1px solid #888b92;
 }
 
 .dark-mode .etcCoopFooter {
-	background: #070f1f;
+	background: var(--darkFooter);
 }
 
 .dark-mode .etcCoopFooter .bottomFooter {
-	background: #111825;
+	background: var(--greenishDark);
 }
 
 .dark-mode .etcCoopFooter .bottomFooter p {
@@ -447,16 +451,16 @@
 }
 
 .dark-mode .etcLearnMoreSection {
-	background: #070f1f;
+	background: var(--secondaryDark);
 }
 
 /* dark mode css starts here */
 .dark-mode .etcNewsSection {
-	background: #111825;
+	background: var(--secondaryDark);
 }
 
 .dark-mode .etcNewsSection .newsBtns .seeAllNews {
-	color: #111825;
+	color: var(--primaryDark);
 }
 
 .dark-mode .etcNewsSection .newsHeading h2 {
@@ -464,7 +468,7 @@
 }
 
 .dark-mode .etcNewsSection .newsSwiperBtns {
-	background: #111825;
+	background: var(--primaryDark);
 }
 
 .dark-mode .etcNewsSection .swiper-pagination-progressbar {
@@ -515,7 +519,7 @@
 
 .dark-mode .historyOfEtcContainer .secBadge {
 	background: #22c55e;
-	color: #111825;
+	color: var(--primaryDark);
 }
 
 .dark-mode .historyOfEtcContent .historyText .circle {
@@ -531,7 +535,7 @@
 }
 
 .dark-mode .historyOfEtcSection {
-	background: #070f1f;
+	background: var(--secondaryDark);
 }
 
 .dark-mode .learnMoreEtcContainer h2 {
@@ -547,7 +551,7 @@
 }
 
 .dark-mode .learnMoreEtcSection {
-	background: #070f1f;
+	background: var(--secondaryDark);
 }
 
 .dark-mode .lightImg {
@@ -584,7 +588,7 @@
 }
 
 .dark-mode .miningParaSection {
-	background: #070f1f;
+	background: var(--secondaryDark);
 }
 
 .dark-mode .missionOfEtcCard h4 {
@@ -605,11 +609,11 @@
 
 .dark-mode .missionOfEtcContainer .secBadge {
 	background: #22c55e;
-	color: #111825;
+	color: var(--primaryDark);
 }
 
 .dark-mode .missionOfEtcSection {
-	background: #111825;
+	background: var(--primaryDark);
 }
 
 .dark-mode .newsCard .newsCardContent h4 {
@@ -625,7 +629,7 @@
 }
 
 .dark-mode .newsletterContainer .inputGroup button {
-	color: #111825;
+	color: var(--primaryDark);
 }
 
 .dark-mode .newsletterContainer .inputGroup input {
@@ -646,7 +650,7 @@
 }
 
 .dark-mode .newsletterSection {
-	background: #111825;
+	background: var(--greenishDark);
 }
 
 .dark-mode .otherDocsContainer .heading h1 {
@@ -662,7 +666,7 @@
 }
 
 .dark-mode .popularMining {
-	background: #070f1f;
+	background: var(--secondaryDark);
 }
 
 .dark-mode .sliderCard img {
@@ -695,7 +699,7 @@
 }
 
 .dark-mode .teamDetailsSection {
-	background: #070f1f;
+	background: var(--secondaryDark);
 }
 
 .dark-mode .teamMemberCard h5 {
@@ -707,7 +711,7 @@
 }
 
 .dark-mode .teamMemberModal {
-	background: #070f1f;
+	background: var(--secondaryDark);
 }
 
 .dark-mode .teamMemberModal .closeModal {
@@ -716,7 +720,7 @@
 }
 
 .dark-mode .teamMemberModal .memberInfo {
-	background: #111825;
+	background: var(--primaryDark);
 	border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -726,7 +730,7 @@
 
 /* ... */
 .dark-mode .whatIsEtcCoopParaSection {
-	background: #070f1f;
+	background: var(--secondaryDark);
 }
 
 .dark-mode .whatIsEtcParaContainer p {
@@ -735,7 +739,7 @@
 
 /* etc classic section ends here */
 .dark-mode .whatIsEtcParaSection {
-	background: #070f1f;
+	background: var(--secondaryDark);
 }
 
 .dark-mode .whatYouNeedContainer .heading h1 {
@@ -748,11 +752,11 @@
 
 .dark-mode .whatYouNeedContainer .secBadge {
 	background: #22c55e;
-	color: #111825;
+	color: var(--primaryDark);
 }
 
 .dark-mode .whatYouNeedSection {
-	background: #111825;
+	background: var(--primaryDark);
 }
 
 .dark-mode .whatYouNeedText h4 {
@@ -1143,7 +1147,7 @@
 	max-width: 1232px;
 	width: 100%;
 	margin: 0 auto;
-	background: #2a3342;
+	background: var(--primaryDark);
 	border: 1px solid #ffffff;
 	border-radius: 24px;
 	padding: 70px 0px;
@@ -1270,7 +1274,7 @@
 
 /*======= OLD ============*/
 .etcCoopNavSection {
-	background: url(@/assets/images/ethereum_cooperative_bg.png);
+	background: url(@/assets/images/ethereum_cooperative_bg.jpg);
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
@@ -1330,7 +1334,7 @@
 }
 
 .etcFooterContainer ul li a:hover {
-	color: #748eb6;
+	color: #ffffff;
 }
 
 .etcFooterContainer ul li img {
@@ -3558,7 +3562,7 @@ body.removeScroll::-webkit-scrollbar {
 		flex-direction: column;
 	}
 
-	. .etcCoopFooter .bottomFooter p {
+	.etcCoopFooter .bottomFooter p {
 		text-align: center;
 	}
 }
@@ -3861,7 +3865,7 @@ body.removeScroll::-webkit-scrollbar {
 @media screen and (max-width: 767px) {
 	.etcCoopNavSection {
 		background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
-			url(@/assets/images/ethereum_cooperative_bg.png);
+			url(@/assets/images/ethereum_cooperative_bg.jpg);
 		background-repeat: no-repeat;
 		background-position: top;
 		background-size: cover;
