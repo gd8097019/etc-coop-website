@@ -99,7 +99,11 @@
 						</ul>
 					</li>
 					<li class="nav-item">
-						<router-link class="nav-link" aria-current="page" to="/contact"
+						<router-link
+							class="nav-link"
+							active-class="active"
+							aria-current="page"
+							to="/contact"
 							>Contact</router-link
 						>
 					</li>
