@@ -1,11 +1,11 @@
 <template>
 	<Layout>
 		<template #header>
-			<section class="fillingNavSection">
+			<section class="filingNavSection">
 				<Navbar></Navbar>
-				<div class="mainContainer fillingContainer">
-					<div class="fillingHeroContent">
-						<h1>Fillings</h1>
+				<div class="mainContainer filingContainer">
+					<div class="filingHeroContent">
+						<h1>Filings</h1>
 					</div>
 				</div>
 			</section>
@@ -13,7 +13,7 @@
 
 		<template #main>
 			<!-- incorporation documents section starts here -->
-			<section class="documentsSection fillingsPage">
+			<section class="documentsSection filingsPage">
 				<div class="documentsContainer">
 					<div class="heading">
 						<h1>Incorporation Documents</h1>
@@ -87,7 +87,7 @@
 			<!-- incorporation documents section ends here -->
 
 			<!-- resolutions section starts here -->
-			<section class="documentsSection fillingsPage">
+			<section class="documentsSection filingsPage">
 				<div class="documentsContainer">
 					<div class="heading">
 						<h1>Resolutions</h1>
@@ -160,16 +160,16 @@
 			</section>
 			<!-- resolutions section ends here -->
 
-			<!-- fillings section starts here -->
-			<section class="documentsSection fillingsPage">
+			<!-- filings section starts here -->
+			<section class="documentsSection filingsPage">
 				<div class="documentsContainer">
 					<div class="heading">
-						<h1>Fillings</h1>
+						<h1>Filings</h1>
 					</div>
 					<div class="accordion" id="accordionPanelsStayOpenExample">
 						<div
 							class="accordion-item"
-							v-for="(filling, fkey) in fillings"
+							v-for="(filing, fkey) in filings"
 							:key="fkey"
 						>
 							<h2 class="accordion-header">
@@ -184,7 +184,7 @@
 									@click="updateAccordionText('f', fkey)"
 								>
 									<span class="accBtnContent">
-										<div style="color: black">{{ filling.title }}</div>
+										<div style="color: black">{{ filing.title }}</div>
 
 										<span v-if="fkey === 0" class="showAndHide">hide</span>
 										<span v-else class="showAndHide">show</span>
@@ -195,11 +195,11 @@
 								:id="`collapse-f-${fkey}`"
 								class="accordion-collapse collapse accordion-collapse collapse"
 								:class="{
-									show: activeFillingsTab === fkey ? true : false,
+									show: activeFilingsTab === fkey ? true : false,
 								}"
 							>
 								<div
-									v-for="(file, fkey) in filling.files"
+									v-for="(file, fkey) in filing.files"
 									:key="fkey"
 									class="documentCard"
 								>
@@ -232,7 +232,7 @@
 					</div>
 				</div>
 			</section>
-			<!-- fillings section ends here -->
+			<!-- filings section ends here -->
 
 			<!-- other documents section starts here -->
 			<section class="otherDocsSections">
@@ -271,7 +271,7 @@ export default {
 		return {
 			activeIncorporationTab: 0,
 			activeResolutionsTab: 0,
-			activeFillingsTab: 0,
+			activeFilingsTab: 0,
 			incorpations: [
 				{
 					title: "Reports 2017",
@@ -351,9 +351,9 @@ export default {
 					],
 				},
 			],
-			fillings: [
+			filings: [
 				{
-					title: "Fillings 2018",
+					title: "Filings 2018",
 					files: [
 						{
 							date: "25th November",
@@ -363,7 +363,7 @@ export default {
 					],
 				},
 				{
-					title: "Fillings 2019",
+					title: "Filings 2019",
 					files: [
 						{
 							date: "20th November",
@@ -373,7 +373,7 @@ export default {
 					],
 				},
 				{
-					title: "Fillings 2020",
+					title: "Filings 2020",
 					files: [
 						{
 							date: "21st November",

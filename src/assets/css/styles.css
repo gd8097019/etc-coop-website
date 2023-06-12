@@ -484,11 +484,11 @@
 		hue-rotate(0deg);
 }
 
-.dark-mode .fillingsPage .documentCardContent h3 {
+.dark-mode .filingsPage .documentCardContent h3 {
 	color: #ffffff !important;
 }
 
-.dark-mode .fillingsPage .documentCardContent p {
+.dark-mode .filingsPage .documentCardContent p {
 	color: #ffffff !important;
 }
 
@@ -1080,7 +1080,7 @@
 	padding-bottom: 52px;
 }
 
-.documentsSection.fillingsPage {
+.documentsSection.filingsPage {
 	padding-top: 84px;
 	padding-bottom: 0px;
 }
@@ -1629,18 +1629,18 @@
 	display: none !important;
 }
 
-.fillingContainer {
+.filingContainer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.fillingContainer .fillingHeroContent {
+.filingContainer .filingHeroContent {
 	width: 100%;
 	margin-top: 137px;
 }
 
-.fillingHeroContent h1 {
+.filingHeroContent h1 {
 	font-family: var(--Noto_sans);
 	font-style: normal;
 	font-weight: 700;
@@ -1650,9 +1650,9 @@
 	text-align: center;
 }
 
-/* filling page starts here */
-.fillingNavSection {
-	background: url(@/assets/images/filling-bg.png);
+/* filing page starts here */
+.filingNavSection {
+	background: url(@/assets/images/filing-bg.png);
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
@@ -3128,13 +3128,13 @@ body.removeScroll::-webkit-scrollbar {
 		margin-top: 40px;
 	}
 
-	.fillingNavSection {
+	.filingNavSection {
 		min-height: 300px;
 		height: auto;
 		padding-bottom: 60px;
 	}
 
-	.fillingContainer .fillingHeroContent {
+	.filingContainer .filingHeroContent {
 		margin-top: 40px;
 	}
 
@@ -3209,13 +3209,13 @@ body.removeScroll::-webkit-scrollbar {
 		font-size: 18px;
 	}
 
-	.fillingNavSection {
+	.filingNavSection {
 		min-height: auto;
 		height: auto;
 		padding-bottom: 60px;
 	}
 
-	.fillingHeroContent h1 {
+	.filingHeroContent h1 {
 		font-size: 50px;
 	}
 

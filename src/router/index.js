@@ -6,7 +6,7 @@ import Mining from "@/views/Mining.vue";
 import DevelopingForEtc from "@/views/DevelopingForEtc.vue";
 import WhatIsEtcCoop from "@/views/WhatIsEtcCoop.vue";
 import Governance from "@/views/Governance.vue";
-import Fillings from "@/views/Fillings.vue";
+import Filings from "@/views/Filings.vue";
 import People from "@/views/People.vue";
 import Contact from "@/views/Contact.vue";
 
@@ -47,9 +47,9 @@ const routes = [
 		component: Governance,
 	},
 	{
-		path: "/fillings",
-		name: "fillings",
-		component: Fillings,
+		path: "/filings",
+		name: "filings",
+		component: Filings,
 	},
 	{
 		path: "/people",

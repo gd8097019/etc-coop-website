@@ -84,8 +84,8 @@
 								<router-link
 									class="dropdown-item"
 									aria-current="page"
-									to="/fillings"
-									>Fillings
+									to="/filings"
+									>Filings
 								</router-link>
 							</li>
 							<li>
