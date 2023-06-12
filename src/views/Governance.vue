@@ -292,7 +292,7 @@
 									@click="updateAccordionText(rkey)"
 								>
 									<span class="accBtnContent">
-										<div style="color: black">{{ report.title }}</div>
+										<div>{{ report.title }}</div>
 
 										<span v-if="rkey === 0" class="showAndHide">hide</span>
 										<span v-else class="showAndHide">show</span>

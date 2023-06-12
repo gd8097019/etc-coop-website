@@ -89,7 +89,12 @@
 	padding: 88px 0px 72px;
 }
 
-.accBtnContent {
+.dark-mode
+	.fillingsPage
+	.documentsContainer
+	.accordion
+	.accordion-button
+	.accBtnContent {
 	color: #ffffff !important;
 }
 
@@ -685,10 +690,12 @@
 	color: #ffffff;
 }
 
+.dark-mode .swiper .swiper-button-next,
 .dark-mode .swiper .swiper-button-prev {
 	border: 3px solid #cccccc;
 }
 
+.dark-mode .swiper .swiper-button-next img,
 .dark-mode .swiper .swiper-button-prev img {
 	filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
 		hue-rotate(0deg);

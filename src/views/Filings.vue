@@ -36,8 +36,7 @@
 									@click="updateAccordionText('i', ikey)"
 								>
 									<span class="accBtnContent">
-										<div style="color: black">{{ incorpation.title }}</div>
-
+										{{ incorpation.title }}
 										<span v-if="ikey === 0" class="showAndHide">hide</span>
 										<span v-else class="showAndHide">show</span>
 									</span>
@@ -110,8 +109,7 @@
 									@click="updateAccordionText('r', rkey)"
 								>
 									<span class="accBtnContent">
-										<div style="color: black">{{ resolution.title }}</div>
-
+										{{ resolution.title }}
 										<span v-if="rkey === 0" class="showAndHide">hide</span>
 										<span v-else class="showAndHide">show</span>
 									</span>
@@ -184,8 +182,7 @@
 									@click="updateAccordionText('f', fkey)"
 								>
 									<span class="accBtnContent">
-										<div style="color: black">{{ filing.title }}</div>
-
+										{{ filing.title }}
 										<span v-if="fkey === 0" class="showAndHide">hide</span>
 										<span v-else class="showAndHide">show</span>
 									</span>
