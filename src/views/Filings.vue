@@ -68,7 +68,7 @@
 											<h3 v-if="file.date !== ''">{{ file.date }}</h3>
 											<p>{{ file.description }}</p>
 										</div>
-										<a href="">
+										<a :href="file.fileLink" :download="file.date">
 											<img
 												class="lightIcon"
 												src="@/assets/images/arrow-right-dark.svg"
@@ -145,7 +145,7 @@
 											<h3 v-if="file.date !== ''">{{ file.date }}</h3>
 											<p>{{ file.description }}</p>
 										</div>
-										<a href="">
+										<a :href="file.fileLink" :download="file.date">
 											<img
 												class="lightIcon"
 												src="@/assets/images/arrow-right-dark.svg"
@@ -222,7 +222,7 @@
 											<h3 v-if="file.date !== ''">{{ file.date }}</h3>
 											<p>{{ file.description }}</p>
 										</div>
-										<a href="">
+										<a :href="file.fileLink" :download="file.date">
 											<img
 												class="lightIcon"
 												src="@/assets/images/arrow-right-dark.svg"
@@ -255,10 +255,12 @@
 							:key="oKey"
 							class="col-md-6"
 						>
-							<div class="otherDocCard">
-								<img src="@/assets/images/excel-icon.svg" alt="" />
-								<p>{{ otherDocument.title }}</p>
-							</div>
+							<a :href="otherDocument.fileLink" :download="otherDocument.title">
+								<div class="otherDocCard">
+									<img src="@/assets/images/excel-icon.svg" alt="" />
+									<p>{{ otherDocument.title }}</p>
+								</div>
+							</a>
 						</div>
 					</div>
 				</div>

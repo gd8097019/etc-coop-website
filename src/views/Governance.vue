@@ -29,7 +29,7 @@
 								</td>
 								<td>{{ budget.description }}</td>
 								<td>
-									<a href="">
+									<a :href="budget.fileLink" :download="budget.title">
 										<img src="@/assets/images/download-icon.svg" alt="" />
 									</a>
 								</td>
@@ -63,16 +63,18 @@
 									:key="rKey"
 									class="swiper-slide"
 								>
-									<div class="sliderCard">
-										<img
-											:src="require(`@/assets/images/${roadmap.img}`)"
-											alt=""
-										/>
-										<div class="sliderCardContent">
-											<p>{{ roadmap.date }}</p>
-											<h5>{{ roadmap.title }}</h5>
+									<a :href="roadmap.link">
+										<div class="sliderCard">
+											<img
+												:src="require(`@/assets/images/${roadmap.img}`)"
+												alt=""
+											/>
+											<div class="sliderCardContent">
+												<p>{{ roadmap.date }}</p>
+												<h5>{{ roadmap.title }}</h5>
+											</div>
 										</div>
-									</div>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -104,16 +106,18 @@
 									:key="rKey"
 									class="swiper-slide"
 								>
-									<div class="sliderCard">
-										<img
-											:src="require(`@/assets/images/${retrospective.img}`)"
-											alt=""
-										/>
-										<div class="sliderCardContent">
-											<p>{{ retrospective.date }}</p>
-											<h5>{{ retrospective.title }}</h5>
+									<a :href="retrospective.link">
+										<div class="sliderCard">
+											<img
+												:src="require(`@/assets/images/${retrospective.img}`)"
+												alt=""
+											/>
+											<div class="sliderCardContent">
+												<p>{{ retrospective.date }}</p>
+												<h5>{{ retrospective.title }}</h5>
+											</div>
 										</div>
-									</div>
+									</a>
 								</div>
 							</div>
 						</div>
@@ -177,7 +181,7 @@
 											<h3 v-if="file.date !== ''">{{ file.date }}</h3>
 											<p>{{ file.description }}</p>
 										</div>
-										<a href="">
+										<a :href="file.fileLink" :download="file.date">
 											<img
 												class="lightIcon"
 												src="@/assets/images/arrow-right-dark.svg"
