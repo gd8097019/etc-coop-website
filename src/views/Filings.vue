@@ -5,7 +5,7 @@
 				<Navbar></Navbar>
 				<div class="mainContainer filingContainer">
 					<div class="filingHeroContent">
-						<h1>Filings</h1>
+						<h1>{{ $t("filings.header") }}</h1>
 					</div>
 				</div>
 			</section>
@@ -16,7 +16,7 @@
 			<section class="documentsSection filingsPage">
 				<div class="documentsContainer">
 					<div class="heading">
-						<h1>Incorporation Documents</h1>
+						<h1>{{ $t("filings.incorporation_documents") }}</h1>
 					</div>
 					<div class="accordion" id="accordionPanelsStayOpenExample">
 						<div
@@ -37,8 +37,12 @@
 								>
 									<span class="accBtnContent">
 										{{ incorpation.title }}
-										<span v-if="ikey === 0" class="showAndHide">hide</span>
-										<span v-else class="showAndHide">show</span>
+										<span v-if="ikey === 0" class="showAndHide">{{
+											$t("filings.hide")
+										}}</span>
+										<span v-else class="showAndHide">{{
+											$t("filings.show")
+										}}</span>
 									</span>
 								</button>
 							</h2>
@@ -89,7 +93,7 @@
 			<section class="documentsSection filingsPage">
 				<div class="documentsContainer">
 					<div class="heading">
-						<h1>Resolutions</h1>
+						<h1>{{ $t("filings.resolutions") }}</h1>
 					</div>
 					<div class="accordion" id="accordionPanelsStayOpenExample">
 						<div
@@ -110,8 +114,12 @@
 								>
 									<span class="accBtnContent">
 										{{ resolution.title }}
-										<span v-if="rkey === 0" class="showAndHide">hide</span>
-										<span v-else class="showAndHide">show</span>
+										<span v-if="rkey === 0" class="showAndHide">{{
+											$t("filings.hide")
+										}}</span>
+										<span v-else class="showAndHide">{{
+											$t("filings.show")
+										}}</span>
 									</span>
 								</button>
 							</h2>
@@ -162,7 +170,7 @@
 			<section class="documentsSection filingsPage">
 				<div class="documentsContainer">
 					<div class="heading">
-						<h1>Filings</h1>
+						<h1>{{ $t("filings.filings") }}</h1>
 					</div>
 					<div class="accordion" id="accordionPanelsStayOpenExample">
 						<div
@@ -183,8 +191,12 @@
 								>
 									<span class="accBtnContent">
 										{{ filing.title }}
-										<span v-if="fkey === 0" class="showAndHide">hide</span>
-										<span v-else class="showAndHide">show</span>
+										<span v-if="fkey === 0" class="showAndHide">{{
+											$t("filings.hide")
+										}}</span>
+										<span v-else class="showAndHide">{{
+											$t("filings.show")
+										}}</span>
 									</span>
 								</button>
 							</h2>
@@ -235,7 +247,7 @@
 			<section class="otherDocsSections">
 				<div class="otherDocsContainer">
 					<div class="heading">
-						<h1>Other documents</h1>
+						<h1>{{ $t("filings.other_documents") }}</h1>
 					</div>
 					<div class="row">
 						<div
@@ -396,10 +408,11 @@ export default {
 			const element = document.querySelector(
 				`[data-bs-target="#collapse-${typeKey}-${key}"] .showAndHide`
 			);
-			if (element.textContent === "hide") {
-				element.textContent = "show";
-			} else if (element.textContent === "show") {
-				element.textContent = "hide";
+
+			if (element.textContent === this.$t("filings.hide")) {
+				element.textContent = this.$t("filings.show");
+			} else if (element.textContent === this.$t("filings.show")) {
+				element.textContent = this.$t("filings.hide");
 			}
 		},
 	},

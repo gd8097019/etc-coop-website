@@ -5,7 +5,7 @@
 				<Navbar></Navbar>
 				<div class="mainContainer governanceContainer">
 					<div class="governanceHeroContent">
-						<h1>Governance</h1>
+						<h1>{{ $t("governance.header") }}</h1>
 					</div>
 				</div>
 			</section>
@@ -16,7 +16,7 @@
 			<section class="governanceBudgetSection">
 				<div class="governanceBudgetContainer">
 					<div class="heading">
-						<h1>Budgets</h1>
+						<h1>{{ $t("governance.budgets") }}</h1>
 					</div>
 					<div class="budgetTable">
 						<table>
@@ -80,7 +80,7 @@
 					<!-- Swiper -->
 					<div class="swiper swiper-container">
 						<div class="heading">
-							<h1>Roadmaps</h1>
+							<h1>{{ $t("governance.roadmaps") }}</h1>
 							<div class="swiperButtons">
 								<div class="swiper-button-prev swiper-button-prev1">
 									<img src="@/assets/images/arrow-left.svg" alt="" />
@@ -177,7 +177,7 @@
 					<!-- Swiper -->
 					<div class="swiper swiper-container">
 						<div class="heading">
-							<h1>Retrospective</h1>
+							<h1>{{ $t("governance.retrospective") }}</h1>
 							<div class="swiperButtons">
 								<div class="swiper-button-prev swiper-button-prev2">
 									<img src="@/assets/images/arrow-left.svg" alt="" />
@@ -272,7 +272,7 @@
 			<section class="documentsSection">
 				<div class="documentsContainer">
 					<div class="heading">
-						<h1>Reports</h1>
+						<h1>{{ $t("governance.reports") }}</h1>
 					</div>
 					<div class="accordion" id="accordionPanelsStayOpenExample">
 						<div
@@ -294,8 +294,12 @@
 									<span class="accBtnContent">
 										<div>{{ report.title }}</div>
 
-										<span v-if="rkey === 0" class="showAndHide">hide</span>
-										<span v-else class="showAndHide">show</span>
+										<span v-if="rkey === 0" class="showAndHide">{{
+											$t("governance.hide")
+										}}</span>
+										<span v-else class="showAndHide">{{
+											$t("governance.show")
+										}}</span>
 									</span>
 								</button>
 							</h2>
@@ -435,10 +439,10 @@ export default {
 			const element = document.querySelector(
 				`[data-bs-target="#collapse-${key}"] .showAndHide`
 			);
-			if (element.textContent === "hide") {
-				element.textContent = "show";
-			} else if (element.textContent === "show") {
-				element.textContent = "hide";
+			if (element.textContent === this.$t("governance.hide")) {
+				element.textContent = this.$t("governance.show");
+			} else if (element.textContent === this.$t("governance.show")) {
+				element.textContent = this.$t("governance.hide");
 			}
 		},
 	},

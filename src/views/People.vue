@@ -5,7 +5,7 @@
 				<Navbar></Navbar>
 				<div class="mainContainer teamContainer">
 					<div class="teamHeroContent">
-						<h1>People</h1>
+						<h1>{{ $t("people.header") }}</h1>
 					</div>
 				</div>
 			</section>
@@ -16,7 +16,7 @@
 			<section class="teamDetailsSection">
 				<div class="teamDetailsContainer">
 					<div class="heading">
-						<h1>Team:</h1>
+						<h1>{{ $t("people.team") }}</h1>
 					</div>
 					<div class="row">
 						<div
@@ -139,7 +139,7 @@
 			<section class="bodSection">
 				<div class="bodContainer">
 					<div class="heading">
-						<h1>Board of Directors:</h1>
+						<h1>{{ $t("people.board_of_directors") }}</h1>
 					</div>
 					<div class="row">
 						<div v-for="(board, bKey) in boards" :key="bKey" class="col-md-6">
