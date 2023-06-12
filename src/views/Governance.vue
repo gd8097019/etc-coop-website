@@ -20,48 +20,14 @@
 					</div>
 					<div class="budgetTable">
 						<table>
-							<tr>
+							<tr v-for="(budget, bKey) in budgets" :key="bKey">
 								<td>
 									<img src="@/assets/images/excel-icon.svg" alt="" />
 								</td>
-								<td><b>Budget 2020</b></td>
-								<td>ETC Coop 2020 Budget</td>
 								<td>
-									<a href="">
-										<img src="@/assets/images/download-icon.svg" alt="" />
-									</a>
+									<b>{{ budget.title }}</b>
 								</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="@/assets/images/excel-icon.svg" alt="" />
-								</td>
-								<td><b>Budget 2020</b></td>
-								<td>ETC Coop 2020 Budget</td>
-								<td>
-									<a href="">
-										<img src="@/assets/images/download-icon.svg" alt="" />
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="@/assets/images/excel-icon.svg" alt="" />
-								</td>
-								<td><b>Budget 2020</b></td>
-								<td>ETC Coop 2020 Budget</td>
-								<td>
-									<a href="">
-										<img src="@/assets/images/download-icon.svg" alt="" />
-									</a>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="@/assets/images/excel-icon.svg" alt="" />
-								</td>
-								<td><b>Budget 2020</b></td>
-								<td>ETC Coop 2020 Budget</td>
+								<td>{{ budget.description }}</td>
 								<td>
 									<a href="">
 										<img src="@/assets/images/download-icon.svg" alt="" />
@@ -92,75 +58,19 @@
 						</div>
 						<div class="swiper mySwiper">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide">
+								<div
+									v-for="(roadmap, rKey) in roadmaps"
+									:key="rKey"
+									class="swiper-slide"
+								>
 									<div class="sliderCard">
-										<img src="@/assets/images/roadmaps-img.png" alt="" />
+										<img
+											:src="require(`@/assets/images/${roadmap.img}`)"
+											alt=""
+										/>
 										<div class="sliderCardContent">
-											<p>April 4, 2020</p>
-											<h5>ETC Coop 2020 Roadmap</h5>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="sliderCard">
-										<img src="@/assets/images/roadmaps-img.png" alt="" />
-										<div class="sliderCardContent">
-											<p>April 4, 2020</p>
-											<h5>ETC Coop 2020 Roadmap</h5>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="sliderCard">
-										<img src="@/assets/images/roadmaps-img.png" alt="" />
-										<div class="sliderCardContent">
-											<p>April 4, 2020</p>
-											<h5>ETC Coop 2020 Roadmap</h5>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="sliderCard">
-										<img src="@/assets/images/roadmaps-img.png" alt="" />
-										<div class="sliderCardContent">
-											<p>April 4, 2020</p>
-											<h5>ETC Coop 2020 Roadmap</h5>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="sliderCard">
-										<img src="@/assets/images/roadmaps-img.png" alt="" />
-										<div class="sliderCardContent">
-											<p>April 4, 2020</p>
-											<h5>ETC Coop 2020 Roadmap</h5>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="sliderCard">
-										<img src="@/assets/images/roadmaps-img.png" alt="" />
-										<div class="sliderCardContent">
-											<p>April 4, 2020</p>
-											<h5>ETC Coop 2020 Roadmap</h5>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="sliderCard">
-										<img src="@/assets/images/roadmaps-img.png" alt="" />
-										<div class="sliderCardContent">
-											<p>April 4, 2020</p>
-											<h5>ETC Coop 2020 Roadmap</h5>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="sliderCard">
-										<img src="@/assets/images/roadmaps-img.png" alt="" />
-										<div class="sliderCardContent">
-											<p>April 4, 2020</p>
-											<h5>ETC Coop 2020 Roadmap</h5>
+											<p>{{ roadmap.date }}</p>
+											<h5>{{ roadmap.title }}</h5>
 										</div>
 									</div>
 								</div>
@@ -189,75 +99,19 @@
 						</div>
 						<div class="swiper mySwiper2">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide">
+								<div
+									v-for="(retrospective, rKey) in retrospectives"
+									:key="rKey"
+									class="swiper-slide"
+								>
 									<div class="sliderCard">
-										<img src="@/assets/images/retrospective-img1.png" alt="" />
+										<img
+											:src="require(`@/assets/images/${retrospective.img}`)"
+											alt=""
+										/>
 										<div class="sliderCardContent">
-											<p>28th March, 2018</p>
-											<h5>ETC Coop 2018 End-of-Year Review</h5>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="sliderCard">
-										<img src="@/assets/images/retrospective-img2.png" alt="" />
-										<div class="sliderCardContent">
-											<p>April 4, 2023. 2019</p>
-											<h5>ETC Coop 2019 Retrospective</h5>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="sliderCard">
-										<img src="@/assets/images/retrospective-img3.png" alt="" />
-										<div class="sliderCardContent">
-											<p>19th February, 2020</p>
-											<h5>ETC Coop 2022 Roadmap</h5>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="sliderCard">
-										<img src="@/assets/images/retrospective-img4.png" alt="" />
-										<div class="sliderCardContent">
-											<p>April 12, 2021</p>
-											<h5>ETC Coop 2021 Retrospective</h5>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="sliderCard">
-										<img src="@/assets/images/retrospective-img1.png" alt="" />
-										<div class="sliderCardContent">
-											<p>28th March, 2018</p>
-											<h5>ETC Coop 2018 End-of-Year Review</h5>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="sliderCard">
-										<img src="@/assets/images/retrospective-img2.png" alt="" />
-										<div class="sliderCardContent">
-											<p>April 4, 2023. 2019</p>
-											<h5>ETC Coop 2019 Retrospective</h5>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="sliderCard">
-										<img src="@/assets/images/retrospective-img3.png" alt="" />
-										<div class="sliderCardContent">
-											<p>19th February, 2020</p>
-											<h5>ETC Coop 2022 Roadmap</h5>
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="sliderCard">
-										<img src="@/assets/images/retrospective-img4.png" alt="" />
-										<div class="sliderCardContent">
-											<p>April 12, 2021</p>
-											<h5>ETC Coop 2021 Retrospective</h5>
+											<p>{{ retrospective.date }}</p>
+											<h5>{{ retrospective.title }}</h5>
 										</div>
 									</div>
 								</div>
@@ -356,82 +210,18 @@ export default {
 		Layout,
 		Navbar,
 	},
+	watch: {
+		"$i18n.locale": function (newLang) {
+			this.getContent(newLang);
+		},
+	},
 	data() {
 		return {
 			activeReportTab: 0,
-			reports: [
-				{
-					title: "Reports 2019",
-					files: [
-						{
-							date: "1st November",
-							description: "History of the Ethereum Classic Cooperative",
-							fileLink: "",
-						},
-					],
-				},
-				{
-					title: "Reports 2020",
-					files: [
-						{
-							date: "17th March",
-							description:
-								"ETC Coop 2020 AGM Meeting Minutes Organizational Meeting Mar 17",
-							fileLink: "",
-						},
-						{
-							date: "17th March",
-							description: "ETC Coop Document Retention Policy",
-							fileLink: "",
-						},
-						{
-							date: "17th March",
-							description: "ETC Coop Gift and Donation Policy",
-							fileLink: "",
-						},
-						{
-							date: "17th March",
-							description: "ETC Coop Whistleblower Policy",
-							fileLink: "",
-						},
-						{
-							date: "30th April",
-							description: "ETC Coop 2020 Q1 Report",
-							fileLink: "",
-						},
-					],
-				},
-				{
-					title: "Reports 2021",
-					files: [
-						{
-							date: "1st November",
-							description: "History of the Ethereum Classic Cooperative",
-							fileLink: "",
-						},
-					],
-				},
-				{
-					title: "Reports 2022",
-					files: [
-						{
-							date: "1st November",
-							description: "History of the Ethereum Classic Cooperative",
-							fileLink: "",
-						},
-					],
-				},
-				{
-					title: "Agendas",
-					files: [
-						{
-							date: "",
-							description: "ETC Coop 2020 Agenda",
-							fileLink: "",
-						},
-					],
-				},
-			],
+			budgets: null,
+			roadmaps: null,
+			retrospectives: null,
+			reports: null,
 		};
 	},
 	methods: {
@@ -444,6 +234,22 @@ export default {
 			} else if (element.textContent === this.$t("governance.show")) {
 				element.textContent = this.$t("governance.hide");
 			}
+		},
+		getContent(lang) {
+			import(`@/config/${lang}/governance.budgets.json`).then((contentEN) => {
+				this.budgets = contentEN.default.budgets;
+			});
+			import(`@/config/${lang}/governance.roadmaps.json`).then((contentEN) => {
+				this.roadmaps = contentEN.default.roadmaps;
+			});
+			import(`@/config/${lang}/governance.retrospectives.json`).then(
+				(contentEN) => {
+					this.retrospectives = contentEN.default.retrospectives;
+				}
+			);
+			import(`@/config/${lang}/governance.reports.json`).then((contentEN) => {
+				this.reports = contentEN.default.reports;
+			});
 		},
 	},
 	mounted() {
@@ -464,6 +270,10 @@ export default {
 				prevEl: ".swiper-button-prev2",
 			},
 		});
+	},
+	created() {
+		const lang = this.$i18n.locale;
+		this.getContent(lang);
 	},
 };
 </script>

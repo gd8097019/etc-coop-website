@@ -276,131 +276,20 @@ export default {
 		Layout,
 		Navbar,
 	},
+	watch: {
+		"$i18n.locale": function (newLang) {
+			this.getContent(newLang);
+		},
+	},
 	data() {
 		return {
 			activeIncorporationTab: 0,
 			activeResolutionsTab: 0,
 			activeFilingsTab: 0,
-			incorpations: [
-				{
-					title: "Reports 2017",
-					files: [
-						{
-							date: "7th September",
-							description: "ETCC LLC – LLC Agreement (EXECUTED)",
-							fileLink: "",
-						},
-					],
-				},
-				{
-					title: "Reports 2018",
-					files: [
-						{
-							date: "29th April",
-							description: "ETCC Inc. Form 1023",
-							fileLink: "",
-						},
-						{
-							date: "9th March",
-							description:
-								"ETCC LLC – Member Action To Convert to Not-For-Profit and Appoint Board (EXECUTED)",
-							fileLink: "",
-						},
-						{
-							date: "10th March",
-							description: "ETCC LLC – Conversion Certificate (FILED)",
-							fileLink: "",
-						},
-						{
-							date: "10th March",
-							description:
-								"ETCC Inc. – Minutes re Certificate, Bylaws, and Directors",
-							fileLink: "",
-						},
-						{
-							date: "10th April",
-							description: "ETCC Inc. – By-Laws (EXECUTED)",
-							fileLink: "",
-						},
-					],
-				},
-			],
-			resolutions: [
-				{
-					title: "Resolutions 2019",
-					files: [
-						{
-							date: "29th March",
-							description:
-								"ETC Coop - Resolutions (Appointing and Removing Officers)",
-							fileLink: "",
-						},
-					],
-				},
-				{
-					title: "Resolutions 2020",
-					files: [
-						{
-							date: "20th March",
-							description:
-								"ETC Coop - Resolutions (Appointing and Removing Officers)",
-							fileLink: "",
-						},
-					],
-				},
-				{
-					title: "Resolutions 2022",
-					files: [
-						{
-							date: "12th April",
-							description:
-								"ETC Coop 2022 AGM Resolutions (Resignation of Directors, Approval of Corporation Governance Documentation)",
-							fileLink: "",
-						},
-					],
-				},
-			],
-			filings: [
-				{
-					title: "Filings 2018",
-					files: [
-						{
-							date: "25th November",
-							description: "ETC Coop – Form 990 (2018 tax year)",
-							fileLink: "",
-						},
-					],
-				},
-				{
-					title: "Filings 2019",
-					files: [
-						{
-							date: "20th November",
-							description: "ETC Coop – Form 990 (2019 tax year)",
-							fileLink: "",
-						},
-					],
-				},
-				{
-					title: "Filings 2020",
-					files: [
-						{
-							date: "21st November",
-							description: "ETC Coop – Form 990 (2020 tax year)",
-							fileLink: "",
-						},
-					],
-				},
-			],
-			otherDocuments: [
-				{ title: "ETC Coop 2020 Goals & Objectives", fileLink: "" },
-				{ title: "ETC Coop 2020 Goals & Objectives", fileLink: "" },
-				{ title: "ETC Coop 2020 Goals & Objectives", fileLink: "" },
-				{ title: "ETC Coop 2020 Goals & Objectives", fileLink: "" },
-				{ title: "ETC Coop 2020 Goals & Objectives", fileLink: "" },
-				{ title: "ETC Coop 2020 Goals & Objectives", fileLink: "" },
-				{ title: "ETC Coop 2020 Goals & Objectives", fileLink: "" },
-			],
+			incorpations: null,
+			resolutions: null,
+			filings: null,
+			otherDocuments: null,
 		};
 	},
 	methods: {
@@ -415,6 +304,26 @@ export default {
 				element.textContent = this.$t("filings.hide");
 			}
 		},
+		getContent(lang) {
+			import(`@/config/${lang}/filing.incorpations.json`).then((contentEN) => {
+				this.incorpations = contentEN.default.incorpations;
+			});
+			import(`@/config/${lang}/filing.resolutions.json`).then((contentEN) => {
+				this.resolutions = contentEN.default.resolutions;
+			});
+			import(`@/config/${lang}/filing.filings.json`).then((contentEN) => {
+				this.filings = contentEN.default.filings;
+			});
+			import(`@/config/${lang}/filing.other-documents.json`).then(
+				(contentEN) => {
+					this.otherDocuments = contentEN.default.otherDocuments;
+				}
+			);
+		},
+	},
+	created() {
+		const lang = this.$i18n.locale;
+		this.getContent(lang);
 	},
 };
 </script>

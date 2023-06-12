@@ -1,0 +1,74 @@
+{
+	"reports": [
+		{
+			"title": "Reports 2019",
+			"files": [
+				{
+					"date": "1st November",
+					"description": "History of the Ethereum Classic Cooperative",
+					"fileLink": ""
+				}
+			]
+		},
+		{
+			"title": "Reports 2020",
+			"files": [
+				{
+					"date": "17th March",
+					"description": "ETC Coop 2020 AGM Meeting Minutes Organizational Meeting Mar 17",
+					"fileLink": ""
+				},
+				{
+					"date": "17th March",
+					"description": "ETC Coop Document Retention Policy",
+					"fileLink": ""
+				},
+				{
+					"date": "17th March",
+					"description": "ETC Coop Gift and Donation Policy",
+					"fileLink": ""
+				},
+				{
+					"date": "17th March",
+					"description": "ETC Coop Whistleblower Policy",
+					"fileLink": ""
+				},
+				{
+					"date": "30th April",
+					"description": "ETC Coop 2020 Q1 Report",
+					"fileLink": ""
+				}
+			]
+		},
+		{
+			"title": "Reports 2021",
+			"files": [
+				{
+					"date": "1st November",
+					"description": "History of the Ethereum Classic Cooperative",
+					"fileLink": ""
+				}
+			]
+		},
+		{
+			"title": "Reports 2022",
+			"files": [
+				{
+					"date": "1st November",
+					"description": "History of the Ethereum Classic Cooperative",
+					"fileLink": ""
+				}
+			]
+		},
+		{
+			"title": "Agendas",
+			"files": [
+				{
+					"date": "",
+					"description": "ETC Coop 2020 Agenda",
+					"fileLink": ""
+				}
+			]
+		}
+	]
+}
