@@ -2400,7 +2400,7 @@
 
 /* newsletter section starts here */
 .newsletterSection {
-	background: url(@/assets/images/newsletter_bg.png);
+	background: url(@/assets/images/newsletter_bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
