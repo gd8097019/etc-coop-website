@@ -1203,7 +1203,7 @@
 }
 
 .etcCoopFooter .bottomFooter {
-	background: #293342;
+	background: var(--greenishDark);
 }
 
 .etcCoopFooter .bottomFooter .bottomFooterCont {
