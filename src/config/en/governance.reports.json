@@ -6,7 +6,7 @@
 				{
 					"date": "1st November",
 					"description": "History of the Ethereum Classic Cooperative",
-					"fileLink": "/ETC-Cooperative-Budget-2022.xlsx"
+					"fileLink": "https://etccooperative.org/The-History-of-ETC-Cooperative.pdf"
 				}
 			]
 		},
@@ -16,27 +16,62 @@
 				{
 					"date": "17th March",
 					"description": "ETC Coop 2020 AGM Meeting Minutes Organizational Meeting Mar 17",
-					"fileLink": "/ETC-Cooperative-Budget-2022.xlsx"
+					"fileLink": "https://etccooperative.org/ETC-Coop-2020-Meeting_Minutes_Organizational_meeting_March_17_signed.pdf"
+				},
+				{
+					"date": "17th March",
+					"description": "ETC Coop Governance Manual",
+					"fileLink": "https://etccooperative.org/ETC-Coop-Governance-Manual.pdf"
 				},
 				{
 					"date": "17th March",
 					"description": "ETC Coop Document Retention Policy",
-					"fileLink": "/ETC-Cooperative-Budget-2022.xlsx"
+					"fileLink": "https://etccooperative.org/ETC-Coop-Document-Retention-Policy.pdf"
 				},
 				{
 					"date": "17th March",
 					"description": "ETC Coop Gift and Donation Policy",
-					"fileLink": "/ETC-Cooperative-Budget-2022.xlsx"
+					"fileLink": "https://etccooperative.org/ETC-Coop-Gift-and-Donation-Policy.pdf"
 				},
 				{
 					"date": "17th March",
 					"description": "ETC Coop Whistleblower Policy",
-					"fileLink": "/ETC-Cooperative-Budget-2022.xlsx"
+					"fileLink": "https://etccooperative.org/ETC-Coop-Whistleblower-Policy.pdf"
 				},
 				{
 					"date": "30th April",
 					"description": "ETC Coop 2020 Q1 Report",
-					"fileLink": "/ETC-Cooperative-Budget-2022.xlsx"
+					"fileLink": "https://etccooperative.org/ETC-Coop-Q1-2020-Report.pdf"
+				},
+				{
+					"date": "4th August",
+					"description": "ETC Coop 2020 Q2 Report",
+					"fileLink": "https://etccooperative.org/ETC-Coop-Q2-2020-Report.pdf"
+				},
+				{
+					"date": "31st August",
+					"description": "ETC Coop 2020 July Report",
+					"fileLink": "https://etccooperative.org/ETC-Coop-Board-Package-July-2020.pdf"
+				},
+				{
+					"date": "30th September",
+					"description": "ETC Coop 2020 August Report",
+					"fileLink": "https://etccooperative.org/ETC-Coop-Board-Package-August-2020.pdf"
+				},
+				{
+					"date": "16th Novembe",
+					"description": "ETC Coop 2020 Q3 Report",
+					"fileLink": "https://etccooperative.org/ETC-Coop-Q3-2020-Report.pdf"
+				},
+				{
+					"date": "30th November",
+					"description": "ETC Coop 2020 October Report",
+					"fileLink": "https://etccooperative.org/ETC-Coop-Board-Package-October-2020.pdf"
+				},
+				{
+					"date": "31st December",
+					"description": "ETC Coop 2020 November Report",
+					"fileLink": "https://etccooperative.org/ETC-Coop-Board-Package-November-2020.pdf"
 				}
 			]
 		},
@@ -44,9 +79,34 @@
 			"title": "Reports 2021",
 			"files": [
 				{
-					"date": "1st November",
-					"description": "History of the Ethereum Classic Cooperative",
-					"fileLink": "/ETC-Cooperative-Budget-2022.xlsx"
+					"date": "2nd April",
+					"description": "ETC Coop 2021 January/February Report",
+					"fileLink": "https://etccooperative.org/ETC-Coop-Board-Package-January-February-2021.pdf"
+				},
+				{
+					"date": "30th April",
+					"description": "ETC Coop 2021 Q1 Report",
+					"fileLink": "https://etccooperative.org/ETC-Coop-Q1-2021-Report.pdf"
+				},
+				{
+					"date": "11th June",
+					"description": "ETC Coop 2021 April/May Report",
+					"fileLink": "https://etccooperative.org/ETC-Coop-Board-Package-April-May-2021.pdf"
+				},
+				{
+					"date": "6th August",
+					"description": "ETC Coop 2021 Q2 Report",
+					"fileLink": "https://etccooperative.org/ETC-Coop-Q2-2021-Report.pdf"
+				},
+				{
+					"date": "23rd September",
+					"description": "ETC Coop 2021 July/August Report",
+					"fileLink": "https://etccooperative.org/ETC-Coop-Board-Package-July-August-2021.pdf"
+				},
+				{
+					"date": "18th November",
+					"description": "ETC Coop 2021 Q3 and October Report",
+					"fileLink": "https://etccooperative.org/ETC-Coop-Q3-2021-Report.pdf"
 				}
 			]
 		},
@@ -54,9 +114,19 @@
 			"title": "Reports 2022",
 			"files": [
 				{
-					"date": "1st November",
-					"description": "History of the Ethereum Classic Cooperative",
-					"fileLink": "/ETC-Cooperative-Budget-2022.xlsx"
+					"date": "26th May",
+					"description": "ETC Coop 2022 Q1 Report",
+					"fileLink": "https://etccooperative.org/ETC-Coop-Q1-2022-Report.pdf"
+				},
+				{
+					"date": "24th August",
+					"description": "ETC Coop 2022 Q2 Report",
+					"fileLink": "https://etccooperative.org/ETC-Coop-Q2-2022-Report.pdf"
+				},
+				{
+					"date": "11th November",
+					"description": "ETC Coop 2022 Q3 Report",
+					"fileLink": "https://etccooperative.org/ETC-Coop-Q3-2022-Report.pdf"
 				}
 			]
 		},
@@ -66,7 +136,7 @@
 				{
 					"date": "",
 					"description": "ETC Coop 2020 Agenda",
-					"fileLink": "/ETC-Cooperative-Budget-2022.xlsx"
+					"fileLink": "https://etccooperative.org/ETC-Coop-2020-AGM-Agenda.pdf"
 				}
 			]
 		}

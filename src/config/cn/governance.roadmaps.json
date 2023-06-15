@@ -1,52 +1,22 @@
 {
 	"roadmaps": [
 		{
-			"img": "roadmaps-img.png",
-			"title": "ETC Coop 2020 Roadmap",
-			"date": "April 4, 2020",
-			"link": "/test"
+			"img": "roadmaps-img-2.png",
+			"title": "Road Map  2022",
+			"date": "12th April",
+			"link": "https://etccooperative.org/ETC-Coop-Roadmap-2022.pdf"
+		},
+		{
+			"img": "roadmaps-img-1.png",
+			"title": "Road Map 2021",
+			"date": "11th May",
+			"link": "https://etccooperative.org/ETC-Cooperative-Roadmap-2021.pdf"
 		},
 		{
 			"img": "roadmaps-img.png",
-			"title": "ETC Coop 2020 Roadmap",
-			"date": "April 4, 2020",
-			"link": ""
-		},
-		{
-			"img": "roadmaps-img.png",
-			"title": "ETC Coop 2020 Roadmap",
-			"date": "April 4, 2020",
-			"link": ""
-		},
-		{
-			"img": "roadmaps-img.png",
-			"title": "ETC Coop 2020 Roadmap",
-			"date": "April 4, 2020",
-			"link": ""
-		},
-		{
-			"img": "roadmaps-img.png",
-			"title": "ETC Coop 2020 Roadmap",
-			"date": "April 4, 2020",
-			"link": ""
-		},
-		{
-			"img": "roadmaps-img.png",
-			"title": "ETC Coop 2020 Roadmap",
-			"date": "April 4, 2020",
-			"link": ""
-		},
-		{
-			"img": "roadmaps-img.png",
-			"title": "ETC Coop 2020 Roadmap",
-			"date": "April 4, 2020",
-			"link": ""
-		},
-		{
-			"img": "roadmaps-img.png",
-			"title": "ETC Coop 2020 Roadmap",
-			"date": "April 4, 2020",
-			"link": ""
+			"title": "Road Map  2020",
+			"date": "17th March",
+			"link": "https://etccooperative.org/ETC-Coop-2020-Roadmap.pdf"
 		}
 	]
 }
