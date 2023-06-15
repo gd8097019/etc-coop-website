@@ -72,12 +72,40 @@
 									What is ETC Cooperative
 								</router-link>
 							</li>
-							<li><a class="dropdown-item" href="#">Action 2</a></li>
-							<li><a class="dropdown-item" href="#">Action 3</a></li>
+							<li>
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/governance"
+									>Governance
+								</router-link>
+							</li>
+							<li>
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/filings"
+									>Filings
+								</router-link>
+							</li>
+							<li>
+								<router-link
+									class="dropdown-item"
+									aria-current="page"
+									to="/people"
+									>People
+								</router-link>
+							</li>
 						</ul>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
+						<router-link
+							class="nav-link"
+							active-class="active"
+							aria-current="page"
+							to="/contact"
+							>Contact</router-link
+						>
 					</li>
 				</ul>
 			</div>

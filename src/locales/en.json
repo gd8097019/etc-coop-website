@@ -82,6 +82,29 @@
 		"community_body": "The ETC community also offers various resources and support for developers who are interested in developing on the platform. These resources include documentation, tutorials, forums, and developer communities that can provide guidance and support throughout the development process.",
 		"p2": "Overall, developing for ETC requires a good understanding of blockchain technology, programming languages, and smart contract development. However, with the right tools and resources, developers can create powerful and innovative DApps and smart contracts on the ETC blockchain."
 	},
+	"governance": {
+		"header": "Governance",
+		"budgets": "Budgets",
+		"roadmaps": "Roadmaps",
+		"retrospective": "Retrospective",
+		"reports": "Reports",
+		"hide": "hide",
+		"show": "show"
+	},
+	"filings": {
+		"header": "Filings",
+		"incorporation_documents": "Incorporation Documents",
+		"resolutions": "Resolutions",
+		"filings": "Filings",
+		"other_documents": "Other documents",
+		"hide": "hide",
+		"show": "show"
+	},
+	"people": {
+		"header": "People",
+		"team": "Team:",
+		"board_of_directors": "Board of Directors:"
+	},
 	"footer": {
 		"learn_about_etc": "Learn about ETC",
 		"mine_etc": "Mine ETC",
