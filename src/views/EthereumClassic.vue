@@ -42,7 +42,20 @@
 				<div class="etcClassicContainer">
 					<div class="row m-0">
 						<div class="col-lg-6">
-							<img src="@/assets/images/what-is-etc-img.png" alt="" />
+							<div>
+								<img
+									class="etcClassicImg light"
+									src="@/assets/images/what-is-etc-img-light.png"
+									alt=""
+								/>
+							</div>
+							<div>
+								<img
+									class="etcClassicImg dark"
+									src="@/assets/images/what-is-etc-img-dark.png"
+									alt=""
+								/>
+							</div>
 						</div>
 						<div class="col-lg-6 justify-content-lg-end">
 							<p>
