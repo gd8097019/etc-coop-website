@@ -37,3 +37,39 @@
 .bodCard img {
 	border: 2px solid #22c55e;
 }
+
+.dark-mode .whatYouNeedInnerContent .whatYouNeedImg.dark {
+	display: block;
+}
+
+.dark-mode .whatYouNeedInnerContent .whatYouNeedImg.light {
+	display: none;
+}
+
+.whatYouNeedInnerContent .whatYouNeedImg.dark {
+	display: none;
+}
+
+.dark-mode .etcClassicContainer .etcClassicImg.dark {
+	display: block;
+}
+
+.dark-mode .etcClassicContainer .etcClassicImg.light {
+	display: none;
+}
+
+.etcClassicContainer .etcClassicImg.dark {
+	display: none;
+}
+
+.dark-mode .moreDetailsContainer .aboutHistoryImg.dark {
+	display: block;
+}
+
+.dark-mode .moreDetailsContainer .aboutHistoryImg.light {
+	display: none;
+}
+
+.moreDetailsContainer .aboutHistoryImg.dark {
+	display: none;
+}

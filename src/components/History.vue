@@ -20,13 +20,16 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-xl-5 col-lg-6 ps-lg-5">
+				<div class="col-xl-5 col-lg-6 ps-lg-5 moreDetailsContainer">
 					<div class="moreDetailsBtns">
 						<button>{{ $t("homepage.learn_more") }}</button>
 						<button>{{ $t("homepage.our_team") }}</button>
 					</div>
-					<div class="aboutHistoryImg">
-						<img src="@/assets/images/aboutHistoryImg.png" alt="" />
+					<div class="aboutHistoryImg light">
+						<img src="@/assets/images/aboutHistoryImg-light.png" alt="" />
+					</div>
+					<div class="aboutHistoryImg dark">
+						<img src="@/assets/images/aboutHistoryImg-dark.png" alt="" />
 					</div>
 				</div>
 			</div>
