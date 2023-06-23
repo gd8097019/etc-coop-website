@@ -40,8 +40,11 @@
 									{{ $t("mining.what_you_need_1_body") }}
 								</p>
 							</div>
-							<div class="whatYouNeedImg">
-								<img src="@/assets/images/etc-start.png" alt="" />
+							<div class="whatYouNeedImg light">
+								<img src="@/assets/images/etc-start-light.png" alt="" />
+							</div>
+							<div class="whatYouNeedImg dark">
+								<img src="@/assets/images/etc-start-dark.png" alt="" />
 							</div>
 							<div class="whatYouNeedText text-start">
 								<h4>{{ $t("mining.what_you_need_2_title") }}</h4>

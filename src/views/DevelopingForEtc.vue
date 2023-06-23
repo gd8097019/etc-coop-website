@@ -52,7 +52,13 @@
 			<section class="developingForEtcSection blockchainSection">
 				<div class="developingForEtcContainer">
 					<div class="row align-items-center">
-						<div class="col-lg-6 col-md-12"></div>
+						<div class="col-lg-6 col-md-12">
+							<img
+								class="communityImg"
+								src="@/assets/images/etc_blockchain_explorer.png"
+								alt=""
+							/>
+						</div>
 						<div class="col-lg-6 col-md-12">
 							<span class="secBadge">{{
 								$t("developing-for-etc.explorer_badge")
