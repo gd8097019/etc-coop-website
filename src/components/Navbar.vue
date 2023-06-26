@@ -50,7 +50,13 @@
 						>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">News</a>
+						<router-link
+							active-class="active"
+							class="nav-link"
+							aria-current="page"
+							to="/news"
+							>News</router-link
+						>
 					</li>
 					<li class="nav-item dropdown">
 						<a
