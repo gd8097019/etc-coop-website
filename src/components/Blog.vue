@@ -38,6 +38,33 @@
 										</div>
 										<div class="col-lg-6 col-md-12">
 											<router-link
+												:to="`/posts/${posts[3].alias}`"
+												class="removeUnderline"
+											>
+												<div class="newsCard">
+													<div class="newsCardImg">
+														<img
+															:src="`/img/posts/featuredImg/${posts[3].image}`"
+															alt=""
+														/>
+													</div>
+													<div class="newsCardContent">
+														<h5>
+															Ethereum Classic Blog <span class="dot">.</span>
+															<span>April 4, 2023</span>
+														</h5>
+														<h4>
+															{{ posts[3].title }}
+														</h4>
+														<p>
+															{{ posts[3].description }}
+														</p>
+													</div>
+												</div>
+											</router-link>
+										</div>
+										<div class="col-lg-6 col-md-12">
+											<router-link
 												:to="`/posts/${posts[4].alias}`"
 												class="removeUnderline"
 											>
@@ -58,33 +85,6 @@
 														</h4>
 														<p>
 															{{ posts[4].description }}
-														</p>
-													</div>
-												</div>
-											</router-link>
-										</div>
-										<div class="col-lg-6 col-md-12">
-											<router-link
-												:to="`/posts/${posts[5].alias}`"
-												class="removeUnderline"
-											>
-												<div class="newsCard">
-													<div class="newsCardImg">
-														<img
-															:src="`/img/posts/featuredImg/${posts[5].image}`"
-															alt=""
-														/>
-													</div>
-													<div class="newsCardContent">
-														<h5>
-															Ethereum Classic Blog <span class="dot">.</span>
-															<span>April 4, 2023</span>
-														</h5>
-														<h4>
-															{{ posts[5].title }}
-														</h4>
-														<p>
-															{{ posts[5].description }}
 														</p>
 													</div>
 												</div>
@@ -136,13 +136,13 @@
 										</div>
 										<div class="col-12">
 											<router-link
-												:to="`/posts/${posts[3].alias}`"
+												:to="`/posts/${posts[5].alias}`"
 												class="removeUnderline"
 											>
 												<div class="newsCard">
 													<div class="newsCardImg">
 														<img
-															:src="`/img/posts/featuredImg/${posts[3].image}`"
+															:src="`/img/posts/featuredImg/${posts[5].image}`"
 															alt=""
 														/>
 													</div>
@@ -152,10 +152,10 @@
 															<span>April 4, 2023</span>
 														</h5>
 														<h4>
-															{{ posts[3].title }}
+															{{ posts[5].title }}
 														</h4>
 														<p>
-															{{ posts[3].description }}
+															{{ posts[5].description }}
 														</p>
 													</div>
 												</div>
