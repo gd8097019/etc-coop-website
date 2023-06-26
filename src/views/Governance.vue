@@ -29,7 +29,11 @@
 								</td>
 								<td>{{ budget.description }}</td>
 								<td>
-									<a :href="budget.fileLink" :download="budget.title">
+									<a
+										target="_blank"
+										:href="budget.fileLink"
+										:download="budget.title"
+									>
 										<img src="@/assets/images/download-icon.svg" alt="" />
 									</a>
 								</td>
@@ -63,7 +67,7 @@
 									:key="rKey"
 									class="swiper-slide"
 								>
-									<a :href="roadmap.link">
+									<a target="_blank" :href="roadmap.link">
 										<div class="sliderCard">
 											<img
 												:src="require(`@/assets/images/${roadmap.img}`)"
@@ -106,7 +110,7 @@
 									:key="rKey"
 									class="swiper-slide"
 								>
-									<a :href="retrospective.link">
+									<a target="_blank" :href="retrospective.link">
 										<div class="sliderCard">
 											<img
 												:src="require(`@/assets/images/${retrospective.img}`)"
@@ -181,7 +185,11 @@
 											<h3 v-if="file.date !== ''">{{ file.date }}</h3>
 											<p>{{ file.description }}</p>
 										</div>
-										<a :href="file.fileLink" :download="file.date">
+										<a
+											target="_blank"
+											:href="file.fileLink"
+											:download="file.date"
+										>
 											<img
 												class="lightIcon"
 												src="@/assets/images/arrow-right-dark.svg"
