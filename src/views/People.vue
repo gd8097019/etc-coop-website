@@ -51,6 +51,18 @@
 						/>
 						<div class="teamMemberModalContainer">
 							<div class="row justify-content-center">
+								<div class="pb-3 etcLogoContainer">
+									<img
+										class="etcLogoImg light"
+										src="@/assets/images/etc-logo-light.png"
+										alt=""
+									/>
+									<img
+										class="etcLogoImg dark"
+										src="@/assets/images/etc-logo-dark.png"
+										alt=""
+									/>
+								</div>
 								<div class="col-lg-6 col-md-8 col-sm-10 col-12">
 									<div class="memberImg">
 										<img
