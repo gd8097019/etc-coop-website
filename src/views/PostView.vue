@@ -20,39 +20,44 @@
 		/>
 		<meta name="twitter:card" content="summary_large_image" />
 	</Head>
-	<div style="float: right">
-		<select
-			id="sel"
-			class="uppercase rounded font-roboto bg-background font-semibold text-textColor font16 border-0 selectMenu py-2 px-1 hidden"
-			v-model="$i18n.locale"
-		>
-			<option
-				class="uppercase rounded bg-background border-0"
-				key="`locale-${0}`"
-				value="cn"
-			>
-				占位符符
-			</option>
-			<option
-				class="uppercase rounded bg-background border-0"
-				key="`locale-${1}`"
-				value="en"
-			>
-				English
-			</option>
-		</select>
-	</div>
-	<div>
-		<h1>{{ title }}</h1>
-		<p v-html="body"></p>
-	</div>
+
+	<Layout>
+		<template #header>
+			<section class="newsDetailNavSection">
+				<Navbar></Navbar>
+			</section>
+		</template>
+
+		<template #main>
+			<div class="container">
+				<div class="row">
+					<h1>{{ title }}</h1>
+				</div>
+				<div class="row">
+					<img
+						:src="`/img/posts/featuredImg/${img}`"
+						class="img-fluid"
+						alt="Blog main image"
+					/>
+				</div>
+				<div class="row justify-content-md-center">
+					<p v-html="body"></p>
+				</div>
+			</div>
+		</template>
+	</Layout>
 </template>
+
 <script>
 import { Head } from "@vueuse/head";
+import Layout from "@/layout/Layout.vue";
+import Navbar from "@/components/Navbar.vue";
 
 export default {
 	components: {
 		Head,
+		Layout,
+		Navbar,
 	},
 	data() {
 		return {

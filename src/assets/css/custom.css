@@ -93,3 +93,11 @@
 	}
 }
 
+/* 
+News Detail start here
+*/
+
+.newsDetailNavSection {
+	height: 100px;
+	background-color: black;
+}
