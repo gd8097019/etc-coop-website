@@ -2275,7 +2275,11 @@
 }
 
 .newsCardHeroImg {
-	height: 675px;
+	height: 576px;
+}
+
+.newsCardHeroImg img {
+	height: 500px !important;
 }
 
 .newsCardImg {
@@ -3446,6 +3450,10 @@ body.removeScroll::-webkit-scrollbar {
 	.newsCardHeroImg {
 		height: 200px;
 		object-fit: cover;
+	}
+
+	.newsCardHeroImg img {
+		height: 200px !important;
 	}
 
 	.newsImgOverContent {

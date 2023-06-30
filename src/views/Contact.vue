@@ -53,17 +53,27 @@
 							<h1>ETC Cooperative:</h1>
 						</div>
 						<div class="contactLinks">
-							<a href="">
+							<a target="_blank" href="https://twitter.com/ETCCooperative">
 								<img src="@/assets/images/contact-twitter.svg" alt="" />
 								@ETCCooperative
 							</a>
-							<a href="">
+							<a target="_blank" href="https://discord.gg/5wDyd6u6pU">
 								<img src="@/assets/images/contact-discord1.svg" alt="" />
 								ETC Cooperative Discord
 							</a>
-							<a href="">
-								<img src="@/assets/images/contact-discord2.svg" alt="" />
-								ETC Community Discord
+							<a
+								target="_blank"
+								href="https://www.linkedin.com/company/etc-cooperative/"
+							>
+								<img src="@/assets/images/linkedin.svg" alt="" />
+								Linkedin
+							</a>
+							<a
+								target="_blank"
+								href="https://www.youtube.com/@ETCCooperative/"
+							>
+								<img src="@/assets/images/youtube.svg" alt="" />
+								Youtube
 							</a>
 						</div>
 					</div>
