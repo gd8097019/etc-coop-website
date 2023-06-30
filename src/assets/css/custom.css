@@ -104,6 +104,7 @@ News Detail start here
 
 .newsTags {
 	cursor: default !important;
+	margin-right: 10px;
 }
 
 .dark-mode .newsDetailContainer {
