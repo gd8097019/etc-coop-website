@@ -45,7 +45,7 @@
 							<div>
 								<img
 									class="etcClassicImg light"
-									src="@/assets/images/what-is-etc-img-light.png"
+									src="@/assets/images/what-is-etc-img-dark.png"
 									alt=""
 								/>
 							</div>
