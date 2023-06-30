@@ -74,6 +74,25 @@
 	display: none;
 }
 
+.dark-mode .etcLogoContainer .etcLogoImg.dark {
+	display: block;
+}
+
+.dark-mode .etcLogoContainer .etcLogoImg.light {
+	display: none;
+}
+
+.etcLogoContainer .etcLogoImg.dark {
+	display: none;
+}
+
+@media screen and (max-width: 991px) and (min-width: 576px) {
+	.etcLogoContainer {
+		display: flex !important;
+		justify-content: center !important;
+	}
+}
+
 /* news list section starts here */
 .newsListNavSection {
 	background: url(@/assets/images/news-list-bg.png);
