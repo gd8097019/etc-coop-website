@@ -32,18 +32,29 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 offset-md-1">
-						<div class="py-4">
-							<h1>{{ title }}</h1>
-						</div>
-						<div>
+						<div class="pt-3">
 							<img
 								:src="`/img/posts/featuredImg/${img}`"
 								class="img-fluid"
 								alt="Blog main image"
 							/>
 						</div>
-						<div class="py-5">
-							<p v-html="body"></p>
+						<div class="newsDetailContainer">
+							<div class="py-3">
+								<h1>{{ title }}</h1>
+							</div>
+							<div class="pb-3">
+								<div
+									class="btn btn-outline-success newsTags"
+									v-for="(tag, tKey) in tags"
+									:key="tKey"
+								>
+									{{ tag }}
+								</div>
+							</div>
+							<div class="py-3">
+								<p v-html="body"></p>
+							</div>
 						</div>
 					</div>
 				</div>

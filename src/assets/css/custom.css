@@ -101,3 +101,18 @@ News Detail start here
 	height: 100px;
 	background-color: black;
 }
+
+.newsTags {
+	cursor: default !important;
+}
+
+.dark-mode .newsDetailContainer {
+	color: white;
+}
+
+@media screen and (max-width: 576px) {
+	.newsDetailNavSection {
+		height: 75px;
+		background-color: black;
+	}
+}
