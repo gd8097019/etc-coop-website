@@ -31,17 +31,21 @@
 		<template #main>
 			<div class="container">
 				<div class="row">
-					<h1>{{ title }}</h1>
-				</div>
-				<div class="row">
-					<img
-						:src="`/img/posts/featuredImg/${img}`"
-						class="img-fluid"
-						alt="Blog main image"
-					/>
-				</div>
-				<div class="row justify-content-md-center">
-					<p v-html="body"></p>
+					<div class="col-md-10 offset-md-1">
+						<div class="py-4">
+							<h1>{{ title }}</h1>
+						</div>
+						<div>
+							<img
+								:src="`/img/posts/featuredImg/${img}`"
+								class="img-fluid"
+								alt="Blog main image"
+							/>
+						</div>
+						<div class="py-5">
+							<p v-html="body"></p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</template>
