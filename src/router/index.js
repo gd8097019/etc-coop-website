@@ -9,6 +9,7 @@ import Governance from "@/views/Governance.vue";
 import Filings from "@/views/Filings.vue";
 import People from "@/views/People.vue";
 import Contact from "@/views/Contact.vue";
+import NewsList from "@/views/NewsList.vue";
 
 const routes = [
 	{
@@ -60,6 +61,11 @@ const routes = [
 		path: "/contact",
 		name: "contact",
 		component: Contact,
+	},
+	{
+		path: "/news",
+		name: "news",
+		component: NewsList,
 	},
 ];
 

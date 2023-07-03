@@ -105,6 +105,9 @@
 		"team": "Team:",
 		"board_of_directors": "Board of Directors:"
 	},
+	"newsList": {
+		"header": "News & Blogs"
+	},
 	"footer": {
 		"learn_about_etc": "Learn about ETC",
 		"mine_etc": "Mine ETC",
