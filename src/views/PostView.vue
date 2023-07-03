@@ -20,39 +20,59 @@
 		/>
 		<meta name="twitter:card" content="summary_large_image" />
 	</Head>
-	<div style="float: right">
-		<select
-			id="sel"
-			class="uppercase rounded font-roboto bg-background font-semibold text-textColor font16 border-0 selectMenu py-2 px-1 hidden"
-			v-model="$i18n.locale"
-		>
-			<option
-				class="uppercase rounded bg-background border-0"
-				key="`locale-${0}`"
-				value="cn"
-			>
-				占位符符
-			</option>
-			<option
-				class="uppercase rounded bg-background border-0"
-				key="`locale-${1}`"
-				value="en"
-			>
-				English
-			</option>
-		</select>
-	</div>
-	<div>
-		<h1>{{ title }}</h1>
-		<p v-html="body"></p>
-	</div>
+
+	<Layout>
+		<template #header>
+			<section class="newsDetailNavSection">
+				<Navbar></Navbar>
+			</section>
+		</template>
+
+		<template #main>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 offset-md-1">
+						<div class="pt-3">
+							<img
+								:src="`/img/posts/featuredImg/${img}`"
+								class="img-fluid"
+								alt="Blog main image"
+							/>
+						</div>
+						<div class="newsDetailContainer">
+							<div class="py-3">
+								<h1>{{ title }}</h1>
+							</div>
+							<div class="pb-3">
+								<div
+									class="btn btn-outline-success newsTags"
+									v-for="(tag, tKey) in tags"
+									:key="tKey"
+								>
+									{{ tag }}
+								</div>
+							</div>
+							<div class="py-3">
+								<p v-html="body"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</template>
+	</Layout>
 </template>
+
 <script>
 import { Head } from "@vueuse/head";
+import Layout from "@/layout/Layout.vue";
+import Navbar from "@/components/Navbar.vue";
 
 export default {
 	components: {
 		Head,
+		Layout,
+		Navbar,
 	},
 	data() {
 		return {

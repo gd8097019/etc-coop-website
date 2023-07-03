@@ -63,6 +63,50 @@ const getMetaData = function (mdFile) {
 	return metadata;
 };
 
+const parseDateFromFileName = function (file) {
+	const monthNames = [
+		"January",
+		"February",
+		"March",
+		"April",
+		"May",
+		"June",
+		"July",
+		"August",
+		"September",
+		"October",
+		"November",
+		"December",
+	];
+	const splited = file.split("-");
+	let dateText = "";
+
+	if (splited.length > 3) {
+		const year = splited[0] || null;
+		const month = splited[1] || null;
+		const day = splited[2] || null;
+
+		const date = new Date(`${year}-${month}-${day}`);
+
+		if (Object.prototype.toString.call(date) === "[object Date]") {
+			// it is a date
+			if (isNaN(date)) {
+				// d.getTime() or d.valueOf() will also work
+				// date object is not valid
+				dateText = "";
+			} else {
+				dateText = `${monthNames[date.getMonth()]} ${String(
+					date.getDay()
+				).padStart(2, "0")}, ${date.getFullYear()}`;
+			}
+		} else {
+			dateText = "";
+		}
+	}
+
+	return dateText;
+};
+
 // main process
 
 const langs = ["en", "cn"];
@@ -100,6 +144,7 @@ for (const lang of langs) {
 					author: metadata.author || "",
 					tags: metadata.tags || [],
 					alias: file,
+					date: parseDateFromFileName(file),
 					image: metadata.featuredImage,
 				});
 			}
