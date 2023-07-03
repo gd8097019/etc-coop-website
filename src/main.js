@@ -7,7 +7,6 @@ import metadataBlock from "markdown-it-metadata-block";
 import yaml from "yaml";
 import i18n from "./i18n";
 import "./assets/css/styles.css";
-import "./assets/css/custom.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 
