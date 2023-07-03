@@ -26,7 +26,7 @@
 						<button>{{ $t("homepage.our_team") }}</button>
 					</div>
 					<div class="aboutHistoryImg light">
-						<img src="@/assets/images/aboutHistoryImg-light.png" alt="" />
+						<img src="@/assets/images/aboutHistoryImg-dark.png" alt="" />
 					</div>
 					<div class="aboutHistoryImg dark">
 						<img src="@/assets/images/aboutHistoryImg-dark.png" alt="" />
