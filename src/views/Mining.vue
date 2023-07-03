@@ -41,7 +41,7 @@
 								</p>
 							</div>
 							<div class="whatYouNeedImg light">
-								<img src="@/assets/images/etc-start-light.png" alt="" />
+								<img src="@/assets/images/etc-start-dark.png" alt="" />
 							</div>
 							<div class="whatYouNeedImg dark">
 								<img src="@/assets/images/etc-start-dark.png" alt="" />
