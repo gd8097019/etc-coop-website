@@ -58,15 +58,29 @@
 									:key="fkey"
 									class="documentCard"
 								>
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
+									<a
+										target="_blank"
+										:href="file.fileLink"
+										:download="file.date"
+									>
+										<img
+											class="pdfIcon"
+											src="@/assets/images/pdf-icon.svg"
+											alt=""
+										/>
+									</a>
 									<div class="documentCardContent">
 										<div class="documentSubj">
 											<h3 v-if="file.date !== ''">{{ file.date }}</h3>
-											<p>{{ file.description }}</p>
+											<a
+												target="_blank"
+												:href="file.fileLink"
+												:download="file.date"
+											>
+												<p>
+													{{ file.description }}
+												</p>
+											</a>
 										</div>
 										<a
 											target="_blank"
@@ -139,15 +153,27 @@
 									:key="fkey"
 									class="documentCard"
 								>
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
+									<a
+										target="_blank"
+										:href="file.fileLink"
+										:download="file.date"
+									>
+										<img
+											class="pdfIcon"
+											src="@/assets/images/pdf-icon.svg"
+											alt=""
+										/>
+									</a>
 									<div class="documentCardContent">
 										<div class="documentSubj">
 											<h3 v-if="file.date !== ''">{{ file.date }}</h3>
-											<p>{{ file.description }}</p>
+											<a
+												target="_blank"
+												:href="file.fileLink"
+												:download="file.date"
+											>
+												<p>{{ file.description }}</p>
+											</a>
 										</div>
 										<a
 											target="_blank"
@@ -220,15 +246,27 @@
 									:key="fkey"
 									class="documentCard"
 								>
-									<img
-										class="pdfIcon"
-										src="@/assets/images/pdf-icon.svg"
-										alt=""
-									/>
+									<a
+										target="_blank"
+										:href="file.fileLink"
+										:download="file.date"
+									>
+										<img
+											class="pdfIcon"
+											src="@/assets/images/pdf-icon.svg"
+											alt=""
+										/>
+									</a>
 									<div class="documentCardContent">
 										<div class="documentSubj">
 											<h3 v-if="file.date !== ''">{{ file.date }}</h3>
-											<p>{{ file.description }}</p>
+											<a
+												target="_blank"
+												:href="file.fileLink"
+												:download="file.date"
+											>
+												<p>{{ file.description }}</p>
+											</a>
 										</div>
 										<a
 											target="_blank"

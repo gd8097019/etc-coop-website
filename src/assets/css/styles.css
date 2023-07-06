@@ -4386,6 +4386,22 @@ News Detail end here
 
 /*** CUSTOM CHANGES ****/
 
+.documentSubj a:link {
+	text-decoration: none !important;
+}
+
+.documentSubj a:visited {
+	text-decoration: none !important;
+}
+
+.documentSubj a:hover {
+	text-decoration: none !important;
+}
+
+.documentSubj a:active {
+	text-decoration: none !important;
+}
+
 .swiper-slide a:link {
 	text-decoration: none !important;
 }
