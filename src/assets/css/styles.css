@@ -4496,3 +4496,22 @@ News Detail end here
 		justify-content: center !important;
 	}
 }
+
+.newsListPagination .pagination a {
+	color: #22c55e;
+}
+
+.newsListPagination .pagination .page-item.active a {
+	background-color: #22c55e;
+	border-color: #22c55e;
+	color: white;
+}
+
+.newsListPagination .page-item .page-link {
+	box-shadow: none !important;
+}
+
+.dark-mode .newsListPagination .pagination a {
+	background: var(--greenishDark) !important;
+	border-color: var(--primaryDark) !important;
+}
