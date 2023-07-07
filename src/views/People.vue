@@ -294,10 +294,24 @@ export default {
 				},
 			],
 			boards: [
-				{ img: "bod-1.png", name: "Craig Salm", title: "Chair" },
-				{ img: "bod-2.png", name: "Cody Burns", title: "" },
+				{
+					img: "bod-1.png",
+					name: "Craig Salm",
+					title:
+						"Chief Legal Officer at Grayscale Investments, the world’s largest digital currency asset manager.",
+				},
+				{
+					img: "bod-2.png",
+					name: "Cody Burns",
+					title:
+						"Technology and Innovation Leader | Driving growth and transformation strategy through emerging technologies, Ethereum expertise, and metaverse capabilities",
+				},
 				{ img: "bod-3.png", name: "Elaine Ou", title: "" },
-				{ img: "bod-4.png", name: "Roy Zou", title: "" },
+				{
+					img: "bod-4.png",
+					name: "Roy Zou",
+					title: "Engineer, founder of Gödel Labs (哥德尔实验室).",
+				},
 			],
 		};
 	},
