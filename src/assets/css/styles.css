@@ -15,7 +15,7 @@
 	font-weight: 700;
 	font-size: 36px;
 	letter-spacing: -0.02em;
-	color: black;
+	color: #1b1b1b;
 	margin-bottom: 16px;
 }
 
@@ -25,7 +25,7 @@
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 28px;
-	color: black;
+	color: #1b1b1b;
 	margin-bottom: 36px;
 }
 
@@ -35,7 +35,7 @@
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 28px;
-	color: grey;
+	color: #515651;
 	margin-bottom: 24px;
 }
 
@@ -105,7 +105,7 @@
 	font-size: 20px;
 	line-height: 25px;
 	text-align: center;
-	color: black;
+	color: #1b1b1b;
 	margin: 16px 0px 6px;
 }
 
@@ -146,7 +146,7 @@
 	font-size: 36px;
 	line-height: 44px;
 	letter-spacing: -0.02em;
-	color: black;
+	color: #1b1b1b;
 }
 
 .bodContainer .row {
@@ -183,7 +183,7 @@
 	font-size: 14px;
 	line-height: 22px;
 	word-break: break-all;
-	color: black;
+	color: #1b1b1b;
 	margin-top: 8px;
 }
 
@@ -198,7 +198,7 @@
 	font-style: normal;
 	font-weight: 700;
 	font-size: 16px;
-	color: black;
+	color: #1b1b1b;
 	margin-bottom: 0px;
 }
 
@@ -208,7 +208,7 @@
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 16px;
-	color: grey;
+	color: #515651;
 }
 
 .contactContainer {
@@ -845,7 +845,7 @@
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 28px;
-	color: grey;
+	color: #515651;
 	margin-bottom: 0px;
 }
 
@@ -894,7 +894,7 @@
 	font-size: 20px;
 	line-height: 30px;
 	text-align: center;
-	color: grey;
+	color: #515651;
 }
 
 /* developing paragraphs section starts here */
@@ -979,7 +979,7 @@
 	font-weight: 700;
 	font-size: 20px;
 	letter-spacing: -0.02em;
-	color: black;
+	color: #1b1b1b;
 	margin-bottom: 0px;
 }
 
@@ -1027,7 +1027,7 @@
 	font-weight: 700;
 	font-size: 26px;
 	letter-spacing: -0.02em;
-	color: black;
+	color: #1b1b1b;
 }
 
 .documentsContainer .accordion .accordion-button:focus {
@@ -1079,7 +1079,7 @@
 	font-size: 36px;
 	line-height: 44px;
 	letter-spacing: -0.02em;
-	color: black;
+	color: #1b1b1b;
 }
 
 /* documents section starts here */
@@ -1109,7 +1109,7 @@
 	font-size: 20px;
 	line-height: 30px;
 	text-align: center;
-	color: grey;
+	color: #515651;
 }
 
 /* donations to etc section starts here */
@@ -1134,7 +1134,7 @@
 	font-size: 20px;
 	line-height: 30px;
 	margin-bottom: 0px;
-	color: grey;
+	color: #515651;
 }
 
 /* etc classic section starts here */
@@ -1319,7 +1319,7 @@
 	font-style: normal;
 	font-weight: 700;
 	font-size: 18px;
-	color: black;
+	color: #1b1b1b;
 	margin-bottom: 20px;
 }
 
@@ -1335,7 +1335,7 @@
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
-	color: grey;
+	color: #515651;
 	text-decoration: none;
 	margin-bottom: 8px;
 }
@@ -1368,7 +1368,7 @@
 	font-size: 20px;
 	line-height: 30px;
 	text-align: center;
-	color: grey;
+	color: #515651;
 }
 
 .etcLearnMoreContainer p a {
@@ -1704,7 +1704,7 @@
 	font-size: 20px;
 	line-height: 44px;
 	letter-spacing: -0.02em;
-	color: black;
+	color: #1b1b1b;
 	padding: 20px 10px 20px;
 	vertical-align: middle;
 }
@@ -1771,7 +1771,7 @@
 	line-height: 44px;
 	text-align: center;
 	letter-spacing: -0.02em;
-	color: black;
+	color: #1b1b1b;
 }
 
 .historyOfEtcContainer .secBadge {
@@ -1821,14 +1821,14 @@
 	line-height: 22px;
 	text-align: center;
 	letter-spacing: 0.005em;
-	color: black;
+	color: #1b1b1b;
 	margin-top: 8px;
 	margin-bottom: 0px;
 }
 
 .historyOfEtcContent .historyText p span {
 	display: block;
-	color: grey;
+	color: #515651;
 }
 
 .historyOfEtcContent .historyText:nth-child(1) {
@@ -1905,7 +1905,7 @@
 	font-size: 20px;
 	line-height: 30px;
 	text-align: center;
-	color: grey;
+	color: #515651;
 }
 
 .learnMoreEtcContainer p a {
@@ -1949,7 +1949,7 @@
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 25px;
-	color: black;
+	color: #1b1b1b;
 	margin: 32px 0px;
 }
 
@@ -1962,7 +1962,7 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
-	color: black;
+	color: #1b1b1b;
 }
 
 .memberEmail img {
@@ -2002,7 +2002,7 @@
 	font-style: normal;
 	font-weight: 700;
 	font-size: 28px;
-	color: black;
+	color: #1b1b1b;
 	margin-bottom: 8px;
 }
 
@@ -2011,7 +2011,7 @@
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
-	color: grey;
+	color: #515651;
 	margin-bottom: 0px;
 }
 
@@ -2072,7 +2072,7 @@
 	font-size: 20px;
 	line-height: 30px;
 	text-align: center;
-	color: grey;
+	color: #515651;
 }
 
 /* mining in etc paragraphs section starts here */
@@ -2121,7 +2121,7 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 21px;
-	color: grey;
+	color: #515651;
 	margin: 0px;
 }
 
@@ -2150,7 +2150,7 @@
 	line-height: 44px;
 	text-align: center;
 	letter-spacing: -0.02em;
-	color: black;
+	color: #1b1b1b;
 	margin-bottom: 16px;
 }
 
@@ -2161,7 +2161,7 @@
 	font-size: 18px;
 	line-height: 28px;
 	text-align: center;
-	color: grey;
+	color: #515651;
 	margin-bottom: 0px;
 }
 
@@ -2232,7 +2232,7 @@
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 25px;
-	color: black;
+	color: #1b1b1b;
 	margin: 0;
 }
 
@@ -2252,11 +2252,11 @@
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
-	color: grey;
+	color: #515651;
 }
 
 .newsCard .newsCardContent h5 span.dot {
-	color: grey;
+	color: #515651;
 	margin: -10px 10px 0px;
 }
 
@@ -2265,7 +2265,7 @@
 	font-style: normal;
 	font-weight: 400;
 	font-size: 14px;
-	color: grey;
+	color: #515651;
 	margin-top: 18px;
 }
 
@@ -2457,7 +2457,7 @@ body.removeScroll::-webkit-scrollbar {
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 28px;
-	color: black;
+	color: #1b1b1b;
 	margin-bottom: 0px;
 }
 
@@ -2518,7 +2518,7 @@ body.removeScroll::-webkit-scrollbar {
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 19px;
-	color: grey;
+	color: #515651;
 	margin: 0px 0px 20px;
 }
 
@@ -2545,7 +2545,7 @@ body.removeScroll::-webkit-scrollbar {
 	font-size: 36px;
 	line-height: 44px;
 	letter-spacing: -0.02em;
-	color: black;
+	color: #1b1b1b;
 }
 
 .sliderContainer .swiper-slide {
@@ -2603,7 +2603,7 @@ body.removeScroll::-webkit-scrollbar {
 	font-size: 36px;
 	line-height: 44px;
 	letter-spacing: -0.02em;
-	color: black;
+	color: #1b1b1b;
 }
 
 .stayConnectedContainer .row {
@@ -2705,7 +2705,7 @@ body.removeScroll::-webkit-scrollbar {
 	font-size: 20px;
 	line-height: 25px;
 	text-align: center;
-	color: black;
+	color: #1b1b1b;
 	margin: 16px 0px 6px;
 }
 
@@ -2723,7 +2723,7 @@ body.removeScroll::-webkit-scrollbar {
 	font-size: 16px;
 	line-height: 27px;
 	text-align: center;
-	color: grey;
+	color: #515651;
 	margin: 0px;
 }
 
@@ -2834,7 +2834,7 @@ body.removeScroll::-webkit-scrollbar {
 	font-size: 20px;
 	line-height: 30px;
 	text-align: center;
-	color: grey;
+	color: #515651;
 }
 
 /* what is etc coop paragraphs section starts here */
@@ -2880,7 +2880,7 @@ body.removeScroll::-webkit-scrollbar {
 	font-size: 20px;
 	line-height: 30px;
 	margin-bottom: 0px;
-	color: grey;
+	color: #515651;
 }
 
 /* what is etc paragraphs section starts here */
@@ -2925,7 +2925,7 @@ body.removeScroll::-webkit-scrollbar {
 	line-height: 44px;
 	text-align: center;
 	letter-spacing: -0.02em;
-	color: black;
+	color: #1b1b1b;
 	margin-bottom: 16px;
 }
 
@@ -2936,7 +2936,7 @@ body.removeScroll::-webkit-scrollbar {
 	font-size: 18px;
 	line-height: 28px;
 	text-align: center;
-	color: grey;
+	color: #515651;
 	margin-bottom: 0px;
 }
 
@@ -2998,7 +2998,7 @@ body.removeScroll::-webkit-scrollbar {
 	font-style: normal;
 	font-weight: 700;
 	font-size: 18px;
-	color: black;
+	color: #1b1b1b;
 	margin-bottom: 15px;
 }
 
@@ -3008,7 +3008,7 @@ body.removeScroll::-webkit-scrollbar {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 21px;
-	color: grey;
+	color: #515651;
 	margin-bottom: 0px;
 }
 
