@@ -108,6 +108,10 @@
 	"newsList": {
 		"header": "News & Blogs"
 	},
+	"newsletter": {
+		"success": "You successfuly subscribed to newsletter!",
+		"error": "An error occured. Please check your email and try again."
+	},
 	"footer": {
 		"learn_about_etc": "Learn about ETC",
 		"mine_etc": "Mine ETC",
