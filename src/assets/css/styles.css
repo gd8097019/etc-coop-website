@@ -427,14 +427,6 @@
 	background: var(--greenishDark);
 }
 
-.dark-mode .etcCoopFooter .bottomFooter p {
-	color: #ffffff;
-}
-
-.dark-mode .etcCoopFooter .footerBottomLinks a {
-	color: #ffffff;
-}
-
 .dark-mode .etcFooterContainer h4 {
 	color: #ffffff;
 }
@@ -648,10 +640,6 @@
 
 .dark-mode .newsletterContainer p {
 	color: #8896ab;
-}
-
-.dark-mode .newsletterContainer span {
-	color: #ffffff;
 }
 
 .dark-mode .newsletterSection {
