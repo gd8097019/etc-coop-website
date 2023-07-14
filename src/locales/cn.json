@@ -18,7 +18,10 @@
 		"sign_up_enter_email": "Enter your email",
 		"sign_up_subscribe": "Subscribe",
 		"sign_up_privacy_title": "We care about your data in our",
-		"sign_up_privacy_link_title": "privacy policy"
+		"sign_up_privacy_link_title": "privacy policy",
+		"sign_up_success": "You successfuly subscribed to newsletter!",
+		"sign_up_error": "An error occured. Please check your email and try again.",
+		"sign_up_sending": "Sending.."
 	},
 	"ethereum-classic": {
 		"header": "What is ETC?",
@@ -107,10 +110,6 @@
 	},
 	"newsList": {
 		"header": "News & Blogs"
-	},
-	"newsletter": {
-		"success": "You successfuly subscribed to newsletter!",
-		"error": "An error occured. Please check your email and try again."
 	},
 	"footer": {
 		"learn_about_etc": "Learn about ETC",

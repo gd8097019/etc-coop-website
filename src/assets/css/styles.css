@@ -4503,3 +4503,15 @@ News Detail end here
 	background: var(--greenishDark) !important;
 	border-color: var(--primaryDark) !important;
 }
+
+.newsletter-success-message {
+	color: lightgreen !important;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.newsletter-error-message {
+	color: red !important;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
