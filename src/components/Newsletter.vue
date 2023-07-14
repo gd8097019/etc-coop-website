@@ -16,15 +16,25 @@
 							autocomplete="email"
 							placeholder="Enter your email"
 						/>
-						<button type="submit" @click="handleSubscribeNewsletter">
-							{{ $t("homepage.sign_up_subscribe") }}
+						<button
+							type="submit"
+							@click="handleSubscribeNewsletter"
+							:disabled="loading"
+							:style="{ opacity: loading ? '0.8' : '1' }"
+						>
+							<template v-if="loading">
+								{{ $t("homepage.sign_up_sending") }}
+							</template>
+							<template v-else>
+								{{ $t("homepage.sign_up_subscribe") }}
+							</template>
 						</button>
 					</div>
 					<div v-if="showMessage">
-						<div v-if="showMessageStatus" class="text-success">
+						<div v-if="showMessageStatus" class="newsletter-success-message">
 							{{ showMessageText }}
 						</div>
-						<div v-else class="text-danger">
+						<div v-else class="newsletter-error-message">
 							{{ showMessageText }}
 						</div>
 					</div>
@@ -45,6 +55,7 @@ export default {
 			showMessage: false,
 			showMessageStatus: false,
 			showMessageText: "",
+			loading: false,
 		};
 	},
 	watch: {
@@ -57,6 +68,7 @@ export default {
 	},
 	methods: {
 		handleSubscribeNewsletter() {
+			this.loading = true;
 			const url = "https://static.mailerlite.com/webforms/submit/s3h0g4";
 
 			const email = this.$refs.email.value;
@@ -80,6 +92,7 @@ export default {
 			)
 				.then((response) => response.text())
 				.then((response) => {
+					this.loading = false;
 					const data = JSON.parse(
 						response
 							.replaceAll(callback, "")
@@ -88,10 +101,10 @@ export default {
 					);
 
 					if (data.success === true) {
-						this.showMessageText = this.$t("newsletter.success");
+						this.showMessageText = this.$t("homepage.sign_up_success");
 						this.showMessageStatus = true;
 					} else if (data.success === false) {
-						this.showMessageText = this.$t("newsletter.error");
+						this.showMessageText = this.$t("homepage.sign_up_error");
 						this.showMessageStatus = false;
 					}
 
