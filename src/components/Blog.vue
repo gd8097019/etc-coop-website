@@ -166,9 +166,11 @@
 							</div>
 						</div>
 						<div class="newsBtns newsBtnsMobile">
-							<button class="seeAllNews seeAllNewsMobile">
-								{{ $t("homepage.see_all_news") }}
-							</button>
+							<router-link to="/news">
+								<button class="seeAllNews seeAllNewsMobile">
+									{{ $t("homepage.see_all_news") }}
+								</button>
+							</router-link>
 						</div>
 					</div>
 				</div>

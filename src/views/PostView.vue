@@ -8,7 +8,7 @@
 		<meta property="og:description" :content="description" />
 		<meta
 			property="og:image"
-			:content="`https://etccooperative.org/img/posts/featuredImg/${img}`"
+			:content="`${baseUrl}/img/posts/featuredImg/${img}`"
 		/>
 
 		<!-- Twitter -->
@@ -16,53 +16,140 @@
 		<meta name="twitter:description" :content="description" />
 		<meta
 			name="twitter:image"
-			:content="`https://etccooperative.org/img/posts/featuredImg/${img}`"
+			:content="`${baseUrl}/img/posts/featuredImg/${img}`"
 		/>
 		<meta name="twitter:card" content="summary_large_image" />
 	</Head>
-
 	<Layout>
 		<template #header>
-			<section class="newsDetailNavSection">
+			<section class="blogNavSection">
 				<Navbar></Navbar>
+				<div class="mainContainer blogContainer">
+					<div class="blogHeroContent">
+						<img :src="`/img/posts/featuredImg/${img}`" alt="Main Image" />
+					</div>
+				</div>
 			</section>
 		</template>
 
 		<template #main>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-10 offset-md-1">
-						<div class="pt-3">
-							<img
-								:src="`/img/posts/featuredImg/${img}`"
-								class="img-fluid"
-								alt="Blog main image"
-							/>
+			<section class="newBlogSection">
+				<div class="mainContainer newBlogContainer">
+					<div class="articleTags">
+						<a
+							v-for="(tag, tKey) in tags"
+							:key="tKey"
+							href=""
+							class="articleTag"
+							>{{ tag }}</a
+						>
+					</div>
+					<div class="blogHeading">
+						<h1>
+							{{ title }}
+						</h1>
+					</div>
+					<div class="blogAutherAndDate">
+						<div class="blogAuthor">
+							<h6 class="authorName" v-if="author">{{ author }}</h6>
 						</div>
-						<div class="newsDetailContainer">
-							<div class="py-3">
-								<h1>{{ title }}</h1>
-							</div>
-							<div class="pb-3">
-								<div
-									class="btn btn-outline-success newsTags"
-									v-for="(tag, tKey) in tags"
-									:key="tKey"
-								>
-									{{ tag }}
+						<div v-if="date" class="blogDate">
+							<p>{{ date }}</p>
+						</div>
+					</div>
+					<div class="blogDetailsContainer">
+						<div class="shareBlog">
+							<ul>
+								<li role="button" @click="share('facebook')">
+									<img src="@/assets/images/blog-facebook.svg" alt="" />
+								</li>
+								<li role="button" @click="share('twitter')">
+									<img src="@/assets/images/blog-twitter.svg" alt="" />
+								</li>
+								<li role="button" @click="share('linkedin')">
+									<img src="@/assets/images/blog-linkedin.svg" alt="" />
+								</li>
+								<li role="button" @click="copyClipboard()">
+									<img src="@/assets/images/blog-copy.svg" alt="" />
+									<p
+										v-if="showCopyClipboardText"
+										class="text-secondary font-weight-light"
+										style="font-size: 10px"
+									>
+										Copied!
+									</p>
+								</li>
+								<li role="button">
+									<a
+										:href="`mailto:?subject=${this.title}&amp;body=${this.fullPath}`"
+									>
+										<img src="@/assets/images/blog-email.svg" alt="" />
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="blogDetailsContent">
+							<p v-html="body"></p>
+							<div class="learnMore">
+								<h4>Thank you for reading this article!</h4>
+								<div class="learnMoreLinks">
+									<a target="_blank" href="https://powsummit.com/">
+										Learn more about the POW Summit.</a
+									>
+									<router-link to="/ethereum-classic">
+										Learn more about Ethereum Classic.</router-link
+									>
+									<router-link to="/what-is-etc-cooperative">
+										Learn more about ETC Cooperative.</router-link
+									>
 								</div>
-							</div>
-							<div class="py-3">
-								<p v-html="body"></p>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
+
+			<section class="moreArticlesSection">
+				<div class="moreArticlesContainer">
+					<h2>You may also like</h2>
+					<div class="row">
+						<div
+							v-for="(mayAlsoLikeArticle, malaKey) in mayAlsoLikeArticles"
+							:key="malaKey"
+							class="col-lg-4 col-md-6 col-sm-12"
+						>
+							<a
+								:href="`/posts/${mayAlsoLikeArticle.alias}`"
+								class="removeUnderline"
+							>
+								<div class="newsCard">
+									<div class="newsCardImg">
+										<img
+											:src="`/img/posts/featuredImg/${mayAlsoLikeArticle.image}`"
+											alt=""
+										/>
+									</div>
+									<div class="newsCardContent">
+										<h5>
+											Ethereum Classic Blog <span class="dot">.</span>
+											<span>{{ mayAlsoLikeArticle.date }}</span>
+										</h5>
+										<h4>
+											{{ mayAlsoLikeArticle.title }}
+										</h4>
+										<p>
+											{{ mayAlsoLikeArticle.description }}
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
 		</template>
 	</Layout>
 </template>
-
 <script>
 import { Head } from "@vueuse/head";
 import Layout from "@/layout/Layout.vue";
@@ -81,13 +168,26 @@ export default {
 			description: null,
 			img: null,
 			author: null,
+			date: null,
 			tags: [],
+			baseUrl: null,
+			fullPath: null,
+			mayAlsoLikeArticles: [],
+			showCopyClipboardText: false,
 		};
 	},
 	watch: {
 		"$i18n.locale": function (newLang) {
 			localStorage.setItem("last-locale", newLang);
 			this.getContent(newLang);
+			this.getMayAlsoLikeArticles(newLang);
+		},
+		showCopyClipboardText: function (val) {
+			setTimeout(() => {
+				if (val === true) {
+					this.showCopyClipboardText = false;
+				}
+			}, 3000);
 		},
 	},
 	methods: {
@@ -104,6 +204,9 @@ export default {
 					this.img = meta.featuredImage || null;
 					this.author = meta.author || null;
 					this.tags = meta.tags || [];
+					this.baseUrl = window.location.origin;
+					this.fullPath = new URL(this.$route.href, this.baseUrl).href;
+					this.date = this.tryParseDateFromAlias(this.$route.params.alias);
 				})
 				.catch(() => {
 					// load default locale (en)
@@ -116,13 +219,99 @@ export default {
 						this.img = meta.featuredImage || null;
 						this.author = meta.author || null;
 						this.tags = meta.tags || [];
+						this.baseUrl = window.location.origin;
+						this.fullPath = new URL(this.$route.href, this.baseUrl).href;
+						this.date = this.tryParseDateFromAlias(this.$route.params.alias);
 					});
 				});
+		},
+		getMayAlsoLikeArticles(locale) {
+			import(`@/contents/posts.home.${locale}.json`).then((module) => {
+				let latestArticles = module.default;
+				latestArticles = latestArticles.filter((latestArticle) => {
+					let alias = this.$route.params.alias;
+					if (latestArticle.alias !== alias) {
+						return latestArticle;
+					}
+				});
+				this.mayAlsoLikeArticles = latestArticles.slice(0, 3);
+			});
+		},
+		tryParseDateFromAlias(alias) {
+			let dateText = "";
+
+			if (alias) {
+				const monthNames = [
+					"January",
+					"February",
+					"March",
+					"April",
+					"May",
+					"June",
+					"July",
+					"August",
+					"September",
+					"October",
+					"November",
+					"December",
+				];
+				const splited = alias.split("-");
+
+				if (splited.length > 3) {
+					const year = splited[0] || null;
+					const month = splited[1] || null;
+					const day = splited[2] || null;
+
+					const date = new Date(`${year}-${month}-${day}`);
+
+					if (Object.prototype.toString.call(date) === "[object Date]") {
+						// it is a date
+						if (isNaN(date)) {
+							// d.getTime() or d.valueOf() will also work
+							// date object is not valid
+							dateText = "";
+						} else {
+							dateText = `${monthNames[date.getMonth()]} ${String(
+								date.getDay()
+							).padStart(2, "0")}, ${date.getFullYear()}`;
+						}
+					} else {
+						dateText = "";
+					}
+				}
+			}
+
+			return dateText;
+		},
+		share(platform) {
+			let path = "";
+			switch (platform) {
+				case "twitter":
+					path = `https://twitter.com/intent/tweet?url=${this.fullPath}%20@ETCCooperative`;
+					break;
+				case "facebook":
+					path = `https://www.facebook.com/sharer.php?u=${this.fullPath}`;
+					break;
+				case "linkedin":
+					path = `https://www.linkedin.com/sharing/share-offsite/?url=${this.fullPath}`;
+					break;
+			}
+
+			if (path) {
+				window.open(path, "ETC Cooperative", "width=650,height=650");
+			}
+		},
+		async copyClipboard() {
+			try {
+				await navigator.clipboard.writeText(this.fullPath);
+				this.showCopyClipboardText = true;
+			} catch (err) {}
 		},
 	},
 	mounted() {
 		const locale = this.$i18n.locale;
 		this.getContent(locale);
+		this.getMayAlsoLikeArticles(locale);
 	},
 };
 </script>
