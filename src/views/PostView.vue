@@ -8,7 +8,7 @@
 		<meta property="og:description" :content="description" />
 		<meta
 			property="og:image"
-			:content="`https://etccooperative.org/img/posts/featuredImg/${img}`"
+			:content="`${baseUrl}/img/posts/featuredImg/${img}`"
 		/>
 
 		<!-- Twitter -->
@@ -16,7 +16,7 @@
 		<meta name="twitter:description" :content="description" />
 		<meta
 			name="twitter:image"
-			:content="`https://etccooperative.org/img/posts/featuredImg/${img}`"
+			:content="`${baseUrl}/img/posts/featuredImg/${img}`"
 		/>
 		<meta name="twitter:card" content="summary_large_image" />
 	</Head>
@@ -170,6 +170,7 @@ export default {
 			author: null,
 			date: null,
 			tags: [],
+			baseUrl: null,
 			fullPath: null,
 			mayAlsoLikeArticles: [],
 			showCopyClipboardText: false,
@@ -203,10 +204,8 @@ export default {
 					this.img = meta.featuredImage || null;
 					this.author = meta.author || null;
 					this.tags = meta.tags || [];
-					this.fullPath = new URL(
-						this.$route.href,
-						window.location.origin
-					).href;
+					this.baseUrl = window.location.origin;
+					this.fullPath = new URL(this.$route.href, this.baseUrl).href;
 					this.date = this.tryParseDateFromAlias(this.$route.params.alias);
 				})
 				.catch(() => {
@@ -220,10 +219,8 @@ export default {
 						this.img = meta.featuredImage || null;
 						this.author = meta.author || null;
 						this.tags = meta.tags || [];
-						this.fullPath = new URL(
-							this.$route.href,
-							window.location.origin
-						).href;
+						this.baseUrl = window.location.origin;
+						this.fullPath = new URL(this.$route.href, this.baseUrl).href;
 						this.date = this.tryParseDateFromAlias(this.$route.params.alias);
 					});
 				});
