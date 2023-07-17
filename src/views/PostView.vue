@@ -51,9 +51,6 @@
 					</div>
 					<div class="blogAutherAndDate">
 						<div class="blogAuthor">
-							<div class="authorImg">
-								<img src="@/assets/images/author.png" alt="" />
-							</div>
 							<h6 class="authorName" v-if="author">{{ author }}</h6>
 						</div>
 						<div v-if="date" class="blogDate">
