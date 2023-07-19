@@ -1199,6 +1199,12 @@
 	padding: 35px 32px;
 }
 
+.etcCoopFooter .bottomFooter .bottomFooterCont a {
+	font-size: 14px;
+	color: #8896ab;
+	text-decoration: none;
+}
+
 .etcCoopFooter .bottomFooter p {
 	margin: 0px;
 	font-family: var(--Noto_sans);
