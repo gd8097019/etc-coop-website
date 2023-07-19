@@ -22,8 +22,14 @@
 				</div>
 				<div class="col-xl-5 col-lg-6 ps-lg-5 moreDetailsContainer">
 					<div class="moreDetailsBtns">
-						<button>{{ $t("homepage.learn_more") }}</button>
-						<button>{{ $t("homepage.our_team") }}</button>
+						<router-link to="/what-is-etc-cooperative">
+							<button>
+								{{ $t("homepage.learn_more") }}
+							</button>
+						</router-link>
+						<button @click="$router.push('/people')">
+							{{ $t("homepage.our_team") }}
+						</button>
 					</div>
 					<div class="aboutHistoryImg light">
 						<img src="@/assets/images/aboutHistoryImg-dark.png" alt="" />
