@@ -65,40 +65,6 @@
 			</section>
 			<!-- mission of etc section ends here -->
 
-			<!-- history of etc cooperative starts here -->
-			<section class="historyOfEtcSection">
-				<div class="historyOfEtcContainer">
-					<span class="secBadge">{{
-						$t("what-is-etc-coop.history_badge")
-					}}</span>
-					<div class="heading">
-						<h1>{{ $t("what-is-etc-coop.history_title") }}</h1>
-					</div>
-					<div class="historyOfEtcMainContent">
-						<img
-							class="historyOfEtcCurvedLines"
-							src="@/assets/images/curve-lines.png"
-							alt=""
-						/>
-						<div class="historyOfEtcContent">
-							<div class="historyText">
-								<span class="circle"></span>
-								<p v-html="$t('what-is-etc-coop.history_1')"></p>
-							</div>
-							<div class="historyText">
-								<span class="circle"></span>
-								<p v-html="$t('what-is-etc-coop.history_2')"></p>
-							</div>
-							<div class="historyText">
-								<span class="circle"></span>
-								<p v-html="$t('what-is-etc-coop.history_3')"></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- history of etc cooperative ends here -->
-
 			<!-- donations to etc section starts here -->
 			<section class="donationsToEtcSection">
 				<div class="donationsToEtcContainer">
