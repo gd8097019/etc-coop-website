@@ -287,13 +287,13 @@ export default {
 			let path = "";
 			switch (platform) {
 				case "twitter":
-					path = `https://twitter.com/intent/tweet?url=${this.fullPath}%20@ETCCooperative`;
+					path = `https://twitter.com/intent/tweet?url=${this.title} ${this.fullPath}%20@ETCCooperative`;
 					break;
 				case "facebook":
-					path = `https://www.facebook.com/sharer.php?u=${this.fullPath}`;
+					path = `https://www.facebook.com/sharer.php?u=${this.title} ${this.fullPath}`;
 					break;
 				case "linkedin":
-					path = `https://www.linkedin.com/sharing/share-offsite/?url=${this.fullPath}`;
+					path = `https://www.linkedin.com/sharing/share-offsite/?url=${this.title} ${this.fullPath}`;
 					break;
 			}
 
