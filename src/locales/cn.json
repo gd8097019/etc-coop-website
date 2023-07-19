@@ -3,7 +3,7 @@
 		"title": "ETC Cooperative",
 		"description": "加速 Ethereum Classic 的发展",
 		"teaser": "我们的使命是管理以太坊经典协议的开发，并支持其成长为一个成熟的生态系统。",
-		"blog": "Blog",
+		"blog": "News",
 		"see_all_news": "See All News",
 		"our_history_badge": "About us",
 		"our_history_title": "Our History",
@@ -109,7 +109,7 @@
 		"board_of_directors": "Board of Directors:"
 	},
 	"newsList": {
-		"header": "News & Blogs"
+		"header": "News"
 	},
 	"footer": {
 		"learn_about_etc": "Learn about ETC",
