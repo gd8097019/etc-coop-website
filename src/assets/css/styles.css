@@ -1288,6 +1288,10 @@
 	display: none;
 }
 
+.dark-mode .etcFooterContainer .darkImg {
+	display: block;
+}
+
 .etcFooterContainer .footerLogoCont img {
 	width: 170px;
 	height: 34px;
