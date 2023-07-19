@@ -3,7 +3,7 @@
 		"title": "ETC Cooperative",
 		"description": "Accelerating the growth of Ethereum Classic",
 		"teaser": "Our mission is to steward the development of the Ethereum Classic protocol and to support its growth into a mature ecosystem.",
-		"blog": "Blog",
+		"blog": "News",
 		"see_all_news": "See All News",
 		"our_history_badge": "About us",
 		"our_history_title": "Our History",
@@ -109,7 +109,7 @@
 		"board_of_directors": "Board of Directors:"
 	},
 	"newsList": {
-		"header": "News & Blogs"
+		"header": "News"
 	},
 	"footer": {
 		"learn_about_etc": "Learn about ETC",

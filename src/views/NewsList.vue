@@ -63,7 +63,9 @@
 																<h5>
 																	Ethereum Classic Blog
 																	<span class="dot">.</span>
-																	<span>April 4, 2023</span>
+																	<span v-if="currentPosts[3].date">{{
+																		currentPosts[3].date
+																	}}</span>
 																</h5>
 																<h4>
 																	{{ currentPosts[3].title }}
@@ -91,7 +93,9 @@
 																<h5>
 																	Ethereum Classic Blog
 																	<span class="dot">.</span>
-																	<span>April 4, 2023</span>
+																	<span v-if="currentPosts[4].date">{{
+																		currentPosts[4].date
+																	}}</span>
 																</h5>
 																<h4>
 																	{{ currentPosts[4].title }}
@@ -163,7 +167,9 @@
 																<h5>
 																	Ethereum Classic Blog
 																	<span class="dot">.</span>
-																	<span>April 4, 2023</span>
+																	<span v-if="currentPosts[5].date">{{
+																		currentPosts[5].date
+																	}}</span>
 																</h5>
 																<h4>
 																	{{ currentPosts[5].title }}
@@ -202,7 +208,9 @@
 														<h5>
 															Ethereum Classic Blog
 															<span class="dot">.</span>
-															<span>April 4, 2023</span>
+															<span v-if="remaincurrentPosts.date">{{
+																remaincurrentPosts.date
+															}}</span>
 														</h5>
 														<h4>
 															{{ remaincurrentPosts.title }}
