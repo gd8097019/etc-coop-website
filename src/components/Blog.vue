@@ -51,7 +51,9 @@
 													<div class="newsCardContent">
 														<h5>
 															Ethereum Classic Blog <span class="dot">.</span>
-															<span>April 4, 2023</span>
+															<span v-if="posts[3].date">{{
+																posts[3].date
+															}}</span>
 														</h5>
 														<h4>
 															{{ posts[3].title }}
@@ -78,7 +80,9 @@
 													<div class="newsCardContent">
 														<h5>
 															Ethereum Classic Blog <span class="dot">.</span>
-															<span>April 4, 2023</span>
+															<span v-if="posts[4].date">{{
+																posts[4].date
+															}}</span>
 														</h5>
 														<h4>
 															{{ posts[4].title }}
@@ -149,7 +153,9 @@
 													<div class="newsCardContent">
 														<h5>
 															Ethereum Classic Blog <span class="dot">.</span>
-															<span>April 4, 2023</span>
+															<span v-if="posts[5].date">{{
+																posts[5].date
+															}}</span>
 														</h5>
 														<h4>
 															{{ posts[5].title }}
