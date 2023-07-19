@@ -18,16 +18,16 @@
 						</a>
 					</div>
 					<div class="socialMediaIcons">
-						<a href="">
+						<a href="https://twitter.com/ETCCooperative">
 							<img src="@/assets/images/twitter.svg" alt="" />
 						</a>
-						<a href="">
+						<a href="https://discord.gg/5wDyd6u6pU">
 							<img src="@/assets/images/discord.svg" alt="" />
 						</a>
-						<a href="">
+						<a href="https://www.linkedin.com/company/etc-cooperative/">
 							<img src="@/assets/images/linkedin.svg" alt="" />
 						</a>
-						<a href="">
+						<a href="https://www.youtube.com/@ETCCooperative/">
 							<img src="@/assets/images/youtube.svg" alt="" />
 						</a>
 					</div>
@@ -38,19 +38,13 @@
 							<h4>{{ $t("footer.learn_about_etc") }}</h4>
 							<ul>
 								<li>
-									<a href="https://ethereumclassic.org/">Ethereumclassic.org</a>
-								</li>
-								<li><a href="">ETC Community</a></li>
-								<li><a href="https://discord.gg/5wDyd6u6pU">Discord</a></li>
-								<li><router-link to="/news">ETC Coop Blog</router-link></li>
-								<li><a href="">ETC Blog</a></li>
-								<li>
-									<a href="https://twitter.com/ETCCooperative">ETC Twitter</a>
+									<a href="https://ethereumclassic.org/">ETC Website</a>
 								</li>
 								<li>
-									<a href="https://www.youtube.com/@ETCCooperative/"
-										>ETC Youtube</a
-									>
+									<a href="https://discord.com/invite/hQs894U">ETC Discord</a>
+								</li>
+								<li>
+									<a href="https://ethereumclassic.org/news">ETC News</a>
 								</li>
 							</ul>
 						</div>
@@ -58,8 +52,11 @@
 							<h4>{{ $t("footer.mine_etc") }}</h4>
 							<ul>
 								<li><router-link to="/mining">Mining on ETC</router-link></li>
-								<li><a href="">ETC Mining Pool</a></li>
-								<li><a href="">Bitmain</a></li>
+								<li>
+									<a href="https://ethereumclassic.org/mining/pools"
+										>Mining Pools</a
+									>
+								</li>
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
@@ -80,12 +77,11 @@
 									<a href="https://blockscout.com/etc/mainnet/">BlockScout</a>
 								</li>
 								<li>
-									<a href="https://rivet.link/networks/">ETC public RPC</a>
+									<a href="https://rivet.link/networks/"
+										>ETC public RPC endpoints</a
+									>
 								</li>
-								<li><a href="">endpoints</a></li>
 								<li><a href="https://etcnodes.org/">ETC nodes explorer</a></li>
-								<li><a href="https://rivet.cloud/">Rivet Blockchain</a></li>
-								<li><a href="">Gateway</a></li>
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
@@ -132,8 +128,10 @@
 					<router-link to="/">https://etccooperative.org/</router-link>
 				</p>
 				<div class="footerBottomLinks">
-					<a href="">What is the ETC Cooperative?</a>
-					<a href="">Contact Us</a>
+					<router-link to="/what-is-etc-cooperative"
+						>What is the ETC Cooperative?</router-link
+					>
+					<router-link to="/contact">Contact Us</router-link>
 				</div>
 			</div>
 		</div>
