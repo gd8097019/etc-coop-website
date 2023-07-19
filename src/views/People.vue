@@ -306,7 +306,11 @@ export default {
 					title:
 						"Technology and Innovation Leader | Driving growth and transformation strategy through emerging technologies, Ethereum expertise, and metaverse capabilities",
 				},
-				{ img: "bod-3.png", name: "Elaine Ou", title: "" },
+				{
+					img: "bod-3.png",
+					name: "Elaine Ou",
+					title: "Engineer at Global Financial Access",
+				},
 				{
 					img: "bod-4.png",
 					name: "Roy Zou",
