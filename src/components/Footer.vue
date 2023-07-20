@@ -17,6 +17,13 @@
 							/>
 						</a>
 					</div>
+					<div class="etcCoopNews">
+						<ul>
+							<li>
+								<router-link to="/news">ETC Coop News</router-link>
+							</li>
+						</ul>
+					</div>
 					<div class="socialMediaIcons">
 						<a href="https://twitter.com/ETCCooperative">
 							<img src="@/assets/images/twitter.svg" alt="" />

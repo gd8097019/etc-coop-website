@@ -1298,7 +1298,12 @@
 }
 
 .etcFooterContainer .socialMediaIcons {
-	margin: 27px 0px 30px;
+	margin: 19px 34px 30px;
+}
+
+.etcFooterContainer .etcCoopNews {
+	padding-top: 17px;
+	padding-left: 36px;
 }
 
 .etcFooterContainer .socialMediaIcons a {
@@ -3104,6 +3109,15 @@ body.removeScroll::-webkit-scrollbar {
 		display: block;
 		text-align: center;
 		margin-top: 15px;
+	}
+
+	.etcFooterContainer .socialMediaIcons {
+		margin: 10px 0px 30px !important;
+	}
+
+	.etcFooterContainer .etcCoopNews {
+		padding-top: 17px;
+		padding-left: 0px !important;
 	}
 }
 
@@ -4927,4 +4941,9 @@ body.removeScroll::-webkit-scrollbar {
 .blogDetailsContent td {
 	padding: 10px;
 	border: 1px solid #dee2e6;
+}
+
+.etcFooterContainer .etcCoopNews {
+	padding-top: 17px;
+	padding-left: 36px;
 }
