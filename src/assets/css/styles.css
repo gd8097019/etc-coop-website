@@ -4908,3 +4908,23 @@ body.removeScroll::-webkit-scrollbar {
 .dark-mode .moreArticlesContainer h2 {
 	color: #ffffff;
 }
+
+.blogDetailsContent table {
+	padding: 10px;
+	border: 1px solid #dee2e6;
+}
+
+.blogDetailsContent th {
+	padding: 10px;
+	border: 1px solid #dee2e6;
+}
+
+.blogDetailsContent tr {
+	padding: 10px;
+	border: 1px solid #dee2e6;
+}
+
+.blogDetailsContent td {
+	padding: 10px;
+	border: 1px solid #dee2e6;
+}
