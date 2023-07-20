@@ -151,7 +151,7 @@
 	</Layout>
 </template>
 <script>
-import { Head } from "@vueuse/head";
+import { Head, useHead } from "@vueuse/head";
 import Layout from "@/layout/Layout.vue";
 import Navbar from "@/components/Navbar.vue";
 
@@ -312,6 +312,13 @@ export default {
 		const locale = this.$i18n.locale;
 		this.getContent(locale);
 		this.getMayAlsoLikeArticles(locale);
+	},
+	beforeRouteLeave(to, from, next) {
+		// revert title
+		useHead({
+			title: "ETC Cooperative",
+		});
+		next();
 	},
 };
 </script>
