@@ -287,7 +287,9 @@ export default {
 			let path = "";
 			switch (platform) {
 				case "twitter":
-					path = `https://twitter.com/intent/tweet?url=${this.title} ${this.fullPath}%20@ETCCooperative`;
+					path = `https://twitter.com/intent/tweet?url=${this.clearTitle(
+						this.title
+					)} ${this.fullPath}`;
 					break;
 				case "facebook":
 					path = `https://www.facebook.com/sharer.php?u=${this.fullPath}`;
@@ -300,6 +302,21 @@ export default {
 			if (path) {
 				window.open(path, "ETC Cooperative", "width=650,height=650");
 			}
+		},
+		clearTitle(title) {
+			return title
+				.replaceAll(
+					"#", //this character makes url as anchor and broke everything
+					" "
+				)
+				.replaceAll(
+					"?", //this character makes url as parameter and broke everything
+					" "
+				)
+				.replaceAll(
+					"&", //this character makes url as paramater too and broke everything
+					" "
+				);
 		},
 		async copyClipboard() {
 			try {
