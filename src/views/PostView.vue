@@ -290,10 +290,10 @@ export default {
 					path = `https://twitter.com/intent/tweet?url=${this.title} ${this.fullPath}%20@ETCCooperative`;
 					break;
 				case "facebook":
-					path = `https://www.facebook.com/sharer.php?u=${this.title} ${this.fullPath}`;
+					path = `https://www.facebook.com/sharer.php?u=${this.fullPath}`;
 					break;
 				case "linkedin":
-					path = `https://www.linkedin.com/sharing/share-offsite/?url=${this.title} ${this.fullPath}`;
+					path = `https://www.linkedin.com/sharing/share-offsite/?url=${this.fullPath}`;
 					break;
 			}
 
