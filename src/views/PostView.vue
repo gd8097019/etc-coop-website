@@ -331,9 +331,42 @@ export default {
 		this.getMayAlsoLikeArticles(locale);
 	},
 	beforeRouteLeave(to, from, next) {
-		// revert title
+		// revert all metadata when you leaving page
 		useHead({
-			title: "ETC Cooperative",
+			title: "Ethereum Classic Cooperative",
+			meta: [
+				{
+					name: "description",
+					content: "Accelerating the growth of Ethereum Classic.",
+				},
+				{ property: "og:url", content: "https://etccooperative.org/" },
+				{ property: "og:type", content: "website" },
+				{ property: "og:title", content: "ETC Classic Coop" },
+				{
+					property: "og:description",
+					content: "Accelerating the growth of Ethereum Classic.",
+				},
+				{
+					property: "og:image",
+					content: "https://etccooperative.org/etc-coop-social.png",
+				},
+				{ name: "twitter:card", content: "summary_large_image" },
+				{ property: "twitter:domain", content: "etccooperative.org" },
+				{ property: "twitter:url", content: "https://etccooperative.org/" },
+				{ name: "twitter:title", content: "Ethereum Classic Cooperative" },
+				{
+					name: "twitter:description",
+					content: "Accelerating the growth of Ethereum Classic.",
+				},
+				{
+					name: "twitter:image",
+					content: "https://etccooperative.org/etc-coop-social.png",
+				},
+				{
+					name: "keywords",
+					content: "Ethereum Classic Cooperative, ETC Classic Coop",
+				},
+			],
 		});
 		next();
 	},
