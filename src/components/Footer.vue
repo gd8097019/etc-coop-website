@@ -22,6 +22,12 @@
 							<li>
 								<router-link to="/news">ETC Coop News</router-link>
 							</li>
+							<li>
+								<router-link to="/privacy-policy">Privacy Policy</router-link>
+							</li>
+							<li>
+								<router-link to="/cookie-policy">Cookie Policy</router-link>
+							</li>
 						</ul>
 					</div>
 					<div class="socialMediaIcons">
