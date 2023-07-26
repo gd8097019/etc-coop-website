@@ -10,6 +10,8 @@ import Filings from "@/views/Filings.vue";
 import People from "@/views/People.vue";
 import Contact from "@/views/Contact.vue";
 import NewsList from "@/views/NewsList.vue";
+import PrivacyPolicy from "@/views/PrivacyPolicy.vue";
+import CookiePolicy from "@/views/CookiePolicy.vue";
 
 const routes = [
 	{
@@ -66,6 +68,21 @@ const routes = [
 		path: "/news",
 		name: "news",
 		component: NewsList,
+	},
+	{
+		path: "/news",
+		name: "news",
+		component: NewsList,
+	},
+	{
+		path: "/cookie-policy",
+		name: "cookie",
+		component: CookiePolicy,
+	},
+	{
+		path: "/privacy-policy",
+		name: "privacy",
+		component: PrivacyPolicy,
 	},
 ];
 
