@@ -9,6 +9,8 @@ import i18n from "./i18n";
 import "./assets/css/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
+import VueCookieAcceptDecline from "vue-cookie-accept-decline";
+import "./assets/css/cookie-popup.css";
 
 import { createHead } from "@vueuse/head";
 
@@ -35,6 +37,7 @@ const mixins = {
 
 createApp(App)
 	.mixin(mixins)
+	.component("vue-cookie-accept-decline", VueCookieAcceptDecline)
 	.use(i18n)
 	.use(createHead())
 	.use(router)
