@@ -103,10 +103,17 @@
 
 							<br />
 
+							<br />
+
 							<p><b>Ethereum Classic Cooperative Inc </b></p>
+							<p><b>EIN: 32-0551158 </b></p>
+							<p><b>Delaware State file number: 6535515</b></p>
+
 							<p><b>1207 Delaware Ave #541</b></p>
 							<p><b>Wilmington, DE 19806</b></p>
 							<p><b>USA</b></p>
+
+							<br />
 						</div>
 						<div class="col-sm-0 col-md-2 col-lg-2"></div>
 					</div>
