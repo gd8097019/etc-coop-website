@@ -326,7 +326,17 @@ export default {
 		},
 	},
 	mounted() {
-		const locale = this.$i18n.locale;
+		let locale = "en";
+
+		// check locale for old posts.
+		if (this.$route.path.endsWith("-en")) {
+			locale = "en";
+		} else if (this.$route.path.endsWith("-cn")) {
+			locale = "cn";
+		} else {
+			locale = this.$i18n.locale;
+		}
+
 		this.getContent(locale);
 		this.getMayAlsoLikeArticles(locale);
 	},
