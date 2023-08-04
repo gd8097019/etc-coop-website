@@ -12,6 +12,7 @@ import Contact from "@/views/Contact.vue";
 import NewsList from "@/views/NewsList.vue";
 import PrivacyPolicy from "@/views/PrivacyPolicy.vue";
 import CookiePolicy from "@/views/CookiePolicy.vue";
+import TermsOfService from "@/views/TermsOfService.vue";
 
 const routes = [
 	{
@@ -83,6 +84,11 @@ const routes = [
 		path: "/privacy-policy",
 		name: "privacy",
 		component: PrivacyPolicy,
+	},
+	{
+		path: "/terms-of-service",
+		name: "terms-of-service",
+		component: TermsOfService,
 	},
 ];
 
