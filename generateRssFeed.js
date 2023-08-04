@@ -52,6 +52,9 @@ for (const lang of langs) {
                     <guid isPermaLink="false">${uuidv4()}</guid>
                     <title>${metadata.title || ""}</title>
                     <link>${website}/${file}</link>
+										<media:content medium="image" url="${website}/img/posts/featuredImg/${
+					metadata.featuredImage || ""
+				}" width="385" height="200" />
                   </item>`;
 
 				xml = `<?xml version="1.0" encoding="UTF-8" ?>
