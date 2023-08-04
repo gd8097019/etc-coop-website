@@ -349,8 +349,6 @@ export default {
 					name: "description",
 					content: "Accelerating the growth of Ethereum Classic.",
 				},
-				{ property: "og:url", content: "https://etccooperative.org/" },
-				{ property: "og:type", content: "website" },
 				{ property: "og:title", content: "ETC Classic Coop" },
 				{
 					property: "og:description",
@@ -361,8 +359,6 @@ export default {
 					content: "https://etccooperative.org/etc-coop-social.png",
 				},
 				{ name: "twitter:card", content: "summary_large_image" },
-				{ property: "twitter:domain", content: "etccooperative.org" },
-				{ property: "twitter:url", content: "https://etccooperative.org/" },
 				{ name: "twitter:title", content: "Ethereum Classic Cooperative" },
 				{
 					name: "twitter:description",
