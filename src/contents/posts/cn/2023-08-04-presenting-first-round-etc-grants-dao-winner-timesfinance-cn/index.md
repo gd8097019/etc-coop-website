@@ -1,34 +1,34 @@
 ---
 id: "2023-08-04-presenting-first-round-etc-grants-dao-winner-timesfinance-cn"
-title: "Presenting First Round ETC Grants DAO Winner TimesFinance"
+title: "首轮ETC Grants DAO获奖者- TimesFinance"
 author: Donald McIntyre
 featuredImage: timesfinance-banner.png
 tags: [Announcement]
 ---
-We are happy to present [TimesFinance](https://etcgrants.softr.app/funded-project-details-en?recordId=rec5OBQ30NPbq30b8) as one of the winners of the first round of the ETC Grants DAO program!
+我们很高兴向您介绍 [TimesFinance](https://etcgrants.softr.app/funded-project-details-en?recordId=rec5OBQ30NPbq30b8)，作为 ETC Grants DAO 计划第一轮的获奖者之一！
 
-We emailed Lancer of TimesFinance with our questions, who responded the following:
+我们通过电子邮件向 TimesFinance 的 Lancer 提出了我们的问题，他回复如下：
 
-Donald McIntyre (DM): Can you describe the team please?
+Donald McIntyre（DM）：请描述一下团队。
 
-Lancer (L): The core founding team of TimesFinance, consisting of crypto engineers from Istanbul and Singapore, also includes some individuals from Hong Kong responsible for community operations.
+Lancer（L）：TimesFinance 的核心创始团队由来自伊斯坦布尔和新加坡的加密工程师组成，还包括一些负责社区运营的来自香港的个人。
 
-Our community is primarily located in North America, Europe, Hong Kong and Turkey.
+我们的社区主要位于北美、欧洲、香港和土耳其。
 
-DM: Can you describe the project please?
+DM：请描述一下项目。
 
-L: TimesFinance is a protocol designed for leveraging lending for several DEX's LPs (Liquidity Providers) in the market. Its innovative features are as follows:
+L：TimesFinance 是一个旨在为市场上的几个 DEX LP（流动性提供者）提供杠杆借贷的协议。其创新功能如下：
 
-As the pioneering platform, it enables leveraged lending for Uniswap V3's LPs. Users can leverage their assets and borrow against their V3LPs through TimesFinance, thus amplifying their capital utilization. TimesFinance also extends its support to LPs from Curve V2, Sushiswap, Dodo, and other DEXs. It facilitates LPs to engage in mining and comparative price analysis within the protocol.
+作为先驱平台，它实现了 Uniswap V3 的 LPs 杠杆借贷。用户可以通过 TimesFinance 杠杆化其资产，并针对其 V3LPs 借款，从而增加其资本利用率。TimesFinance 还将其支持扩展到来自 Curve V2、Sushiswap、Dodo 和其他 DEX 的 LPs。它使 LPs 可以在协议内进行挖矿和比价分析。
 
-DM: How much money did you receive from the ETC Grants DAO?
+DM：您从 ETC Grants DAO 那里获得了多少资金？
 
-L: We have sought and been granted of $50,000.
+L：我们获得了 50,000 美元的资助。
 
-DM: Why did you choose ETC?
+DM：为什么选择了 ETC？
 
-The aim of TimesFinance is to establish a DEX ecosystem within a multi-chain environment, thus actively engaging in the development of outstanding public chains infrastructures.
+TimesFinance 的目标是在多链环境中建立一个 DEX 生态系统，从而积极参与优秀公链基础设施的发展。
 
 ---
 
-To see the full list of winners go here: [https://etcgrants.softr.app/projects-list-en](https://etcgrants.softr.app/projects-list-en)
+要查看完整的获奖名单，请访问此处: [https://etcgrants.softr.app/projects-list-en](https://etcgrants.softr.app/projects-list-en)
