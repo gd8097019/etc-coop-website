@@ -18,7 +18,7 @@ Igor Barinov is the project founder and continues to drive the vision of Blocksc
 
 DM: Can you describe the project please?
 
-AG: Blockscout has been providing an open-source block explorer to EVM chains since 2018. [Ethereum Classic](https://blockscout.com/etc/mainnet/) was one of the first chains to use Blockscout for their explorer needs. While Blockscout hosting is currently managed by ETC, Blockscout has helped with various updates and issues for managed instances (including mainnet and several testnets) over the years.
+AG: Blockscout has been providing an open-source block explorer to EVM chains since 2018. [Ethereum Classic](https://blockscout.com/etc/mainnet/) was one of the first chains to use Blockscout for their explorer needs. While Blockscout hosting is currently managed by the ETC Cooperative, Blockscout has helped with various updates and issues for managed instances (including mainnet and several testnets) over the years.
 
 During the past year, Blockscout has expanded focus to prioritize the new version of Blockscout, called Blockscout Portal. This new version is designed to make exploration easy and accessible, while incorporating new features like a Dapp Marketplace, My Account section, a Rest API, analytics, and much more. In addition to the rebuilt front-end, a new microservices architecture adds modularity and the ability to code new features using Rust. We’ve made many speed and optimization improvements and are very excited to bring this new version to ETC developers and users.
 
