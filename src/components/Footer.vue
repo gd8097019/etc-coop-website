@@ -28,6 +28,11 @@
 							<li>
 								<router-link to="/cookie-policy">Cookie Policy</router-link>
 							</li>
+							<li>
+								<router-link to="/terms-of-service"
+									>Terms Of Service</router-link
+								>
+							</li>
 						</ul>
 					</div>
 					<div class="socialMediaIcons">
