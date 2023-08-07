@@ -2,7 +2,7 @@
 id: "2023-08-14-presenting-first-round-etc-grants-dao-winner-etc-radio-en"
 title: "Presenting First Round ETC Grants DAO Winner ETC Radio"
 author: Donald McIntyre
-featuredImage: etc-radio-banner.png
+featuredImage: etc-radio-banner-1.png
 tags: [Announcement]
 ---
 
