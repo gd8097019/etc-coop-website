@@ -2,7 +2,7 @@
 id: "2023-08-08-presenting-first-round-etc-grants-dao-winner-ETC-Fans-en"
 title: "Presenting First Round ETC Grants DAO Winner ETC Fans"
 author: Donald McIntyre
-featuredImage: etc-fans-banner.png
+featuredImage: etc-fans-banner-1.png
 tags: [Announcement]
 ---
 
