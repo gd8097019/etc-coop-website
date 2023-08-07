@@ -1,6 +1,6 @@
 ---
-id: "2023-08-09-presenting-first-round-etc-grants-dao-winner-ETC-Fans-en"
-title: "Presenting First Round ETC Grants DAO Winner ETC Fans"
+id: "2023-08-09-presenting-first-round-etc-grants-dao-winner-blockscout-en"
+title: "Presenting First Round ETC Grants DAO Winner Blockscout"
 author: Donald McIntyre
 featuredImage: blockscout-banner.png
 tags: [Announcement]
