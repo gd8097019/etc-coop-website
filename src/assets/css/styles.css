@@ -2613,6 +2613,14 @@ body.removeScroll::-webkit-scrollbar {
 	padding: 80px 0px;
 }
 
+.addressSection {
+	padding: 0px 0px 80px 0px;
+}
+
+.addressSection p {
+	color: #1f2734;
+}
+
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
 	width: 30px;
@@ -3295,6 +3303,10 @@ body.removeScroll::-webkit-scrollbar {
 
 	.stayConnectedSection {
 		padding: 40px 0px;
+	}
+
+	.addressSection {
+		padding: 0px 0px 40px 0px;
 	}
 
 	.etcContactLinksSection {
