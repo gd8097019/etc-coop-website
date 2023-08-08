@@ -31,4 +31,4 @@ TimesFinance 的目标是在多链环境中建立一个 DEX 生态系统，从�
 
 ---
 
-要查看完整的获奖名单，请访问此处: [https://etcgrants.softr.app/projects-list-en](https://etcgrants.softr.app/projects-list-en)
+要查看完整的获奖名单，请访问此处: 查看完整版获奖项目列表: https://etcgrants.softr.app/projects-list-funded-zh
