@@ -96,7 +96,7 @@ const parseDateFromFileName = function (file) {
 				dateText = "";
 			} else {
 				dateText = `${monthNames[date.getMonth()]} ${String(
-					date.getDay()
+					date.getDate()
 				).padStart(2, "0")}, ${date.getFullYear()}`;
 			}
 		} else {
