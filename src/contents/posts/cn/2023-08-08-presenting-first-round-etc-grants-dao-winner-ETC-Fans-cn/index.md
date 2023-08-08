@@ -1,14 +1,14 @@
 ---
 id: "2023-08-08-presenting-first-round-etc-grants-dao-winner-ETC-Fans-cn"
-title: "Presenting First Round ETC Grants DAO Winner ETC Fans"
+title: "首轮ETC Grants DAO获奖者 - ETC Fans"
 author: Donald McIntyre
 featuredImage: etc-fans-banner-1.png
 tags: [Announcement]
 ---
 
-We are happy to present [ETC Fans](https://etcgrants.softr.app/project-details-zh?recordId=recr0eMr29BldNctN) by [Web3CN](https://twitter.com/Web3CN_Pro) as one of the winners of the first round of the ETC Grants DAO program!  
+今天，我们很开心将来自[Web3CN](https://twitter.com/Web3CN_Pro)的[ETC Fans](https://etcgrants.softr.app/project-details-zh?recordId=recr0eMr29BldNctN) 介绍给大家认识。ETC Fans是首轮ETC Grants DAO项目的获奖项目之一。
 
-Below please find our email interview with Xu Xing, one of the team members:
+以下为我们与Xu Xing（团队成员之一）的邮件访谈：
 
 Donald McIntyre (DM): 请您介绍一下您的团队？
 
@@ -20,7 +20,7 @@ XX: ETC Fans 是一个致力于汇聚全球ETC（以太坊经典）爱好者的�
 
 DM: 您从ETC Grants DAO项目中获得了多少资金支持？
 
-XX: We received $10k USD.
+XX: 我们收到了$10000美金。
 
 DM: 您为什么选择了ETC？
 
@@ -30,4 +30,4 @@ XX: 1.ETC是一条真正意义上的去中心化的公链，体现了加密世�
 
 ---
 
-To see the full list of winners go here: [https://etcgrants.softr.app/projects-list-en](https://etcgrants.softr.app/projects-list-en)
+查看完整版获奖项目列表: [https://etcgrants.softr.app/projects-list-en](https://etcgrants.softr.app/projects-list-zh)
