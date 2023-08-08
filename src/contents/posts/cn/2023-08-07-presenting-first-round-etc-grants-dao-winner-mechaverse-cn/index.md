@@ -43,8 +43,4 @@ L：Mechaverse的目标是在多链生态系统中创建一个机甲游戏生态
 
 **感谢您阅读本期文章!**
 
-查看完整版获奖者名单: [https://etcgrants.softr.app/projects-list-en](https://etcgrants.softr.app/projects-list-en)
-
-了解更多有关ETC合作社:  [https://etccooperative.org](https://etccooperative.org/)
-
-了解更多有关ETC:  [https://ethereumclassic.org](https://ethereumclassic.org/)
+查看完整版获奖项目列表: https://etcgrants.softr.app/projects-list-funded-zh
