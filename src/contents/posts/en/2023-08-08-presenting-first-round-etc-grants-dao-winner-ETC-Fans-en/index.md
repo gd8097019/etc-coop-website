@@ -30,4 +30,4 @@ XX: 1. ETC is a truly decentralized public chain, which embodies the most origin
 
 ---
 
-To see the full list of winners go here: [https://etcgrants.softr.app/projects-list-en](https://etcgrants.softr.app/projects-list-en)
+To see the full list of winners go here: [https://etcgrants.softr.app/projects-list-funded-en](https://etcgrants.softr.app/projects-list-funded-en)
