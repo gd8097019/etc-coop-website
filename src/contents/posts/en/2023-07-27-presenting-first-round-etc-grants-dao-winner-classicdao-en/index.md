@@ -69,8 +69,5 @@ DM: Excellent! I think it's a good interesting case to have a DAO. First, a new 
 
 **Thank you for reading this article!**
 
-To see the full list of winners go here: [https://etcgrants.softr.app/projects-list-en](https://etcgrants.softr.app/projects-list-en)
+To see the full list of winners go here: [https://etcgrants.softr.app/projects-list-funded-en](https://etcgrants.softr.app/projects-list-funded-en)
 
-To learn more about the ETC Cooperative go to:  [https://etccooperative.org](https://etccooperative.org/)
-
-To learn more about ETC go to:  [https://ethereumclassic.org](https://ethereumclassic.org/)
