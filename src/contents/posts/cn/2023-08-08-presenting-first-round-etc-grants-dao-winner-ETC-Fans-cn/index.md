@@ -30,4 +30,4 @@ XX: 1.ETC是一条真正意义上的去中心化的公链，体现了加密世�
 
 ---
 
-查看完整版获奖项目列表: [https://etcgrants.softr.app/projects-list-funded-zh](https://etcgrants.softr.app/projects-list-funded-zh)
+查看完整版获奖项目列表: https://etcgrants.softr.app/projects-list-funded-zh
