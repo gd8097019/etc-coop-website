@@ -31,4 +31,4 @@ NerveNetwork目前支持包括以太坊、BSC、Polygon、Arbitrum、zkSync、Op
 
 ---
 
-查看获奖项目的完整名单: [https://etcgrants.softr.app/projects-list-en](https://etcgrants.softr.app/projects-list-en)
+查看完整版获奖项目列表: https://etcgrants.softr.app/projects-list-funded-zh
