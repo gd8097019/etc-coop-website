@@ -72,8 +72,4 @@ HB: 我们选择ETC作为我们开发Dapp的平台，这是因为在2021年12月
 
 **感谢您阅读本期文章!**
 
-了解完整版获奖名单: [https://etcgrants.softr.app/projects-list-en](https://etcgrants.softr.app/projects-list-en)
-
-了解更多有关ETC合作社:  [https://etccooperative.org](https://etccooperative.org/)
-
-了解更多有关ETC:  [https://ethereumclassic.org](https://ethereumclassic.org/)
+查看完整版获奖项目列表: https://etcgrants.softr.app/projects-list-funded-zh
