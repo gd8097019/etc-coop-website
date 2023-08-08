@@ -42,4 +42,5 @@ The goal of Mechaverse is to create a mecha game ecosystem in a multi-chain ecos
 
 ---
 
-To see the full list of winners go here: [https://etcgrants.softr.app/projects-list-en](https://etcgrants.softr.app/projects-list-en) 
+To see the full list of winners go here: [https://etcgrants.softr.app/projects-list-funded-en](https://etcgrants.softr.app/projects-list-funded-en)
+ 
