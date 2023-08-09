@@ -29,8 +29,4 @@ tags: [Announcement]
 
 **感谢您阅读本期文章!**
 
-查看完整的获奖者名单，请访问: [https://etcgrants.softr.app/projects-list-en](https://etcgrants.softr.app/projects-list-en)
-
-了解更多关于ETC合作社，请访问:  [https://etccooperative.org](https://etccooperative.org/)
-
-了解更多关于ETC，请访问:  [https://ethereumclassic.org](https://ethereumclassic.org/)
+查看完整版获奖项目列表: https://etcgrants.softr.app/projects-list-funded-zh

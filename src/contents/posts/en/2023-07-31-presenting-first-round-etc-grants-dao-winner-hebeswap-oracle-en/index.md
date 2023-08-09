@@ -73,8 +73,4 @@ As a result, we built our first Dapp, Hebe Swap, on the ETC blockchain. Later, w
 
 **Thank you for reading this article!**
 
-To see the full list of winners go here: [https://etcgrants.softr.app/projects-list-en](https://etcgrants.softr.app/projects-list-en)
-
-To learn more about the ETC Cooperative go to:  [https://etccooperative.org](https://etccooperative.org/)
-
-To learn more about ETC go to:  [https://ethereumclassic.org](https://ethereumclassic.org/)
+To see the full list of winners go here: [https://etcgrants.softr.app/projects-list-funded-en](https://etcgrants.softr.app/projects-list-funded-en)
