@@ -2,7 +2,7 @@
 id: "2023-08-09-presenting-first-round-etc-grants-dao-winner-blockscout-cn"
 title: "首轮ETC Grants DAO获奖者 - Blockscout"
 author: Donald McIntyre
-featuredImage: blockscout-banner.png
+featuredImage: blockscout-banner-1.png
 tags: [Announcement]
 ---
 
