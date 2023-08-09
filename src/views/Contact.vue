@@ -45,6 +45,24 @@
 			</section>
 			<!-- stay connected section ends here -->
 
+			<!-- postal adress section starts here -->
+			<section class="addressSection">
+				<div class="stayConnectedContainer">
+					<div class="heading">
+						<h1>Postal Address:</h1>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<p>Ethereum Classic Cooperative Inc</p>
+							<p>1207 Delaware Ave #541</p>
+							<p>Wilmington, DE 19806</p>
+							<p>USA</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- postal adress section ends here -->
+
 			<!-- etc contact links starts here -->
 			<section class="etcContactLinksSection">
 				<div class="etcContactLinksContainer">
@@ -52,6 +70,7 @@
 						<div class="heading">
 							<h1>ETC Cooperative:</h1>
 						</div>
+
 						<div class="contactLinks">
 							<a target="_blank" href="https://twitter.com/ETCCooperative">
 								<img src="@/assets/images/contact-twitter.svg" alt="" />
@@ -152,7 +171,6 @@ export default {
 					mail: "angelah@etccooperative.org",
 					twitter: "angelahliu_",
 				},
-				
 			],
 		};
 	},
