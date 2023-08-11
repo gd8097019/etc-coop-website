@@ -271,9 +271,9 @@ export default {
 							// date object is not valid
 							dateText = "";
 						} else {
-							dateText = `${monthNames[date.getMonth()]} ${String(
-								date.getDate()
-							).padStart(2, "0")}, ${date.getFullYear()}`;
+							dateText = `${monthNames[date.getUTCMonth()]} ${String(
+								date.getUTCDate()
+							).padStart(2, "0")}, ${date.getUTCFullYear()}`;
 						}
 					} else {
 						dateText = "";
