@@ -1095,6 +1095,10 @@
 	color: #515651;
 }
 
+.documentCardContent a {
+	flex: 1;
+}
+
 /* donations to etc section starts here */
 .donationsToEtcSection {
 	padding: 0px 32px;
