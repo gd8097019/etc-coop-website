@@ -1095,6 +1095,10 @@
 	color: #515651;
 }
 
+.documentCardContent a {
+	flex: 1;
+}
+
 /* donations to etc section starts here */
 .donationsToEtcSection {
 	padding: 0px 32px;
@@ -4233,6 +4237,10 @@ body.removeScroll::-webkit-scrollbar {
 .dark-mode .newsListSection .swiperSlideBtn img {
 	filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%)
 		hue-rotate(0deg);
+}
+
+.dark-mode .addressSection p {
+	color: #ffffff;
 }
 
 .newsListSection .newsBtns {
