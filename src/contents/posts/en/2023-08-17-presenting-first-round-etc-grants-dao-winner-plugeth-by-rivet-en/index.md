@@ -6,7 +6,7 @@ featuredImage: plugeth-banner.png
 tags: [Announcement]
 ---
 
-We are happy to present PluGeth by Rivet as one of the winners of the first round of the ETC Grants DAO program!  
+We are happy to present [PluGeth](https://etcgrants.softr.app/project-details-en?recordId=recOpSvgpRDDBPuJ8) by Rivet as one of the winners of the first round of the ETC Grants DAO program!  
 
 ---
 **You can watch this interview here:**
