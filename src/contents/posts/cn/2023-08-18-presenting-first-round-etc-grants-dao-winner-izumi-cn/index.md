@@ -6,7 +6,7 @@ featuredImage: izumi-banner.png
 tags: [Announcement]
 ---
 
-We are happy to present [iZUMi](https://etcgrants.softr.app/project-details-en?recordId=recAgWpIfely1Btoc) as one of the winners of the first round of the ETC Grants DAO program!
+We are happy to present [iZUMi](https://etcgrants.softr.app/project-details-zh?recordId=recAgWpIfely1Btoc) as one of the winners of the first round of the ETC Grants DAO program!
 
 Below please find our email interview with Larry Lee, who is the business development lead at iZUMi:
 
