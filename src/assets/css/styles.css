@@ -4239,6 +4239,10 @@ body.removeScroll::-webkit-scrollbar {
 		hue-rotate(0deg);
 }
 
+.dark-mode .addressSection p {
+	color: #ffffff;
+}
+
 .newsListSection .newsBtns {
 	display: flex;
 	justify-content: flex-end;
