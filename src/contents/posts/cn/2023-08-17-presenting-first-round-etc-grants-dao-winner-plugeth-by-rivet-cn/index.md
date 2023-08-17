@@ -1,31 +1,32 @@
 ---
 id: "2023-08-17-presenting-first-round-etc-grants-dao-winner-plugeth-by-rivet-cn"
-title: "Presenting First Round ETC Grants DAO Winner PluGeth by Rivet"
+title: "首轮ETC Grants DAO获奖者 - PluGeth by Rivet"
 author: Donald McIntyre
 featuredImage: plugeth-banner.png
 tags: [Announcement]
 ---
 
-We are happy to present [PluGeth](https://etcgrants.softr.app/project-details-zh?recordId=recOpSvgpRDDBPuJ8) by Rivet as one of the winners of the first round of the ETC Grants DAO program!  
+我们很高兴向您介绍 Rivet的[PluGeth](https://etcgrants.softr.app/project-details-zh?recordId=recOpSvgpRDDBPuJ8)，它是 ETC Grants DAO 计划第一轮的获奖项目之一！
 
 ---
-**You can watch this interview here:**
+**欢迎由此观看访谈:**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/P-m6XpW5Nto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ---
 
-In our video interview, we spoke with Philip Morlier, software engineer at Rivet, about the following topics:  
 
-- PluGeth/Rivet team description  
-- What is the PluGeth project?  
-- Grant amount earned
-- Why did Rivet choose Ethereum Classic to do this PluGeth implementation?  
+在我们的视频采访中，我们与 Rivet 的软件工程师 Philip Morlier 讨论了以下主题：
 
-Stay tuned for more interviews and presentations of our winners!
+- PluGeth/Rivet 团队介绍
+- 什么是 PluGeth 项目？
+- 获得助款金额
+- 为什么 Rivet 选择以太经典来实现PluGeth？
+
+请继续关注更多获奖者的采访和演示！
 
 ---
-Following are links to the PluGeth project:
+以下是 PluGeth 项目的链接：
 
 PluGeth: https://plugeth.org 
 
@@ -33,4 +34,4 @@ Rivet: https://rivet.cloud
 
 ---
 
-To see the full list of winners go here: [https://etcgrants.softr.app/projects-list-en](https://etcgrants.softr.app/projects-list-en)
+由此查看完整获奖项目名单: [https://etcgrants.softr.app/projects-list-en](https://etcgrants.softr.app/projects-list-en)
