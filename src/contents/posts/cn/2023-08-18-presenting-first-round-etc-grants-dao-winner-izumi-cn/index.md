@@ -6,7 +6,7 @@ featuredImage: izumi-banner.png
 tags: [Announcement]
 ---
 
-我们很开心的介绍首轮ETC Grants DAO获奖项目-[iZUMi](https://etcgrants.softr.app/project-details-zh?recordId=recAgWpIfely1Btoc)！
+我们今天向大家介绍介绍首轮ETC Grants DAO的获奖项目是：[iZUMi](https://etcgrants.softr.app/project-details-zh?recordId=recAgWpIfely1Btoc)！
 
 以下是我们与 iZUMi 的业务发展负责人 Larry Lee 的电子邮件采访：
 
