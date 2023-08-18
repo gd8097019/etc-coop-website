@@ -2,7 +2,7 @@
 id: "2023-08-18-presenting-first-round-etc-grants-dao-winner-izumi-cn"
 title: "首轮ETC Grants DAO获奖者 - iZUMi"
 author: Donald McIntyre
-featuredImage: izumi-banner.png
+featuredImage: izumi-banner-1.png
 tags: [Announcement]
 ---
 
