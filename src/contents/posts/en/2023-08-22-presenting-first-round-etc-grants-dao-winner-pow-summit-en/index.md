@@ -2,7 +2,7 @@
 id: "2023-08-22-presenting-first-round-etc-grants-dao-winner-pow-summit-en"
 title: "Presenting First Round ETC Grants DAO Winner POW Summit"
 author: Donald McIntyre
-featuredImage: pow-summit-banner.png
+featuredImage: pow-summit-banner-1.png
 tags: [Announcement]
 ---
 
