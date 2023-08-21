@@ -26,8 +26,9 @@ Stay tuned for more interviews and presentations of our winners!
 
 ---
 
-To learn more about the POW Summit or to get tickets go to: https://powsummit.com/
+To learn more about the POW Summit or to get tickets go to: [https://powsummit.com/](https://powsummit.com/)
 
 ---
 
 To see the full list of winners go here: [https://etcgrants.softr.app/projects-list-en](https://etcgrants.softr.app/projects-list-en)
+
