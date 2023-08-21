@@ -6,7 +6,7 @@ featuredImage: alphaday-banner.png
 tags: [Announcement]
 ---
 
-We are happy to present [Alphaday](https://etcgrants.softr.app/project-details-en?recordId=recFXsxD1gSPBC6ab) as one of the winners of the first round of the ETC Grants DAO program!
+We are happy to present [Alphaday](https://etcgrants.softr.app/project-details-zh?recordId=recFXsxD1gSPBC6ab) as one of the winners of the first round of the ETC Grants DAO program!
 
 Below please find our email interview with Deniz Omer, who is the founder of Alphaday:
 
