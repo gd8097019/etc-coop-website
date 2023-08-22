@@ -2,7 +2,7 @@
 id: "2023-08-22-presenting-first-round-etc-grants-dao-winner-pow-summit-cn"
 title: "首轮ETC Grants DAO获奖者 - 工作量证明峰会"
 author: Donald McIntyre
-featuredImage: pow-summit-banner-1.png
+featuredImage: pow-summit-banner-2.png
 tags: [Announcement]
 ---
 
