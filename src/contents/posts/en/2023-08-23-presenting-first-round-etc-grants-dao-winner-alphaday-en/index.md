@@ -2,7 +2,7 @@
 id: "2023-08-23-presenting-first-round-etc-grants-dao-winner-alphaday-en"
 title: "Presenting First Round ETC Grants DAO Winner Alphaday"
 author: Donald McIntyre
-featuredImage: alphaday-banner.png
+featuredImage: alphaday-banner-1.png
 tags: [Announcement]
 ---
 
