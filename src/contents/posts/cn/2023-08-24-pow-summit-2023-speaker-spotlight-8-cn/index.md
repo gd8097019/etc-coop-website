@@ -12,6 +12,6 @@ Donald McIntyre，区块链领域的知名人士，作为以太经典合作社�
 
 Ryan Condron，Titan Mining的富有远见的首席执行官，Lumerin协议的架构师，将加入我们在布拉格工作量证明峰会的行列，分享他对工作证明和挖矿未来的看法。瑞恩的专业知识必将展示出塑造该行业的技术演变的一瞥。
 
-Michael Parenti，在加密社区内备受尊敬的声音，以及Paralelní Polis的多才多艺的生态系统整合者，为峰会增添了独特的维度。作为加密现实主义者，他的观点将为我们提供关于加密货币未来发展轨迹的有趣见解。
+Michael Parenti，在加密社区内备受尊敬的声音，以及Parallele Polis的多才多艺的生态系统整合者，为峰会增添了独特的维度。作为加密现实主义者，他的观点将为我们提供关于加密货币未来发展轨迹的有趣见解。
 
 欢迎您持续关注，并通过[POW峰会](https://twitter.com/PowSummit)，[莱特币基金会（Litecoin Foundation）](https://www.litecoin.net/)或[以太经典合作社（ETC Cooperative）](https://etccooperative.org/)推特来了解最新动态。
