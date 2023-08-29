@@ -12,6 +12,6 @@ This week, we're thrilled to introduce you to more captivating speakers who will
 
 **Ryan Condron**, the visionary CEO of Titan Mining and architect of the Lumerin Protocol, joins us in Prague to share his thoughts on the future of proof-of-work and mining. Ryan's expertise promises to provide a glimpse into the technological evolution shaping the industry.
 
-**Michael Parenti**, a respected voice within the crypto community and a versatile ecosystem integrator at Paralelní Polis, adds a unique dimension to the summit. His perspective as a crypto-realist will offer intriguing insights into the future trajectories of cryptocurrency.
+**Michael Parenti**, a respected voice within the crypto community and a versatile ecosystem integrator at Parallele Polis, adds a unique dimension to the summit. His perspective as a crypto-realist will offer intriguing insights into the future trajectories of cryptocurrency.
 
 Connect with us and stay in the loop for the latest updates: follow us on [POW Twitter](https://twitter.com/PowSummit), the [Litecoin Foundation](https://www.litecoin.net/), or the [ETC Cooperative](https://etccooperative.org/).
