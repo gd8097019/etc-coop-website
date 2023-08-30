@@ -51,7 +51,7 @@ for (const lang of langs) {
 				items += `<item>
                     <guid isPermaLink="false">${uuidv4()}</guid>
                     <title>${metadata.title || ""}</title>
-                    <link>${website}/${file}</link>
+                    <link>${website}/posts/${file}</link>
 										<media:content medium="image" url="${website}/img/posts/featuredImg/${
 					metadata.featuredImage || ""
 				}" width="385" height="200" />
