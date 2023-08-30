@@ -1,31 +1,31 @@
 ---
 id: "2023-08-30-presenting-first-round-etc-grants-dao-winner-magic-tower-cn"
-title: "Presenting First Round ETC Grants DAO Winner Magic Tower"
+title: "首轮ETC Grants DAO获奖者 - 魔塔"
 author: Donald McIntyre
 featuredImage: magic-tower-banner.png
 tags: [Announcement]
 ---
 
-We are happy to present [Magic Tower](https://etcgrants.softr.app/project-details-cn?recordId=recnw4j7BP3XQHZr5) as one of the winners of the first round of the ETC Grants DAO program!
+今天，我们向大家介绍ETC Grants DAO的获奖项目之一：[魔塔](https://etcgrants.softr.app/project-details-cn?recordId=recnw4j7BP3XQHZr5)
 
-Below please find our email interview with Tuna Bluefin, who works for Magic Tower:
+以下是我们与在魔塔工作的Tuna Bluefin进行的电子邮件访谈，内容如下：
 
-Donald McIntyre (DM): Can you describe the team please?
+Donald McIntyre（DM）：能请您描述一下团队吗？
 
-Tuna Bluefin (TB): We are an efficient and collaborative team. David Lee, our CEO is the public relations director of Dangdang. He is mainly engaged in NFT and Metaverse. Todd Taylor, the game design director, is experienced in game planning and online maintenance of products. Hong Yi, the Algorithm Engineer, is very experienced too. There are another two members in our team, they are CMO, Xia Chuanjia, and the Project Director, Koki Morita.
+Tuna Bluefin（TB）：我们是一个高效协作的团队。David Lee是我们的CEO，也是Dangdang的公共关系总监。他主要从事NFT和元宇宙方面的工作。游戏设计总监Todd Taylor在游戏规划和产品在线维护方面经验丰富。算法工程师Hong Yi也非常有经验。团队中还有另外两名成员，他们是首席营销官夏传佳和项目总监Koki Morita。
 
-DM: Can you describe the project please?
+DM：能请您描述一下这个项目吗？
 
-TB: Our project is Magic Tower, which is an unprecedented role-playing (RPG) game (RPG). It was first launched on the ETC public chain. It combines NFTs with game assets, allowing players to trade freely and generate new value through battles. Magic Tower can also provide players with a free, open, and fair virtual social platform.
+TB：我们的项目是魔塔，这是一款前所未有的角色扮演（RPG）游戏。它首次在ETC公链上推出。它将NFT与游戏资产结合在一起，使玩家能够通过战斗自由交易并创造新价值。魔塔还可以为玩家提供一个自由、开放和公平的虚拟社交平台。
 
-DM: How much money did you receive from the ETC Grants DAO?
+DM：您从ETC Grants DAO那里获得了多少资金？
 
-TB: We are honored to have received a grant of $50,000, which will give us a lot of help to advance our work plan.  
+TB：我们非常荣幸地获得了5万美元的资助，这将极大地帮助我们推进工作计划。
 
-DM: Why did you choose ETC?
+DM：您为什么选择了ETC？
 
-TB: We chose the ETC chain because of its more stable monetary policy, its security, and the strong support for the "EVM" format.
+TB：我们选择了ETC链，是因为它具有更稳定的货币政策、更高的安全性，以及对“EVM”格式的强大支持。
 
 ---
 
-To see the full list of winners go here: [https://etcgrants.softr.app/projects-list-en](https://etcgrants.softr.app/projects-list-cn)
+查看完整版获奖项目: [https://etcgrants.softr.app/projects-list-cn](https://etcgrants.softr.app/projects-list-cn)
