@@ -1,6 +1,6 @@
 ---
 id: "2023-08-30-presenting-first-round-etc-grants-dao-winner-magic-tower-cn"
-title: "首轮ETC Grants DAO获奖者 - 魔塔"
+title: "首轮ETC Grants DAO获奖项目 - 魔塔"
 author: Donald McIntyre
 featuredImage: magic-tower-banner.png
 tags: [Announcement]
