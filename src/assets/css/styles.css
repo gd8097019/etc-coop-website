@@ -898,6 +898,11 @@
 }
 
 /* developing requirement section starts here */
+h2.accordion-header {
+	font-size: 28px;
+	font-weight: bold;
+}
+
 .developingRequirement {
 	padding: 80px 32px;
 }
@@ -916,11 +921,10 @@
 
 .documentCard {
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
+	gap: 20px;
+	align-items: baseline;
 	border-bottom: 1px solid rgba(123, 125, 130, 0.25);
-	padding: 18px 0px;
-	margin-bottom: 38px;
+	padding: 8px 0px;
 }
 
 .documentCard .documentCardContent {
@@ -936,7 +940,7 @@
 }
 
 .documentCard:first-child {
-	padding-top: 56px;
+	padding-top: 20px;
 }
 
 .documentCard:last-child {
@@ -961,7 +965,7 @@
 	font-family: var(--Noto_sans);
 	font-style: normal;
 	font-weight: 700;
-	font-size: 20px;
+	font-size: 16px;
 	letter-spacing: -0.02em;
 	color: #1b1b1b;
 	margin-bottom: 0px;
@@ -977,7 +981,7 @@
 	font-family: var(--Noto_sans);
 	font-style: normal;
 	font-weight: 400;
-	font-size: 20px;
+	font-size: 16px;
 	color: #1b1b1b;
 	margin-right: 74px;
 	margin-bottom: 0px;
@@ -1050,6 +1054,7 @@
 	background-repeat: no-repeat !important;
 	background-position: center;
 	background-size: 12px 7.5px !important;
+	display: none;
 }
 
 .documentsContainer .heading {
@@ -1066,6 +1071,17 @@
 	color: #1b1b1b;
 }
 
+@media screen and (max-width: 767px) {
+	.documentCard > a {
+		display: none;
+	}
+	.documentCardContent p {
+		margin-right: 0;
+	}
+	.documentCard .documentCardContent {
+		width: 100%;
+	}
+}
 /* documents section starts here */
 .documentsSection {
 	padding-bottom: 52px;
