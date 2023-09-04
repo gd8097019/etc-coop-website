@@ -22,33 +22,11 @@
 							:key="fkey"
 						>
 							<h2 class="accordion-header">
-								<button
-									class="accordion-button"
-									:class="{ collapsed: fkey !== 0 ? true : false }"
-									type="button"
-									data-bs-toggle="collapse"
-									:data-bs-target="`#collapse-f-${fkey}`"
-									aria-expanded="false"
-									:aria-controls="`collapse-f-${fkey}`"
-									@click="updateAccordionText('f', fkey)"
-								>
-									<span class="accBtnContent">
-										{{ filing.title }}
-										<span v-if="fkey === 0" class="showAndHide">{{
-											$t("filings.hide")
-										}}</span>
-										<span v-else class="showAndHide">{{
-											$t("filings.show")
-										}}</span>
-									</span>
-								</button>
+								{{ filing.title }}
 							</h2>
 							<div
 								:id="`collapse-f-${fkey}`"
-								class="accordion-collapse collapse accordion-collapse collapse"
-								:class="{
-									show: activeFilingsTab === fkey ? true : false,
-								}"
+								class="accordion-collapse collapse accordion-collapse collapse show"
 							>
 								<div
 									v-for="(file, fkey) in filing.files"
@@ -77,22 +55,6 @@
 												<p>{{ file.description }}</p>
 											</a>
 										</div>
-										<a
-											target="_blank"
-											:href="file.fileLink"
-											:download="file.date"
-										>
-											<img
-												class="lightIcon"
-												src="@/assets/images/arrow-right-dark.svg"
-												alt=""
-											/>
-											<img
-												class="darkIcon"
-												src="@/assets/images/arrow-right-gray.svg"
-												alt=""
-											/>
-										</a>
 									</div>
 								</div>
 							</div>
