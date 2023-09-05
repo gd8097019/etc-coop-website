@@ -1,6 +1,6 @@
 ---
 id: "2023-08-28-pow-summit-2023-speaker-spotlight-9-cn"
-title: "POW Summit 2023 Speaker Spotlight #9"
+title: "POW工作量证明峰会嘉宾阵容 #9"
 author: Donald McIntyre
 featuredImage: speaker-ann-9.png
 tags: [Announcement]
