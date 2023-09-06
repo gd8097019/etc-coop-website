@@ -33,17 +33,6 @@
 									:key="fkey"
 									class="documentCard"
 								>
-									<a
-										target="_blank"
-										:href="file.fileLink"
-										:download="file.date"
-									>
-										<img
-											class="pdfIcon"
-											src="@/assets/images/pdf-icon.svg"
-											alt=""
-										/>
-									</a>
 									<div class="documentCardContent">
 										<div class="documentSubj">
 											<a
