@@ -951,7 +951,7 @@ h2.accordion-header {
 	display: none;
 }
 
-.documentCardContent .documentSubj {
+.documentCardContent .documentSubj > a {
 	display: flex;
 	align-items: flex-start;
 }
@@ -1080,6 +1080,9 @@ h2.accordion-header {
 	}
 	.documentCard .documentCardContent {
 		width: 100%;
+	}
+	.documentCardContent .documentSubj > a {
+		display: block;
 	}
 }
 /* documents section starts here */

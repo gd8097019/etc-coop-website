@@ -46,12 +46,12 @@
 									</a>
 									<div class="documentCardContent">
 										<div class="documentSubj">
-											<h3 v-if="file.date !== ''">{{ file.date }}</h3>
 											<a
 												target="_blank"
 												:href="file.fileLink"
 												:download="file.date"
 											>
+												<h3 v-if="file.date !== ''">{{ file.date }}</h3>
 												<p>{{ file.description }}</p>
 											</a>
 										</div>
