@@ -3571,7 +3571,6 @@ body.removeScroll::-webkit-scrollbar {
 
 @media screen and (max-width: 1199px) and (min-width: 992px) {
 	.newsCardImg {
-		height: 432px;
 		object-fit: cover;
 	}
 
