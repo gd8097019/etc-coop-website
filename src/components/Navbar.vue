@@ -27,7 +27,7 @@
 							aria-current="page"
 							to="/ethereum-classic"
 						>
-							Ethereum Classic
+							{{ $t("navigation.ethereum_classic") }}
 						</router-link>
 					</li>
 					<li class="nav-item">
@@ -37,7 +37,7 @@
 							aria-current="page"
 							to="/mining"
 						>
-							Mining
+							{{ $t("navigation.mining") }}
 						</router-link>
 					</li>
 					<li class="nav-item">
@@ -46,7 +46,9 @@
 							class="nav-link"
 							aria-current="page"
 							to="/developing-for-etc"
-							>Developing</router-link
+							>
+								{{ $t("navigation.developing") }}
+							</router-link
 						>
 					</li>
 					<li class="nav-item">
@@ -55,7 +57,9 @@
 							class="nav-link"
 							aria-current="page"
 							to="/news"
-							>News</router-link
+							>
+								{{ $t("navigation.news") }}
+							</router-link
 						>
 					</li>
 					<li class="nav-item dropdown">
@@ -66,7 +70,7 @@
 							data-bs-toggle="dropdown"
 							aria-expanded="false"
 						>
-							ETC Cooperative
+							{{ $t("navigation.etc_cooperative") }}
 						</a>
 						<ul class="dropdown-menu">
 							<li>
@@ -75,7 +79,7 @@
 									aria-current="page"
 									to="/what-is-etc-cooperative"
 								>
-									What is ETC Cooperative
+									{{ $t("navigation.what_is_etc_cooperative") }}
 								</router-link>
 							</li>
 							<li>
@@ -83,7 +87,8 @@
 									class="dropdown-item"
 									aria-current="page"
 									to="/governance"
-									>Governance
+								>
+									{{ $t("navigation.governance") }}
 								</router-link>
 							</li>
 							<li>
@@ -91,7 +96,8 @@
 									class="dropdown-item"
 									aria-current="page"
 									to="/filings"
-									>Filings
+								>
+									{{ $t("navigation.filings") }}
 								</router-link>
 							</li>
 							<li>
@@ -99,7 +105,8 @@
 									class="dropdown-item"
 									aria-current="page"
 									to="/people"
-									>People
+								>
+									{{ $t("navigation.people") }}
 								</router-link>
 							</li>
 						</ul>
@@ -110,8 +117,9 @@
 							active-class="active"
 							aria-current="page"
 							to="/contact"
-							>Contact</router-link
 						>
+							{{ $t("navigation.contact") }}
+						</router-link>
 					</li>
 				</ul>
 			</div>

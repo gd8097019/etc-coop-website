@@ -108,6 +108,40 @@
 		"team": "团队：",
 		"board_of_directors": "董事会成员："
 	},
+	"contact": {
+		"header": "Contact",
+		"stay_in_contact": "How to stay in contact with the ETC Cooperative:",
+		"postal_address": "Postal Address:"
+	},
+	"navigation": {
+		"ethereum_classic": "以太坊经典",
+		"mining": "挖矿",
+		"developing": "开发",
+		"news": "新闻",
+		"etc_cooperative": "以太坊经典合作社",
+		"what_is_etc_cooperative": "什么是以太坊经典合作社",
+		"governance": "治理",
+		"filings": "文件",
+		"people": "人事",
+		"contact": "联系我们"
+	},
+	"footer_navigation": {
+		"etc_coop_news": "以太经典合作社新闻",
+		"privacy_policy": "隐私政策",
+		"cookie_policy": "Cookie 政策",
+		"terms_of_service": "服务条款",
+		"etc_website": "以太经典网站",
+		"etc_discord": "以太经典 Discord",
+		"etc_news": "以太经典新闻",
+		"mining_on_etc": "在以太经典上进行挖矿",
+		"mining_pools": "矿池",
+		"ecips": "ECIPs (以太经典改进提案)",
+		"hyperledger_besu": "Hyperledger Besu",
+		"core_geth": "Core-Geth",
+		"blockscout": "BlockScout",
+		"etc_public_rpc_endpoints": "以太经典公共 RPC 终端",
+		"etc_nodes_explorer": "以太经典节点浏览器"
+	},
 	"newsList": {
 		"header": "新闻"
 	},
@@ -116,6 +150,8 @@
 		"mine_etc": "在ETC上挖矿",
 		"develop_for_etc": "在ETC上开发",
 		"etc_partners": "ETC合作社的合作伙伴",
-		"reserved_text": "版权所有 - © 2023"
+		"reserved_text": "版权所有 - © 2023",
+		"what_is_etc_cooperative": "什么是以太坊经典合作社?",
+		"contact_us": "联系我们"
 	}
 }
