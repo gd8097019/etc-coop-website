@@ -20,18 +20,18 @@
 					<div class="etcCoopNews">
 						<ul>
 							<li>
-								<router-link to="/news">ETC Coop News</router-link>
+								<router-link to="/news">{{ $t("footer_navigation.etc_coop_news") }}</router-link>
 							</li>
 							<li>
-								<router-link to="/privacy-policy">Privacy Policy</router-link>
+								<router-link to="/privacy-policy">{{ $t("footer_navigation.privacy_policy") }}</router-link>
 							</li>
 							<li>
-								<router-link to="/cookie-policy">Cookie Policy</router-link>
+								<router-link to="/cookie-policy">{{ $t("footer_navigation.cookie_policy") }}</router-link>
 							</li>
 							<li>
-								<router-link to="/terms-of-service"
-									>Terms Of Service</router-link
-								>
+								<router-link to="/terms-of-service">
+									{{ $t("footer_navigation.terms_of_service") }}
+								</router-link>
 							</li>
 						</ul>
 					</div>
@@ -56,50 +56,50 @@
 							<h4>{{ $t("footer.learn_about_etc") }}</h4>
 							<ul>
 								<li>
-									<a href="https://ethereumclassic.org/">ETC Website</a>
+									<a href="https://ethereumclassic.org/">{{ $t("footer_navigation.etc_website") }}</a>
 								</li>
 								<li>
-									<a href="https://discord.com/invite/hQs894U">ETC Discord</a>
+									<a href="https://discord.com/invite/hQs894U">{{ $t("footer_navigation.etc_discord") }}</a>
 								</li>
 								<li>
-									<a href="https://ethereumclassic.org/news">ETC News</a>
+									<a href="https://ethereumclassic.org/news">{{ $t("footer_navigation.etc_news") }}</a>
 								</li>
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 							<h4>{{ $t("footer.mine_etc") }}</h4>
 							<ul>
-								<li><router-link to="/mining">Mining on ETC</router-link></li>
+								<li><router-link to="/mining">{{ $t("footer_navigation.etc_news") }}</router-link></li>
 								<li>
-									<a href="https://ethereumclassic.org/mining/pools"
-										>Mining Pools</a
-									>
+									<a href="https://ethereumclassic.org/mining/pools">
+										{{ $t("footer_navigation.mining_pools") }}
+									</a>
 								</li>
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
 							<h4>{{ $t("footer.develop_for_etc") }}</h4>
 							<ul>
-								<li><a href="https://ecips.ethereumclassic.org/">ECIPs</a></li>
+								<li><a href="https://ecips.ethereumclassic.org/">{{ $t("footer_navigation.ecips") }}</a></li>
 								<li>
-									<a href="https://github.com/hyperledger/besu"
-										>Hyperledger Besu</a
-									>
+									<a href="https://github.com/hyperledger/besu">
+										{{ $t("footer_navigation.hyperledger_besu") }}
+									</a>
 								</li>
 								<li>
-									<a href="https://github.com/etclabscore/core-geth"
-										>Core-Geth</a
-									>
+									<a href="https://github.com/etclabscore/core-geth">
+										{{ $t("footer_navigation.core_geth") }}
+									</a>
 								</li>
 								<li>
-									<a href="https://blockscout.com/etc/mainnet/">BlockScout</a>
+									<a href="https://blockscout.com/etc/mainnet/">{{ $t("footer_navigation.blockscout") }}</a>
 								</li>
 								<li>
-									<a href="https://rivet.link/networks/"
-										>ETC public RPC endpoints</a
-									>
+									<a href="https://rivet.link/networks/">
+										{{ $t("footer_navigation.etc_public_rpc_endpoints") }}
+									</a>
 								</li>
-								<li><a href="https://etcnodes.org/">ETC nodes explorer</a></li>
+								<li><a href="https://etcnodes.org/">{{ $t("footer_navigation.etc_nodes_explorer") }}</a></li>
 							</ul>
 						</div>
 						<div class="col-lg-3 col-md-4 col-sm-6 col-12">
@@ -146,10 +146,12 @@
 					<router-link to="/">https://etccooperative.org/</router-link>
 				</p>
 				<div class="footerBottomLinks">
-					<router-link to="/what-is-etc-cooperative"
-						>What is the ETC Cooperative?</router-link
-					>
-					<router-link to="/contact">Contact Us</router-link>
+					<router-link to="/what-is-etc-cooperative">
+						{{ $t("footer.what_is_etc_cooperative") }}
+					</router-link>
+					<router-link to="/contact">
+						{{ $t("footer.contact_us") }}
+					</router-link>
 				</div>
 			</div>
 		</div>

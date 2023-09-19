@@ -108,6 +108,40 @@
 		"team": "Team:",
 		"board_of_directors": "Board of Directors:"
 	},
+	"contact": {
+		"header": "Contact",
+		"stay_in_contact": "How to stay in contact with the ETC Cooperative:",
+		"postal_address": "Postal Address:"
+	},
+	"navigation": {
+		"ethereum_classic": "Ethereum Classic",
+		"mining": "Mining",
+		"developing": "Developing",
+		"news": "News",
+		"etc_cooperative": "ETC Cooperative",
+		"what_is_etc_cooperative": "What is ETC Cooperative",
+		"governance": "Governance",
+		"filings": "Filings",
+		"people": "People",
+		"contact": "Contact"
+	},
+	"footer_navigation": {
+		"etc_coop_news": "ETC Coop News",
+		"privacy_policy": "Privacy Policy",
+		"cookie_policy": "Cookie Policy",
+		"terms_of_service": "Terms Of Service",
+		"etc_website": "ETC Website",
+		"etc_discord": "ETC Discord",
+		"etc_news": "ETC News",
+		"mining_on_etc": "Mining on ETC",
+		"mining_pools": "Mining Pools",
+		"ecips": "ECIPs",
+		"hyperledger_besu": "Hyperledger Besu",
+		"core_geth": "Core-Geth",
+		"blockscout": "BlockScout",
+		"etc_public_rpc_endpoints": "ETC public RPC endpoints",
+		"etc_nodes_explorer": "ETC nodes explorer"
+	},
 	"newsList": {
 		"header": "News"
 	},
@@ -116,6 +150,8 @@
 		"mine_etc": "Mine ETC",
 		"develop_for_etc": "Develop for ETC",
 		"etc_partners": "ETC COOP Partners",
-		"reserved_text": "Copyright - © 2023"
+		"reserved_text": "Copyright - © 2023",
+		"what_is_etc_cooperative": "What is the ETC Cooperative?",
+		"contact_us": "Contact Us"
 	}
 }

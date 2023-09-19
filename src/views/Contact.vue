@@ -5,7 +5,7 @@
 				<Navbar></Navbar>
 				<div class="mainContainer contactContainer">
 					<div class="contactHeroContent">
-						<h1>Contact</h1>
+						<h1>{{ $t("contact.header") }}</h1>
 					</div>
 				</div>
 			</section>
@@ -16,13 +16,13 @@
 			<section class="stayConnectedSection">
 				<div class="stayConnectedContainer">
 					<div class="heading">
-						<h1>How to stay in contact with the ETC Cooperative:</h1>
+						<h1>{{ $t("contact.stay_in_contact") }}</h1>
 					</div>
 					<div class="row">
 						<div
 							v-for="(contact, cKey) in contacts"
 							:key="cKey"
-							class="col-xl-4 col-md-6 px-2"
+							class="col-md-6 px-2"
 						>
 							<div class="contactCard">
 								<img :src="require(`@/assets/images/${contact.img}`)" alt="" />
@@ -49,7 +49,7 @@
 			<section class="addressSection">
 				<div class="stayConnectedContainer">
 					<div class="heading">
-						<h1>Postal Address:</h1>
+						<h1>{{ $t("contact.postal_address") }}</h1>
 					</div>
 					<div class="row">
 						<div class="col-12">
