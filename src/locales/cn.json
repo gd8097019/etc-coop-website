@@ -109,9 +109,10 @@
 		"board_of_directors": "董事会成员："
 	},
 	"contact": {
-		"header": "Contact",
-		"stay_in_contact": "How to stay in contact with the ETC Cooperative:",
-		"postal_address": "Postal Address:"
+		"header": "联系我们",
+		"stay_in_contact": "如何与ETC合作社取得联络:",
+		"postal_address": "邮寄地址:",
+		"ethereum_classic_cooperative_in": "以太经典合作社公司"
 	},
 	"navigation": {
 		"ethereum_classic": "以太坊经典",

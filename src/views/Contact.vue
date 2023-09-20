@@ -53,7 +53,7 @@
 					</div>
 					<div class="row">
 						<div class="col-12">
-							<p>Ethereum Classic Cooperative Inc</p>
+							<p>{{ $t("contact.ethereum_classic_cooperative_in") }}</p>
 							<p>1207 Delaware Ave #541</p>
 							<p>Wilmington, DE 19806</p>
 							<p>USA</p>
