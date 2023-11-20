@@ -4986,3 +4986,19 @@ body.removeScroll::-webkit-scrollbar {
 	padding-top: 17px;
 	padding-left: 36px;
 }
+
+/* Search */
+#search {
+	margin-right: 15px;
+	cursor: pointer;
+}
+#search img.search-icon {
+	width: 24px;
+	height: 24px;
+}
+#autocomplete-results .aa-Panel {
+	position: relative;
+	top: unset!important;
+	left: unset!important;
+	right: unset!important;
+}
