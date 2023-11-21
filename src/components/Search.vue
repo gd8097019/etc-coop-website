@@ -74,12 +74,7 @@ export default {
                         }
                     ]
                 },
-                // renderer: {createElement: h, Fragment, render},
             });
-
-            document.getElementById('search').onclick = () => {
-                document.getElementById('autocomplete').click()
-            }
         });
     }
 }
