@@ -73,7 +73,7 @@ export default {
                                 item({ item, html }) {
                                     return html`
                                         <a href="/posts/${item.alias}" class="removeUnderline">
-                                            <div class="px-2 py-2 border">
+                                            <div class="px-2 py-2 border" style="color: #1b1b1b;">
                                                 ${item.title}
                                             </div>
                                         </a>
