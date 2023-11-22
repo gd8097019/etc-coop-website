@@ -22,6 +22,9 @@ export default {
     setup(props) {
 
         const showModal = () => {
+            var els = document.querySelectorAll('.aa-Autocomplete');
+            if (els.length > 1) els[0].remove();
+
             var el = document.getElementById('exampleModal');
             el.className += ' show';
             el.style.cssText = 'display: block;';
@@ -74,7 +77,12 @@ export default {
                                     return html`
                                         <a href="/posts/${item.alias}" class="removeUnderline">
                                             <div class="px-2 py-2 border" style="color: #1b1b1b;">
-                                                ${item.title}
+                                                <div>
+                                                    <div>${item.title}</div>
+                                                </div>
+                                                <div class="pt-2 font-small">
+                                                    ${item.description}
+                                                </div>
                                             </div>
                                         </a>
                                     `;

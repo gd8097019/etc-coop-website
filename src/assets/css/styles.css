@@ -5002,3 +5002,13 @@ body.removeScroll::-webkit-scrollbar {
 	left: unset!important;
 	right: unset!important;
 }
+
+.flex {
+	display: flex;
+}
+.font-small {
+	font-size: 12px;
+}
+.justify-between {
+	justify-content: space-between;
+}
