@@ -46,7 +46,7 @@ export default {
         }
 
         onMounted(() => {
-            const searchClient = algoliasearch('7PCCLM6OLI', '5a455e80c51bc83e6b2b38611176c993');
+            const searchClient = algoliasearch('K9ZCQAPPB3', '0d9574ae209975445a641f2d58872daa');
             autocomplete({
                 container: '#autocomplete',
                 panelContainer: '#autocomplete-results',
