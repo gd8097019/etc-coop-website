@@ -80,7 +80,7 @@ export default {
                                                 <div>
                                                     <div>${item.title}</div>
                                                 </div>
-                                                <div class="pt-2 font-small">
+                                                <div class="pt-2 font-small el">
                                                     ${item.description}
                                                 </div>
                                             </div>
