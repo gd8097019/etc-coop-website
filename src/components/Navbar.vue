@@ -124,6 +124,9 @@
 				</ul>
 			</div>
 			<div class="navOptions order-lg-4 order-2">
+				<div id="search">
+					<Search :lang="$i18n.locale" />
+				</div>
 				<div class="themeSwitchButton">
 					<input
 						type="checkbox"
@@ -179,7 +182,11 @@
 	</nav>
 </template>
 <script>
+import Search from './Search';
 export default {
+	components: {
+		Search,
+	},
 	data() {
 		return {
 			theme: "light",

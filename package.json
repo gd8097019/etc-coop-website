@@ -7,8 +7,11 @@
 		"build": "node ./generatePostJson.js && node ./generateRssFeed.js && vue-cli-service build"
 	},
 	"dependencies": {
+		"@algolia/autocomplete-js": "^1.12.1",
+		"@algolia/autocomplete-theme-classic": "^1.12.1",
 		"@popperjs/core": "^2.11.6",
 		"@vueuse/head": "^1.1.23",
+		"algoliasearch": "^4.20.0",
 		"bootstrap": "^5.2.3",
 		"glob": "^9.3.2",
 		"markdown-it": "^13.0.1",

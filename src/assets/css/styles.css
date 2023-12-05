@@ -4986,3 +4986,36 @@ body.removeScroll::-webkit-scrollbar {
 	padding-top: 17px;
 	padding-left: 36px;
 }
+
+/* Search */
+#search {
+	margin-right: 15px;
+	cursor: pointer;
+}
+#search img.search-icon {
+	width: 24px;
+	height: 24px;
+}
+#autocomplete-results .aa-Panel {
+	position: relative;
+	top: unset!important;
+	left: unset!important;
+	right: unset!important;
+}
+
+.flex {
+	display: flex;
+}
+.font-small {
+	font-size: 12px;
+}
+.justify-between {
+	justify-content: space-between;
+}
+.el {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
