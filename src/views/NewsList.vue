@@ -61,7 +61,7 @@
 															</div>
 															<div class="newsCardContent">
 																<h5>
-																	Ethereum Classic Blog
+																	ETC Coop Blog
 																	<span class="dot">.</span>
 																	<span v-if="currentPosts[3].date">{{
 																		currentPosts[3].date
@@ -91,7 +91,7 @@
 															</div>
 															<div class="newsCardContent">
 																<h5>
-																	Ethereum Classic Blog
+																	ETC Coop Blog
 																	<span class="dot">.</span>
 																	<span v-if="currentPosts[4].date">{{
 																		currentPosts[4].date
@@ -165,7 +165,7 @@
 															</div>
 															<div class="newsCardContent">
 																<h5>
-																	Ethereum Classic Blog
+																	ETC Coop Blog
 																	<span class="dot">.</span>
 																	<span v-if="currentPosts[5].date">{{
 																		currentPosts[5].date
@@ -206,7 +206,7 @@
 													</div>
 													<div class="newsCardContent">
 														<h5>
-															Ethereum Classic Blog
+															ETC Coop Blog
 															<span class="dot">.</span>
 															<span v-if="remaincurrentPosts.date">{{
 																remaincurrentPosts.date
