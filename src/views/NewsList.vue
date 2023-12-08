@@ -37,6 +37,13 @@
 																/>
 															</div>
 															<div class="newsImgOverContent">
+																<h5>
+																	ETC Coop Blog
+																	<span class="dot">.</span>
+																	<span v-if="currentPosts[3].date">{{
+																		currentPosts[3].date
+																	}}</span>
+																</h5>
 																<h4>
 																	{{ currentPosts[0].title }}
 																</h4>
@@ -124,6 +131,13 @@
 																/>
 															</div>
 															<div class="newsCardContent">
+																<h5>
+																	ETC Coop Blog
+																	<span class="dot">.</span>
+																	<span v-if="currentPosts[3].date">{{
+																		currentPosts[3].date
+																	}}</span>
+																</h5>
 																<h4>
 																	{{ currentPosts[1].title }}
 																</h4>
@@ -144,6 +158,13 @@
 																/>
 															</div>
 															<div class="newsCardContent">
+																<h5>
+																	ETC Coop Blog
+																	<span class="dot">.</span>
+																	<span v-if="currentPosts[3].date">{{
+																		currentPosts[3].date
+																	}}</span>
+																</h5>
 																<h4>
 																	{{ currentPosts[2].title }}
 																</h4>
