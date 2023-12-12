@@ -131,7 +131,7 @@
 									</div>
 									<div class="newsCardContent">
 										<h5>
-											Ethereum Classic Blog <span class="dot">.</span>
+											ETC Coop Blog <span class="dot">.</span>
 											<span>{{ mayAlsoLikeArticle.date }}</span>
 										</h5>
 										<h4>

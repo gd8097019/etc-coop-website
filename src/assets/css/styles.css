@@ -2257,7 +2257,7 @@ h2.accordion-header {
 	margin: 0;
 }
 
-.newsCard .newsCardContent h5 {
+.newsCard .newsCardContent h5, .newsCard .newsImgOverContent h5 {
 	font-family: var(--Noto_sans);
 	font-style: normal;
 	font-weight: 500;
@@ -2268,7 +2268,7 @@ h2.accordion-header {
 	margin-bottom: 15px;
 }
 
-.newsCard .newsCardContent h5 span {
+.newsCard .newsCardContent h5 span, .newsCard .newsImgOverContent h5 span {
 	font-family: var(--Noto_sans);
 	font-style: normal;
 	font-weight: 500;
@@ -2276,9 +2276,13 @@ h2.accordion-header {
 	color: #515651;
 }
 
-.newsCard .newsCardContent h5 span.dot {
+.newsCard .newsCardContent h5 span.dot, .newsCard .newsImgOverContent h5 span.dot {
 	color: #515651;
 	margin: -10px 10px 0px;
+}
+
+.newsCard .newsImgOverContent h5, .newsCard .newsImgOverContent h5 span {
+	color: #a3a3a3;
 }
 
 .newsCard .newsCardContent p {
