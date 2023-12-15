@@ -5023,3 +5023,16 @@ body.removeScroll::-webkit-scrollbar {
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
 }
+#notification {
+	min-height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+}
+
+#notification a {
+	color: #22C55E;
+}
