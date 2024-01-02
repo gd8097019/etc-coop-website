@@ -64,7 +64,7 @@ export default {
                                             indexName: `posts_${props.lang || 'en'}`,
                                             query,
                                             params: {
-                                                hitsPerPage: 10,
+                                                hitsPerPage: 50,
                                                 attributesToSnippet: ['title:10', 'description:35'],
                                                 snippetEllipsisText: '…',
                                             },
