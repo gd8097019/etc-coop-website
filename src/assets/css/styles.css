@@ -4883,11 +4883,7 @@ body.removeScroll::-webkit-scrollbar {
 	.newBlogSection .newBlogContainer {
 		padding: 40px 0px 50px;
 	}
-	.articleTags {
-		justify-content: center;
-	}
 	.blogHeading h1 {
-		text-align: center;
 		font-size: 30px;
 	}
 	.blogDetailsContent h4 {
@@ -4895,7 +4891,6 @@ body.removeScroll::-webkit-scrollbar {
 		font-size: 20px;
 	}
 	.blogDetailsContent p {
-		text-align: center;
 		font-size: 16px;
 	}
 	.blogDetailsContent ul li {
@@ -4910,7 +4905,6 @@ body.removeScroll::-webkit-scrollbar {
 		margin-bottom: 12px;
 	}
 	.moreArticlesContainer h2 {
-		text-align: center;
 		font-size: 30px;
 		margin-bottom: 28px;
 	}
