@@ -4880,6 +4880,9 @@ body.removeScroll::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 576px) {
+	.blogDetailsContent iframe {
+		width: 100%;
+	}
 	.newBlogSection .newBlogContainer {
 		padding: 40px 0px 50px;
 	}
