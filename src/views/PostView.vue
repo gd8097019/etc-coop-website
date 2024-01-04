@@ -90,6 +90,21 @@
 						</div>
 						<div class="blogDetailsContent">
 							<p v-html="body"></p>
+							<h4>Share it on:</h4>
+							<div class="postShare">
+								<div role="button" @click="share('facebook')">
+									<img src="@/assets/images/blog-facebook.svg" alt="" />
+								</div>
+								<div role="button" @click="share('twitter')">
+									<img src="@/assets/images/blog-twitter.svg" alt="" />
+								</div>
+								<div role="button" @click="share('linkedin')">
+									<img src="@/assets/images/blog-linkedin.svg" alt="" />
+								</div>
+								<div role="button" @click="share('reddit')">
+									<img src="@/assets/images/blog-reddit.svg" width="32" height="32" alt="" />
+								</div>
+							</div>
 							<div class="learnMore">
 								<h4>Thank you for reading this article!</h4>
 								<div class="learnMoreLinks">
@@ -296,6 +311,9 @@ export default {
 					break;
 				case "linkedin":
 					path = `https://www.linkedin.com/sharing/share-offsite/?url=${this.fullPath}`;
+					break;
+				case "reddit":
+					path = `https://www.reddit.com/submit?url=` + encodeURIComponent(`${this.fullPath}&title=${this.clearTitle(this.title)}`);
 					break;
 			}
 

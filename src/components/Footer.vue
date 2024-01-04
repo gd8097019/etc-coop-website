@@ -48,6 +48,12 @@
 						<a href="https://www.youtube.com/@ETCCooperative/">
 							<img src="@/assets/images/youtube.svg" alt="" />
 						</a>
+						<a href="https://www.facebook.com/etccooperative2023">
+							<img src="@/assets/images/facebook.svg" alt="" />
+						</a>
+						<a href="https://www.instagram.com/etccooperative/">
+							<img src="@/assets/images/instagram.svg" alt="" />
+						</a>
 					</div>
 				</div>
 				<div class="col-lg-9 col-md-12">
