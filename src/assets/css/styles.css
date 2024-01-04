@@ -1321,7 +1321,7 @@ h2.accordion-header {
 }
 
 .etcFooterContainer .socialMediaIcons {
-	margin: 19px 34px 30px;
+	margin: 19px 25px 30px;
 }
 
 .etcFooterContainer .etcCoopNews {
@@ -2606,7 +2606,7 @@ body.removeScroll::-webkit-scrollbar {
 .socialMediaIcons img {
 	width: 30px;
 	height: 30px;
-	margin-right: 12px;
+	margin-right: 7px;
 }
 
 .stayConnectedContainer {
