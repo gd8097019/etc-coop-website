@@ -4703,6 +4703,7 @@ body.removeScroll::-webkit-scrollbar {
 	flex: 1;
 	max-width: 816px;
 	margin: 0 auto;
+	min-width: 0;
 }
 
 .blogDetailsContent h4 {
