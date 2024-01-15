@@ -49,7 +49,7 @@ for (const lang of langs) {
 
 				items += `<item>
                     <guid isPermaLink="false">${uuidv4()}</guid>
-                    <title>${metadata.title || ""}</title>
+                    <title>${metadata.title.replace('&', '&amp;') || ""}</title>
                     <link>${website}/posts/${file}</link>
 										<media:content medium="image" url="${website}/img/posts/featuredImg/${
 					metadata.featuredImage || ""
