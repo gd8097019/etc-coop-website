@@ -39,7 +39,6 @@ for (const lang of langs) {
 	let items = "";
 
 	fs.readdirSync(folder)
-		.slice(0, 100)
 		.reverse()
 		.forEach((file) => {
 			const mdFiles = glob.globSync(`${folder}/${file}/*.md`);
