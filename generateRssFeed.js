@@ -1,7 +1,7 @@
 const fs = require("fs");
 const glob = require("glob");
 const yaml = require("yaml");
-
+const markdownIt = require("markdown-it");
 // helper functions
 
 const getMetaData = function (mdFile) {
@@ -18,6 +18,38 @@ const getMetaData = function (mdFile) {
 	}
 
 	return metadata;
+};
+
+const clearHTMLTags = function (str) {
+	return str.replace(/(<([^>]+)>)/gi, "");
+}
+
+const getDescriptionFromBody = function (mdFile) {
+	const buffer = fs.readFileSync(mdFile);
+	let fileContent = buffer.toString();
+
+	// clear meta data
+	const metas = /---(.*?)---/s.exec(fileContent);
+	if (metas.length > 0) {
+		fileContent = fileContent.replaceAll(metas[0], "");
+	}
+
+	//try to get first n character as plain text
+	let body = "";
+
+	try {
+		let md = new markdownIt({
+			html: true,
+			linkify: true,
+			typographer: true,
+		});
+
+		body = md.render(fileContent);
+		body = clearHTMLTags(body);
+		body = body.slice(0, 160) + "...";
+	} catch (e) { }
+
+	return body;
 };
 
 const uuidv4 = function () {
@@ -46,15 +78,15 @@ for (const lang of langs) {
 				const mdFile = mdFiles[0];
 
 				const metadata = getMetaData(mdFile);
+				const description = getDescriptionFromBody(mdFile);
 
 				items += `<item>
                     <guid isPermaLink="false">${uuidv4()}</guid>
                     <title>${metadata.title.replace('&', '&amp;') || ""}</title>
                     <link>${website}/posts/${file}</link>
-										<media:content medium="image" url="${website}/img/posts/featuredImg/${
-					metadata.featuredImage || ""
-				}" width="385" height="200" />
-                  </item>`;
+                    <description>${description}</description>
+					<media:content medium="image" url="${website}/img/posts/featuredImg/${metadata.featuredImage || ""}" width="385" height="200" />
+				</item>`;
 
 				xml = `<?xml version="1.0" encoding="UTF-8" ?>
                 <rss version="2.0"
