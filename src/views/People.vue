@@ -89,10 +89,10 @@
 												<p v-if="activePeople">
 													{{ activePeople.description }}
 												</p>
-												<div class="memberEmail">
+												<div class="memberEmail" v-if="activePeople?.mail">
 													<a href="">
 														<img src="@/assets/images/mail-icon.svg" alt="" />
-														mailto:bob@etccooperative.org
+														{{ activePeople.mail }}
 													</a>
 												</div>
 											</div>
@@ -104,6 +104,7 @@
 														activePeople.social.twitter
 													"
 													:href="activePeople.social.twitter"
+													target="_blank"
 												>
 													<img
 														src="@/assets/images/member-twitter.svg"
@@ -117,6 +118,7 @@
 														activePeople.social.discord
 													"
 													:href="activePeople.social.discord"
+													target="_blank"
 												>
 													<img
 														src="@/assets/images/member-discord.svg"
@@ -130,6 +132,7 @@
 														activePeople.social.linkedin
 													"
 													:href="activePeople.social.linkedin"
+													target="_blank"
 												>
 													<img
 														src="@/assets/images/member-linkedin.svg"
@@ -191,9 +194,8 @@ export default {
 						"Bob Summerwill is Executive Director for the ETC Cooperative. He has been a community member of the Ethereum project since 2015 and of the Hyperledger project since 2016.",
 					mail: "bob@etccooperative.org",
 					social: {
-						twitter: "https://www.twitter.com",
-						discord: "https://www.discord.com",
-						linkedin: "https://www.linkedin.com",
+						twitter: "https://twitter.com/BobSummerwill",
+						linkedin: "https://www.linkedin.com/in/bobsummerwill/",
 					},
 				},
 				{
@@ -201,11 +203,9 @@ export default {
 					name: "Alison Alexis",
 					title: "Financial Controller and Business Services",
 					description: "",
-					mail: "",
+					mail: "alison@etccooperative.org",
 					social: {
-						twitter: "https://www.twitter.com",
-						discord: "https://www.discord.com",
-						linkedin: "https://www.linkedin.com",
+						linkedin: "https://www.linkedin.com/in/alison-alexis-ca/",
 					},
 				},
 				{
@@ -213,11 +213,9 @@ export default {
 					name: "Isaac Ardis",
 					title: "Core Developer, Ethereum Classic",
 					description: "",
-					mail: "",
+					mail: "isaac@etccooperative.org",
 					social: {
-						twitter: "https://www.twitter.com",
-						discord: "https://www.discord.com",
-						linkedin: "https://www.linkedin.com",
+						linkedin: "https://twitter.com/isaacardis",
 					},
 				},
 				{
@@ -225,11 +223,10 @@ export default {
 					name: "Chris Ziogas",
 					title: "Core Developer, Ethereum Classic",
 					description: "",
-					mail: "",
+					mail: "chris@etccooperative.org",
 					social: {
-						twitter: "https://www.twitter.com",
-						discord: "https://www.discord.com",
-						linkedin: "https://www.linkedin.com",
+						twitter: "https://twitter.com/ziogaschr",
+						linkedin: "https://www.linkedin.com/in/ziogaschr/",
 					},
 				},
 				{
@@ -237,11 +234,10 @@ export default {
 					name: "Diego López León",
 					title: "Core Developer, Ethereum Classic",
 					description: "",
-					mail: "",
+					mail: "diego@etccooperative.org",
 					social: {
-						twitter: "https://www.twitter.com",
-						discord: "https://www.discord.com",
-						linkedin: "https://www.linkedin.com",
+						twitter: "https://twitter.com/diega",
+						linkedin: "https://www.linkedin.com/in/dlopezleon/",
 					},
 				},
 				{
@@ -249,11 +245,10 @@ export default {
 					name: "Donald McIntyre",
 					title: "Senior Editor",
 					description: "",
-					mail: "",
+					mail: "donald@etccooperative.org",
 					social: {
-						twitter: "https://www.twitter.com",
-						discord: "https://www.discord.com",
-						linkedin: "https://www.linkedin.com",
+						twitter: "https://twitter.com/ETCCoopEd",
+						linkedin: "https://www.linkedin.com/in/donmcint/",
 					},
 				},
 				{
@@ -261,11 +256,9 @@ export default {
 					name: "Andrew Dick",
 					title: "Marketing Manager",
 					description: "",
-					mail: "",
+					mail: "andrew@etccooperative.org",
 					social: {
-						twitter: "https://www.twitter.com",
-						discord: "https://www.discord.com",
-						linkedin: "https://www.linkedin.com",
+						linkedin: "https://www.linkedin.com/in/andrewgdick/",
 					},
 				},
 				{
@@ -273,14 +266,12 @@ export default {
 					name: "Angelah Liu",
 					title: "Communications Manager",
 					description: "",
-					mail: "",
+					mail: "angelah@etccooperative.org",
 					social: {
-						twitter: "https://www.twitter.com",
-						discord: "https://www.discord.com",
-						linkedin: "https://www.linkedin.com",
+						twitter: "https://twitter.com/angelahliu_",
+						linkedin: "https://www.linkedin.com/in/angelahyliu/",
 					},
 				},
-				
 			],
 			boards: [
 				{
