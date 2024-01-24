@@ -215,7 +215,7 @@ export default {
 					description: "",
 					mail: "isaac@etccooperative.org",
 					social: {
-						linkedin: "https://twitter.com/isaacardis",
+						twitter: "https://twitter.com/isaacardis",
 					},
 				},
 				{
