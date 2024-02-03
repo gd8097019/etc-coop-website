@@ -40,8 +40,8 @@
 																<h5>
 																	ETC Coop Blog
 																	<span class="dot">.</span>
-																	<span v-if="currentPosts[3].date">{{
-																		currentPosts[3].date
+																	<span v-if="currentPosts[0].date">{{
+																		currentPosts[0].date
 																	}}</span>
 																</h5>
 																<h4>
@@ -134,8 +134,8 @@
 																<h5>
 																	ETC Coop Blog
 																	<span class="dot">.</span>
-																	<span v-if="currentPosts[3].date">{{
-																		currentPosts[3].date
+																	<span v-if="currentPosts[1].date">{{
+																		currentPosts[1].date
 																	}}</span>
 																</h5>
 																<h4>
@@ -161,8 +161,8 @@
 																<h5>
 																	ETC Coop Blog
 																	<span class="dot">.</span>
-																	<span v-if="currentPosts[3].date">{{
-																		currentPosts[3].date
+																	<span v-if="currentPosts[2].date">{{
+																		currentPosts[2].date
 																	}}</span>
 																</h5>
 																<h4>
